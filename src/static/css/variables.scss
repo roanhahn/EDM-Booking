@@ -2,11 +2,35 @@
 // BREAKPOINTS
 $breakpoint-desktop: 1199px;
 $breakpoint-tablet: 991px;
-$breakpoint-mobile: 767px;
+$breakpoint-mobile: 768px;
 
 
 
 $bg-color: #000;
 $text-color: #fff;
 $font: 'Roboto', sans-serif;
-$border-color: rgba(255,255,255,.15)
+$border-color: rgba(255,255,255,.15);
+
+
+// THEME COLOURS
+
+$color-1: #D8232A; // red
+$color-2: #0099cd; // blue
+
+
+
+
+// FOOTER
+
+$footer-padding: 100px 0;
+$footer-bg-color: #000;
+$footer-font-size: 14px;
+$footer-opacity: .3;
+$footer-text-color: rgba(255,255,255,.3);
+$footer-link-color: rgba(255,255,255,.3);
+$footer-link-hover-color: rgba(255,255,255,1);
+
+$cookie-radius: 4px;
+$cookie-bg-color: rgba(0,0,0,1);
+$cookie-text-color: #fff;
+$cookie-shadow: 0px 0px 20px 0px rgba(255,255,255,.3);
