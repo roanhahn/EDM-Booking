@@ -20,10 +20,11 @@
 
 		&:before{
 			content:"";
-			background: -webkit-linear-gradient(left,rgba(0,0,0,0.3),rgba(0,0,0,1)); /*Safari 5.1-6*/
-			background: -o-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,1)); /*Opera 11.1-12*/
-			background: -moz-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,1)); /*Fx 3.6-15*/
-			background: linear-gradient(to bottom, rgba(0,0,0,0.3),rgba(0,0,0,1)); /*Standard*/
+			// background: -webkit-linear-gradient(left,rgba(0,0,0,0.3),rgba(0,0,0,1));
+			// background: -o-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,1)); 
+			// background: -moz-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,1));
+			// background: linear-gradient(to bottom, rgba(0,0,0,0.3),rgba(0,0,0,1));
+			background: $prefooter-overlay;
 			position: absolute;
 			right: 0;
 			top: 0;

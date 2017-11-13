@@ -120,14 +120,7 @@ a, button {
     overflow: hidden; }
     .pre-footer .videowrapper:before {
       content: "";
-      background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3), black);
-      /*Safari 5.1-6*/
-      background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.3), black);
-      /*Opera 11.1-12*/
-      background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.3), black);
-      /*Fx 3.6-15*/
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), black);
-      /*Standard*/
+      background: rgba(0, 0, 0, 0.7);
       position: absolute;
       right: 0;
       top: 0;
