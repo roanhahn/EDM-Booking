@@ -1,0 +1,63 @@
+body, html{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	cursor: default;
+	font-weight: 400;
+	height: 100%;
+	-webkit-overflow-scrolling: touch; /* lets it scroll lazy */
+	position: relative;
+	font-family: $font;
+}
+
+a, a:active, a:focus{
+	outline: none;
+	text-decoration: none;
+}
+
+a{
+	-webkit-transition: all .2s ease-in-out 0s;
+	-moz-transition: all .2s ease-in-out 0s;
+	-o-transition: all .2s ease-in-out 0s;
+	transition: all .2s ease-in-out 0s;
+}
+
+
+// INFO
+
+.info-labels{
+
+	& li{
+		display: inline-block;
+		list-style-type: none;
+		padding: 10px;
+		border: 1px solid #000;
+	}
+}
+
+.info-list-section{
+	text-transform: uppercase;
+	font-weight: 600;
+	padding-top: 15px;
+	font-size: 20px;
+}
+.info-list{
+	list-style-type: none;
+
+	&-question{
+		cursor: pointer;
+		border-bottom: 1px solid #000;
+		padding: 20px 0;
+		line-height: 1;
+		text-transform: uppercase;
+		font-weight: 600;
+		border-bottom: 1px solid $border-color;
+
+		&.active{
+			background-color: red;
+		}
+	}
+	&-answer{
+		display: none;
+	}
+}

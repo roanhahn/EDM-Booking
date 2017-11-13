@@ -1,0 +1,37 @@
+---
+title: Components
+type: page
+layout: default.hbs
+---
+
+
+<div class="cover">
+  <div class="hi">This is fully responsive & mobile friendly YouTube video background scaled with 16/9 aspect ratio. Actually bunch of videos - js loads randomly 1 of 4 with different start/end times, then it loops through all the vids.<br><br> Click <span>here</span> to <em>un</em>mute & <span>here</span> to see another vid (<em>0</em> of <em>0</em>). Check all of them! They're quite awesome. ;]</div>
+</div>
+	<div class="tv">
+		  <div class="screen mute" id="tv"></div>
+	</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4"></div>
+		<div class="col-sm-4"></div>
+	</div>
+</div>
+
+<section class="section">
+	<div class="container">
+		<h3>Hotels<small>Some text goes here</small></h3>
+		<div class="row">
+			<div class="col-md-3">{{> home-hotel-item }}</div>
+			<div class="col-md-3">{{> home-hotel-item }}</div>
+			<div class="col-md-3">{{> home-hotel-item }}</div>
+			<div class="col-md-3">{{> home-hotel-item }}</div>
+		</div>
+		<p>some text goes here</p>
+		<a href="#" class="button" title="">Button text</a>
+	</div>
+</section>
+{{> footer }}
+

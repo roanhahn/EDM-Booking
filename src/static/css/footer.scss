@@ -1,0 +1,53 @@
+footer{
+	background: $color-3;
+	padding: 100px 0 80px;
+	color: $color-4;
+	font-size: 11px;
+	font-family: $font-1;
+	font-weight: 400;
+
+	@media all and(max-width: $breakpoint-mobile){
+		padding: 50px 0 30px;
+	}
+
+	& p{
+		line-height: 2;
+		letter-spacing: 1px;
+	}
+
+	& a{
+		color: $color-4;
+	}
+
+	& .social{
+		list-style-type: none;
+		margin: 0 0 30px;
+		padding: 0;
+		letter-spacing: none;
+		font-size: 0px;
+
+		& li{
+			display: inline-block;
+			margin: 0 4px;
+
+			& a{
+				display: block;
+				width: 50px;
+				height: 50px;
+				border: 2px solid $color-4;
+				color: $color-4;
+				font-size: 20px;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				border-radius: 50%;
+				line-height: 46px;
+				text-align: center;
+
+				&:hover{
+					background: $color-4;
+					color: $color-3;
+				}
+			}
+		}
+	}
+}
