@@ -231,7 +231,12 @@ body {
       margin-bottom: 5px; }
   .product:hover {
     border: 1px solid #0099cd;
-    background: #000; }
+    background: #000;
+    -webkit-box-shadow: inset 0px 0px 15px 0px #0099cd;
+    -moz-box-shadow: inset 0px 0px 15px 0px #0099cd;
+    box-shadow: inset 0px 0px 15px 0px rgba(0, 153, 205, 0.3); }
+    .product:hover .product-thumb {
+      border: 1px solid #0099cd; }
     .product:hover .product-thumb img {
       opacity: 1; }
     .product:hover .product-info {

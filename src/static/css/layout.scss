@@ -232,6 +232,13 @@ body{
 		border: $product-border-hover;
 		background: $product-bg-hover;
 
+		-webkit-box-shadow: inset 0px 0px 15px 0px rgba(0,153,205,1);
+		-moz-box-shadow: inset 0px 0px 15px 0px rgba(0,153,205,1);
+		box-shadow: inset 0px 0px 15px 0px rgba(0,153,205,.3);
+
+		& .product-thumb{
+			border: $product-border-hover;
+		}
 		& .product-thumb img{
 			opacity: 1;
 		}
