@@ -1,10 +1,267 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import url(owl.carousel.min.css);
+@import url(owl.theme.default.min.css);
+@font-face {
+  font-family: 'ornitons-bold';
+  src: url("../font/ornitons-bold-webfont.eot");
+  src: url("../font/ornitons-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/ornitons-bold-webfont.woff2") format("woff2"), url("../font/ornitons-bold-webfont.woff") format("woff"), url("../font/ornitons-bold-webfont.ttf") format("truetype"), url("../font/ornitons-bold-webfont.svg#ornitons-boldregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ornitons-demiboldregular';
+  src: url("../font/ornitons-demibold-webfont.eot");
+  src: url("../font/ornitons-demibold-webfont.eot?#iefix") format("embedded-opentype"), url("../font/ornitons-demibold-webfont.woff2") format("woff2"), url("../font/ornitons-demibold-webfont.woff") format("woff"), url("../font/ornitons-demibold-webfont.ttf") format("truetype"), url("../font/ornitons-demibold-webfont.svg#ornitons-demiboldregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ornitons-heavyregular';
+  src: url("../font/ornitons-heavy-webfont.eot");
+  src: url("../font/ornitons-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("../font/ornitons-heavy-webfont.woff2") format("woff2"), url("../font/ornitons-heavy-webfont.woff") format("woff"), url("../font/ornitons-heavy-webfont.ttf") format("truetype"), url("../font/ornitons-heavy-webfont.svg#ornitons-heavyregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ornitons-lightregular';
+  src: url("../font/ornitons-light-webfont.eot");
+  src: url("../font/ornitons-light-webfont.eot?#iefix") format("embedded-opentype"), url("../font/ornitons-light-webfont.woff2") format("woff2"), url("../font/ornitons-light-webfont.woff") format("woff"), url("../font/ornitons-light-webfont.ttf") format("truetype"), url("../font/rnitons-light-webfont.svg#ornitons-lightregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ornitons-mediumregular';
+  src: url("../font/ornitons-medium-webfont.eot");
+  src: url("../font/ornitons-medium-webfont.eot?#iefix") format("embedded-opentype"), url("../font/ornitons-medium-webfont.woff2") format("woff2"), url("../font/ornitons-medium-webfont.woff") format("woff"), url("../font/ornitons-medium-webfont.ttf") format("truetype"), url("../font/ornitons-medium-webfont.svg#ornitons-mediumregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ornitons-regularregular';
+  src: url("../font/ornitons-regular-webfont.eot");
+  src: url("../font/ornitons-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/ornitons-regular-webfont.woff2") format("woff2"), url("../font/ornitons-regular-webfont.woff") format("woff"), url("../font/ornitons-regular-webfont.ttf") format("truetype"), url("../font/ornitons-regular-webfont.svg#ornitons-regularregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ornitons-xlightregular';
+  src: url("../font/ornitons-xlight-webfont.eot");
+  src: url("../font/ornitons-xlight-webfont.eot?#iefix") format("embedded-opentype"), url("../font/ornitons-xlight-webfont.woff2") format("woff2"), url("../font/ornitons-xlight-webfont.woff") format("woff"), url("../font/ornitons-xlight-webfont.ttf") format("truetype"), url("../font/ornitons-xlight-webfont.svg#ornitons-xlightregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 body {
   background: #000;
   color: #fff; }
 
+.m-t-10 {
+  margin-top: 10px; }
+
+.m-t-20 {
+  margin-top: 20px; }
+
+.m-t-30 {
+  margin-top: 30px; }
+
+.m-t-40 {
+  margin-top: 40px; }
+
+.m-t-50 {
+  margin-top: 50px; }
+
+.site-background {
+  position: fixed;
+  width: 100%;
+  height: 680px;
+  display: block;
+  z-index: -1;
+  top: 0;
+  left: 0; }
+  .site-background:before {
+    display: block;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+    /* IE6-9 */
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 680px;
+    content: "";
+    z-index: 2; }
+  .site-background-visual {
+    background: #000 url(http://weownthenitenyc.com/wp-content/uploads/2017/08/We-Own-The-Nite-NYC_AMF-2017_ADE-2017_Armin-van-Buuren_Hardwell_Two-is-One_Armin-van-Buuren-B2B-Hardwell-e1504109947369.jpg) no-repeat 0% 50% scroll;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 680px;
+    opacity: .2;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%); }
+
+.section {
+  padding: 100px 0;
+  background: transparent; }
+  .section-line {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+
+.scroll-container {
+  background: red;
+  overflow: auto;
+  display: flex;
+  align-items: stretch;
+  padding-left: 15px; }
+  .scroll-container:after {
+    content: "";
+    clear: both;
+    display: block; }
+
+.owl-carousel .owl-stage {
+  display: flex;
+  align-items: stretch; }
+
+.owl-item {
+  flex-shrink: 0; }
+
+.owl-item .item {
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 2px; }
+
+.product {
+  border: 1px solid rgba(0, 153, 205, 0.3);
+  background: #0a0a0a;
+  position: relative;
+  padding: 0 20px 20px;
+  cursor: pointer;
+  height: 100%;
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s; }
+  .product-thumb {
+    position: relative;
+    margin-top: -20px;
+    border: 1px solid rgba(0, 153, 205, 0.3);
+    -webkit-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 30px 10px rgba(0, 0, 0, 0.5);
+    background: #0a0a0a;
+    z-index: 1;
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s; }
+    .product-thumb img {
+      opacity: .5; }
+  .product-content {
+    position: relative;
+    padding-top: 45px; }
+    .product-content--margin {
+      padding-bottom: 50px; }
+  .product-info {
+    width: 40px;
+    height: 40px;
+    -webkit-box-shadow: inset 0px 0px 0px 3px #d8232a;
+    -moz-box-shadow: inset 0px 0px 0px 3px #d8232a;
+    box-shadow: inset 0px 0px 0px 3px #d8232a;
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    z-index: 2;
+    background: #0a0a0a;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    -webkit-transition: all .3s ease 0s;
+    transition: all .3s ease 0s; }
+    .product-info:before {
+      display: block;
+      content: "";
+      background-image: url(../img/amf/arrow-white.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 20px;
+      width: 40px;
+      height: 40px;
+      z-index: 1;
+      -webkit-transition: all .3s ease 0s;
+      transition: all .3s ease 0s; }
+  .product .extra-price {
+    color: #fff;
+    margin: 0 0 10px 0;
+    font-size: 14px; }
+    .product .extra-price strong {
+      font-size: 26px;
+      color: #0099cd; }
+  .product-description {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0; }
+  .product-details {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    width: calc(100% - 30px);
+    padding: 15px 0; }
+  .product-distance {
+    float: left;
+    font-size: 14px; }
+    .product-distance img {
+      height: 16px !important;
+      width: auto !important;
+      display: inline-block !important;
+      vertical-align: middle; }
+  .product-rating {
+    float: right;
+    text-align: right; }
+    .product-rating img {
+      width: 16px !important;
+      display: inline-block !important;
+      vertical-align: baseline;
+      vertical-align: middle; }
+  .product-list {
+    margin: 20px 0 0 0;
+    padding: 0;
+    text-align: left;
+    list-style-type: none;
+    font-size: 14px; }
+    .product-list li {
+      margin-bottom: 5px; }
+  .product:hover {
+    border: 1px solid #0099cd;
+    background: #000; }
+    .product:hover .product-thumb img {
+      opacity: 1; }
+    .product:hover .product-info {
+      -webkit-box-shadow: inset 0px 0px 0px 40px #d8232a;
+      -moz-box-shadow: inset 0px 0px 0px 40px #d8232a;
+      box-shadow: inset 0px 0px 0px 40px #d8232a; }
+    .product:hover .product-info:before {
+      -ms-transform: rotate(90deg);
+      /* IE 9 */
+      -webkit-transform: rotate(90deg);
+      /* Safari */
+      transform: rotate(90deg); }
+
+.why-book-icon {
+  max-height: 65px;
+  margin: 10px auto 30px;
+  display: block; }
+.why-book-heading {
+  text-transform: none;
+  min-height: 53px;
+  margin-bottom: 5px;
+  font-family: "ornitons-demiboldregular", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 500;
+  text-transform: none; }
+
 body, html {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: auto;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   cursor: default;
   font-weight: 400;
@@ -24,6 +281,24 @@ a, button {
   -moz-transition: all .2s ease-out 0s;
   -o-transition: all .2s ease-out 0s;
   transition: all .2s ease-out 0s; }
+
+.h3 {
+  text-transform: uppercase;
+  font-family: "ornitons-demiboldregular", sans-serif;
+  font-size: 42px;
+  margin: 0 0 20px 0; }
+
+.h4 {
+  text-transform: uppercase;
+  font-family: "ornitons-demiboldregular", sans-serif;
+  font-size: 18px; }
+
+.subheader {
+  font-size: 24px;
+  font-family: "ornitons-lightregular", sans-serif;
+  margin: 0 auto 30px auto;
+  max-width: 60%;
+  line-height: 1.2; }
 
 .info-labels li {
   display: inline-block;
@@ -51,6 +326,25 @@ a, button {
       background-color: red; }
   .info-list-answer {
     display: none; }
+
+.button {
+  padding: 15px 40px;
+  border: 2px solid #D8232A;
+  border-radius: 100px;
+  background-color: #D8232A;
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+  font-family: "ornitons-demiboldregular", sans-serif;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block; }
+  .button:hover {
+    background-color: #000;
+    color: #fff; }
 
 .cover {
   position: absolute;
@@ -102,11 +396,15 @@ a, button {
 @media (min-width: 1440px) {
   .container {
     max-width: 1400px; } }
+.max-container {
+  margin: 0 auto;
+  max-width: 1400px; }
+
 .pre-footer {
   height: 30%;
+  min-height: 300px;
   padding: 100px 0;
-  position: relative;
-  margin-top: 1000px; }
+  position: relative; }
   .pre-footer .content {
     z-index: 5;
     position: relative; }
@@ -165,7 +463,8 @@ a, button {
   cursor: pointer;
   width: 300px;
   text-align: center;
-  color: #fff !important; }
+  color: #fff !important;
+  font-family: "ornitons-demiboldregular", sans-serif; }
   .footer-btn:hover {
     color: #fff;
     background: #D8232A;
@@ -238,7 +537,7 @@ a, button {
         display: block; }
 
 .cookies {
-  width: 600px;
+  max-width: 600px;
   padding: 30px;
   font-size: 14px;
   background: black;
@@ -247,6 +546,7 @@ a, button {
   bottom: 30px;
   left: 50%;
   z-index: 100;
+  border: 1px solid #0099cd;
   -ms-transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);

@@ -21,6 +21,31 @@ $( ".hide-cookies" ).click(function() {
 	$(".cookies").fadeToggle(500);
 });
 
+// OWL
+
+$(document).ready(function() {
+  var owl = $('.owl-carousel');
+  owl.owlCarousel({
+    margin: 15,
+    nav: false,
+    loop: false,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 3
+      },
+      1200: {
+        items: 4
+      }
+    }
+  })
+});
+
 
 // HERO VIDEO
 
@@ -86,8 +111,6 @@ function vidRescale(){
 vidRescale();
 
 $( window ).resize(function() {
-	w = $('.video-background').outerWidth()+200;
-	h = $('.video-background').outerHeight()+200;
 	vidRescale();
 });
 

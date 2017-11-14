@@ -8,16 +8,36 @@ $breakpoint-mobile: 768px;
 
 $bg-color: #000;
 $text-color: #fff;
-$font: 'Roboto', sans-serif;
 $border-color: rgba(255,255,255,.15);
 
 
+// FONTS
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'ornitons-demiboldregular', sans-serif;
+$tertiary-font: 'ornitons-lightregular', sans-serif;
+
+// BUTTONS
+$button-border-color: #D8232A;
+$button-bg: #D8232A;
+$button-bg-hover: #000;
+$button-hover-color: #fff;
+
 // THEME COLOURS
 
-$color-1: #D8232A; // red
-$color-2: #0099cd; // blue
+$color-1: #D8232A; // Red
+$color-2: rgba(0,153,205,1); // Blue
+
+$main-bg: #000 url(http://weownthenitenyc.com/wp-content/uploads/2017/08/We-Own-The-Nite-NYC_AMF-2017_ADE-2017_Armin-van-Buuren_Hardwell_Two-is-One_Armin-van-Buuren-B2B-Hardwell-e1504109947369.jpg) no-repeat 0% 50% scroll;
+$secion-bg-color: transparent; // Black
+
+// PRODUCTS
 
 
+
+$product-bg: #0a0a0a; // dark grey
+$product-bg-hover: #000;
+$product-border: 1px solid rgba(0,153,205,.3);
+$product-border-hover: 1px solid rgba(0,153,205,1);
 
 
 // FOOTER

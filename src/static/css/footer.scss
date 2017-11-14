@@ -1,8 +1,8 @@
 .pre-footer{
 	height: 30%;
+	min-height: 300px;
 	padding: $footer-padding;
 	position: relative;
-	margin-top: 1000px;
 
 	& .content{
 		z-index: 5;
@@ -20,10 +20,6 @@
 
 		&:before{
 			content:"";
-			// background: -webkit-linear-gradient(left,rgba(0,0,0,0.3),rgba(0,0,0,1));
-			// background: -o-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,1)); 
-			// background: -moz-linear-gradient(bottom,rgba(0,0,0,0.3),rgba(0,0,0,1));
-			// background: linear-gradient(to bottom, rgba(0,0,0,0.3),rgba(0,0,0,1));
 			background: $prefooter-overlay;
 			position: absolute;
 			right: 0;
@@ -82,6 +78,7 @@
 	width: 300px;
 	text-align: center;
 	color: #fff !important;
+	font-family: $secondary-font;
 
 	&:hover{
 		color: #fff;
@@ -189,7 +186,7 @@
 }
 
 .cookies{
-	width: 600px;
+	max-width: 600px;
 	padding: 30px;
 	font-size: 14px;
 	background: $cookie-bg-color;
@@ -198,6 +195,7 @@
 	bottom: 30px;
 	left: 50%;
 	z-index: 100;
+	border: 1px solid $color-2;
 	-ms-transform: translate(-50%, 0);
 	-webkit-transform: translate(-50%, 0);
 	transform: translate(-50%, 0);
