@@ -1,6 +1,4 @@
 .pre-footer{
-	height: 30%;
-	min-height: 300px;
 	padding: $footer-padding;
 	position: relative;
 
@@ -192,7 +190,8 @@
 	background: $cookie-bg-color;
 	color: $cookie-text-color;
 	position: fixed;
-	bottom: 30px;
+	// display: none;
+	bottom: 10px;
 	left: 50%;
 	z-index: 100;
 	border: 1px solid $color-2;
@@ -228,17 +227,37 @@
 
 	& .hide-cookies{
 		float: right;
-		background: none;
+		background: $color-2;
 		cursor: pointer;
 		border: none;
 		display: inline-block;
-		padding: 3px;
+		// padding: 10px;
+		color: #fff;
+		font-size: 16px;
+		font-weight: 700;
+		// text-transform: uppercase;
 		margin: 0 0 0 15px;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		border-radius: 100px;
+		width: 40px;
+		overflow: hidden;
+		text-align: center;
+		height: 40px;
+		border: 2px solid $color-2;
+		background: transparent;
+
+		&:hover{
+			background-color: $color-2;
+		}
 
 
 		& img{
-			width: 30px;
+			width: 16px;
 			height: auto;
+			margin: 0;
+			line-height: 40px;
+			vertical-align: middle;
 		}
 	}
 }

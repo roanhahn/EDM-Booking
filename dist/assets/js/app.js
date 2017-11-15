@@ -220,39 +220,92 @@ $(".info-list-item").click(function() {
 	$(this).find(".info-list-answer").slideToggle(500);
 });
 
+// SCROLL HEADER
+
+$(window).scroll(function() {    
+	var scroll = $(window).scrollTop();
+
+	if (scroll >= 90) {
+		$(".header").addClass("scrolled");
+	} else {
+		$(".header").removeClass("scrolled");
+	}
+});
+
+// SCROLL TO
+$(".scroll").click(function() {
+	var whereto = $(this).data('scroll');
+	console.log(whereto);
+	$('html,body').animate({scrollTop: $("#" + whereto).offset().top-90}, 1000, 'easeInOutCubic');
+	return false;
+});
+
+
 // HIDE COOKIES
 
 $( ".hide-cookies" ).click(function() {
 	$(".cookies").fadeToggle(500);
 });
 
+// CATEGORY
+// $( ".toggle-category" ).click(function() {
+
+// 	var category = $(this).data('toggle');
+// 	// console.log($(this).data('toggle'));
+// 	$(".homepage-category--active").addClass("animated fadeOut");
+
+// 	setTimeout(function() {
+// 		$(".homepage-category--active").removeClass('homepage-category--active animated fadeOut');
+// 		$("#" + category).addClass("homepage-category--active animated fadeIn");
+// 		// alert("bla");
+// 	}, 200);
+// 	setTimeout(function() {
+// 		$(".homepage-category--active").removeClass('animated fadeIn');
+// 	}, 400);
+
+// });
+
 // OWL
 
 $(document).ready(function() {
-  var owl = $('.owl-carousel');
-  owl.owlCarousel({
-    margin: 15,
-    nav: false,
-    loop: false,
-    responsive: {
-      0: {
-        items: 1
-      },
-      600: {
-        items: 2
-      },
-      1000: {
-        items: 3
-      },
-      1200: {
-        items: 4
-      }
-    }
-  })
+	var owl = $('.owl-offers');
+	owl.owlCarousel({
+		responsiveRefreshRate: 200, 
+		margin: 15,
+		nav: false,
+		loop: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 2
+			},
+			1000: {
+				items: 3
+			},
+			1200: {
+				items: 4
+			}
+		}
+	})
+
+	var owlReviews = $('.owl-reviews');
+	owlReviews.owlCarousel({
+		items:1,
+		autoplay:true,
+		autoplayTimeout:3000,
+		autoplayHoverPause:true,
+		loop: true,
+		animateOut: 'slideOutDown',
+		animateIn: 'flipInX',
+	})
 });
 
 
-// HERO VIDEO
+
+
+// YOUTUBE VIDEO
 
 // 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
@@ -264,12 +317,24 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 			var player;
 			function onYouTubeIframeAPIReady() {
 				player = new YT.Player('videoplayer', {
-					videoId: 'oPr-XZbvQcM',
+					videoId: '4witGyaCtqk',
 					playerVars: {
-		        controls: '0',
-		        playlist: 'oPr-XZbvQcM',
-		        loop: 1
-		      },
+						controls: '0',
+						playlist: '4witGyaCtqk',
+						loop: 1
+					},
+					events: {
+						'onReady': onPlayerReady,
+						'onStateChange': onPlayerStateChange
+					}
+				});
+				player = new YT.Player('hero-video', {
+					videoId: '4witGyaCtqk',
+					playerVars: {
+						controls: '0',
+						playlist: '4witGyaCtqk',
+						loop: 1
+					},
 					events: {
 						'onReady': onPlayerReady,
 						'onStateChange': onPlayerStateChange
@@ -319,4 +384,17 @@ $( window ).resize(function() {
 	vidRescale();
 });
 
+// SCROLL REVEAL
+
+// window.sr = ScrollReveal({ reset: false });
+// sr.reveal('.reveal', { 
+// 	duration: 500,
+// 	useDelay: 'once',
+// 	delay: 0,
+// 	origin: 'bottom',
+// 	distance: '150px',
+// 	mobile: true,
+// 	scale: 1,
+// 	viewFactor: 0.4
+// });
 
