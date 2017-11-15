@@ -51,7 +51,7 @@ $product-border-hover: 1px solid rgba(0,153,205,1);
 
 // FOOTER
 
-$prefooter-overlay: rgba(0,0,0,.8);
+$prefooter-overlay: rgba(0,0,0,.4);
 
 $footer-padding: 100px 0;
 $footer-bg-color: #000;
@@ -62,6 +62,6 @@ $footer-link-color: rgba(255,255,255,.3);
 $footer-link-hover-color: rgba(255,255,255,1);
 
 $cookie-radius: 4px;
-$cookie-bg-color: rgba(0,0,0,1);
-$cookie-text-color: #fff;
+$cookie-bg-color: #fff;
+$cookie-text-color: #000;
 $cookie-shadow: 0px 0px 20px 0px rgba(255,255,255,.3);

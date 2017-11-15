@@ -117,7 +117,7 @@ body {
     left: 0;
     width: 100%;
     height: 680px;
-    opacity: .2;
+    opacity: .3;
     -webkit-filter: grayscale(100%);
     /* Safari 6.0 - 9.0 */
     filter: grayscale(100%); }
@@ -220,7 +220,7 @@ body {
     transition: all .3s ease 0s;
     background: #000; }
     .product-thumb img {
-      opacity: .5; }
+      opacity: .7; }
   .product-content {
     position: relative;
     padding-top: 45px; }
@@ -268,8 +268,8 @@ body {
       font-size: 26px;
       color: #0099cd; }
   .product-description {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 400;
     margin: 0; }
   .product-details {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -554,9 +554,9 @@ a, button {
   transition: all .3s ease 0s; }
   .header.scrolled {
     background: black;
-    -webkit-box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.75); }
+    -webkit-box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 10px 16px 0px rgba(0, 0, 0, 0.4); }
   .header-logo {
     float: left;
     margin: 15px 0; }
@@ -630,7 +630,7 @@ a, button {
       color: #fff; }
 
 .hero {
-  height: 70%;
+  height: 80%;
   position: relative; }
   .hero-content {
     position: absolute;
@@ -638,13 +638,13 @@ a, button {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
-    background-color: rgba(0, 0, 0, 0.5); }
+    z-index: 2; }
     .hero-content .hero-preheader {
       text-transform: uppercase;
       font-size: 18px;
       margin-bottom: 30px;
-      font-weight: 500; }
+      font-weight: 500;
+      margin-top: 45px; }
     .hero-content .hero-header {
       font-family: "ornitons-demiboldregular", sans-serif;
       font-size: 60px;
@@ -693,7 +693,8 @@ a, button {
       top: 0;
       bottom: 0;
       left: 0;
-      z-index: 10; }
+      z-index: 10;
+      opacity: .8; }
   .hero .videoplayer {
     position: absolute;
     top: 50%;
@@ -723,7 +724,7 @@ a, button {
     overflow: hidden; }
     .pre-footer .videowrapper:before {
       content: "";
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.4);
       position: absolute;
       right: 0;
       top: 0;
@@ -843,10 +844,10 @@ a, button {
 
 .cookies {
   max-width: 600px;
-  padding: 30px;
+  padding: 15px;
   font-size: 14px;
-  background: black;
-  color: #fff;
+  background: #fff;
+  color: #000;
   position: fixed;
   bottom: 10px;
   left: 50%;
@@ -874,7 +875,7 @@ a, button {
   .cookies p {
     margin: 0; }
   .cookies a {
-    color: #fff;
+    color: #000;
     text-decoration: underline; }
   .cookies .hide-cookies {
     float: right;
@@ -894,9 +895,9 @@ a, button {
     text-align: center;
     height: 40px;
     border: 2px solid #0099cd;
-    background: transparent; }
+    background: #0099cd; }
     .cookies .hide-cookies:hover {
-      background-color: #0099cd; }
+      background-color: #000; }
     .cookies .hide-cookies img {
       width: 16px;
       height: auto;
