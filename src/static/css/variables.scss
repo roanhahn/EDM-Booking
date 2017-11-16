@@ -1,8 +1,9 @@
 
 // BREAKPOINTS
-$breakpoint-desktop: 1199px;
-$breakpoint-tablet: 991px;
+$breakpoint-desktop: 1200px;
+$breakpoint-tablet: 992px;
 $breakpoint-mobile: 768px;
+
 
 
 
@@ -27,17 +28,17 @@ $button-hover-color: #fff;
 $color-1: #D8232A; // Red
 $color-2: rgba(0,153,205,1); // Blue
 
-$main-bg: #000 url(http://weownthenitenyc.com/wp-content/uploads/2017/08/We-Own-The-Nite-NYC_AMF-2017_ADE-2017_Armin-van-Buuren_Hardwell_Two-is-One_Armin-van-Buuren-B2B-Hardwell-e1504109947369.jpg) no-repeat 0% 50% scroll;
+$main-bg: #000 url(http://weownthenitenyc.com/wp-content/uploads/2017/08/We-Own-The-Nite-NYC_AMF-2017_ADE-2017_Armin-van-Buuren_Hardwell_Two-is-One_Armin-van-Buuren-B2B-Hardwell-e1504109947369.jpg) no-repeat 50% 50% scroll;
 $secion-bg-color: transparent; // Black
 
-$hero-overlay: rgba(0,0,0,.7);
+
 
 
 // HEADER
 
 $header-bg-color: rgba(0,0,0,0.3);
 $header-bg-color-scrolled: rgba(0,0,0,1);
-
+$hero-overlay: rgba(255,255,255,.3);
 
 // PRODUCTS
 
@@ -51,7 +52,7 @@ $product-border-hover: 1px solid rgba(0,153,205,1);
 
 // FOOTER
 
-$prefooter-overlay: rgba(0,0,0,.4);
+$prefooter-overlay: rgba(0,153,205,.3);
 
 $footer-padding: 100px 0;
 $footer-bg-color: #000;

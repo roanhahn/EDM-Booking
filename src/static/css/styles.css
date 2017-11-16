@@ -111,7 +111,7 @@ body {
     content: "";
     z-index: 2; }
   .site-background-visual {
-    background: #000 url(http://weownthenitenyc.com/wp-content/uploads/2017/08/We-Own-The-Nite-NYC_AMF-2017_ADE-2017_Armin-van-Buuren_Hardwell_Two-is-One_Armin-van-Buuren-B2B-Hardwell-e1504109947369.jpg) no-repeat 0% 50% scroll;
+    background: #000 url(http://weownthenitenyc.com/wp-content/uploads/2017/08/We-Own-The-Nite-NYC_AMF-2017_ADE-2017_Armin-van-Buuren_Hardwell_Two-is-One_Armin-van-Buuren-B2B-Hardwell-e1504109947369.jpg) no-repeat 50% 50% scroll;
     background-size: cover;
     position: absolute;
     left: 0;
@@ -127,6 +127,9 @@ body {
   background: transparent; }
   .section-line {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  @media (max-width: 768px) {
+    .section {
+      padding: 60px 0; } }
 
 .homepage-category {
   display: none; }
@@ -146,14 +149,18 @@ body {
 .category-menu {
   margin: 0 0 30px;
   padding: 0;
-  list-style-type: none; }
+  list-style-type: none;
+  display: flex; }
+  @media (max-width: 768px) {
+    .category-menu {
+      margin-bottom: 10px; } }
   .category-menu li {
     display: inline-block;
+    flex-grow: 1;
     font-family: "ornitons-demiboldregular", sans-serif;
     font-size: 28px;
     padding: 20px 0;
     margin: 0 20px;
-    width: 25%;
     border-bottom: 4px solid transparent;
     text-transform: uppercase;
     opacity: .5;
@@ -161,10 +168,13 @@ body {
     transition: all .3s ease 0s;
     cursor: pointer;
     white-space: nowrap; }
-    @media (max-width: 567px) {
+    @media (max-width: 992px) {
       .category-menu li {
-        width: 100%;
-        display: block; } }
+        font-size: 20px; } }
+    @media (max-width: 768px) {
+      .category-menu li {
+        margin: 0;
+        font-size: 11px; } }
     .category-menu li:hover {
       border-color: #D8232A;
       opacity: 1; }
@@ -188,19 +198,23 @@ body {
   border: 1px solid rgba(0, 153, 205, 0.3);
   background: #000;
   position: relative;
-  padding: 0 20px 20px;
+  padding: 0 15px 15px;
   cursor: pointer;
   height: 100%; }
+  @media (max-width: 768px) {
+    .product {
+      width: 80%;
+      margin: 0 auto; } }
   .product-label {
     position: absolute;
     right: 10px;
     top: 10px;
     border: 1px solid #fff;
-    padding: 8px 12px;
+    padding: 5px 5px 4px;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
-    font-size: 13px;
+    font-size: 12px;
     background: #fff;
     z-index: 3;
     line-height: 1;
@@ -223,9 +237,9 @@ body {
       opacity: .7; }
   .product-content {
     position: relative;
-    padding-top: 45px; }
+    padding-top: 30px; }
     .product-content--margin {
-      padding-bottom: 50px; }
+      padding-bottom: 40px; }
   .product-info {
     width: 40px;
     height: 40px;
@@ -257,20 +271,30 @@ body {
       z-index: 1;
       -webkit-transition: all .3s ease 0s;
       transition: all .3s ease 0s; }
-  .product .offername {
-    min-height: 40px;
+  .product-title {
+    min-height: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
     overflow: hidden; }
+    @media (max-width: 768px) {
+      .product-title {
+        min-height: 0px;
+        height: auto;
+        overflow: visible; } }
   .product .extra-price {
     color: #fff;
     margin: 0 0 10px 0;
     font-size: 14px; }
     .product .extra-price strong {
-      font-size: 26px;
-      color: #0099cd; }
+      font-size: 24px;
+      color: #fff; }
+    @media (max-width: 768px) {
+      .product .extra-price {
+        margin: 0 0 5px 0; } }
   .product-description {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
-    margin: 0; }
+    margin: 0 0 15px; }
   .product-details {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     text-align: left;
@@ -281,7 +305,7 @@ body {
     padding: 15px 0; }
   .product-distance {
     float: left;
-    font-size: 14px; }
+    font-size: 12px; }
     .product-distance img {
       height: 16px !important;
       width: auto !important;
@@ -325,7 +349,7 @@ body {
       /* Safari */
       transform: rotate(90deg); }
 
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   .whybook-item {
     margin-bottom: 30px; } }
 .whybook-icon {
@@ -341,12 +365,25 @@ body {
   line-height: 26px;
   font-weight: 500;
   text-transform: none; }
+  @media (max-width: 768px) {
+    .whybook-heading {
+      min-height: 0px;
+      height: auto;
+      font-size: 18px;
+      margin-bottom: 10px; } }
 .whybook-p {
-  padding: 0 20px;
+  font-size: 14px;
   text-align: justify; }
+  @media (max-width: 768px) {
+    .whybook-p {
+      font-size: 14px;
+      text-align: center; } }
 
 .review {
   padding-bottom: 60px; }
+  @media (max-width: 768px) {
+    .review {
+      padding-bottom: 30px; } }
   .review img {
     max-width: 60px;
     margin: 0 auto 30px; }
@@ -354,6 +391,10 @@ body {
     font-size: 32px;
     font-family: "ornitons-lightregular", sans-serif;
     margin-bottom: 30px; }
+    @media (max-width: 768px) {
+      .review-title {
+        font-size: 20px;
+        margin-bottom: 15px; } }
   .review-author {
     color: #D8232A;
     margin-bottom: 10px; }
@@ -389,6 +430,10 @@ a, button {
   font-family: "ornitons-demiboldregular", sans-serif;
   font-size: 42px;
   margin: 0 0 20px 0; }
+  @media (max-width: 768px) {
+    .h3 {
+      font-size: 22px;
+      margin-bottom: 10px; } }
 
 .h4 {
   text-transform: uppercase;
@@ -401,6 +446,11 @@ a, button {
   margin: 0 auto 30px auto;
   max-width: 60%;
   line-height: 1.2; }
+  @media (max-width: 768px) {
+    .subheader {
+      font-size: 16px;
+      max-width: 80%;
+      margin-bottom: 10px; } }
 
 .info-labels li {
   display: inline-block;
@@ -482,7 +532,8 @@ a, button {
   display: inline-block; }
   .button:hover {
     background-color: #000;
-    color: #fff; }
+    color: #fff;
+    padding: 15px 50px; }
   .button--secondary {
     background-color: #0099cd;
     border-color: #0099cd; }
@@ -567,8 +618,8 @@ a, button {
       margin-left: 15px;
       font-size: 14px;
       border-left: 1px solid #fff;
-      padding-left: 15px;
-      color: #ccc;
+      padding-left: 10px;
+      color: #fff;
       font-weight: 500;
       text-transform: uppercase;
       display: inline-block; }
@@ -638,20 +689,42 @@ a, button {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2; }
+    z-index: 3;
+    text-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+    /* IE6-9 */ }
     .hero-content .hero-preheader {
       text-transform: uppercase;
       font-size: 18px;
       margin-bottom: 30px;
       font-weight: 500;
       margin-top: 45px; }
+      @media (max-width: 768px) {
+        .hero-content .hero-preheader {
+          font-size: 12px;
+          margin-bottom: 10px; } }
     .hero-content .hero-header {
       font-family: "ornitons-demiboldregular", sans-serif;
       font-size: 60px;
-      margin-bottom: 20px; }
+      margin: 0 auto 20px;
+      max-width: 80%; }
+      @media (max-width: 768px) {
+        .hero-content .hero-header {
+          font-size: 30px; } }
     .hero-content .hero-subheader {
       font-size: 22px;
-      font-family: "ornitons-lightregular", sans-serif; }
+      font-family: "ornitons-lightregular", sans-serif;
+      max-width: 80%;
+      margin: 0 auto; }
+      @media (max-width: 768px) {
+        .hero-content .hero-subheader {
+          font-size: 16px; } }
     .hero-content .scroll-down {
       width: 50px;
       height: 50px;
@@ -674,27 +747,20 @@ a, button {
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 2;
     overflow: hidden;
-    background: #000 url(http://weownthenitenyc.com/wp-content/uploads/2017/08/We-Own-The-Nite-NYC_AMF-2017_ADE-2017_Armin-van-Buuren_Hardwell_Two-is-One_Armin-van-Buuren-B2B-Hardwell-e1504109947369.jpg) no-repeat 0% 50% scroll;
+    background: #000 url(http://weownthenitenyc.com/wp-content/uploads/2017/08/We-Own-The-Nite-NYC_AMF-2017_ADE-2017_Armin-van-Buuren_Hardwell_Two-is-One_Armin-van-Buuren-B2B-Hardwell-e1504109947369.jpg) no-repeat 50% 50% scroll;
     background-size: cover; }
     .hero .videowrapper:before {
       content: "";
-      background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
-      /* FF3.6-15 */
-      background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
-      /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
-      /* IE6-9 */
+      background: rgba(0, 153, 205, 0.3);
       position: absolute;
       right: 0;
       top: 0;
       bottom: 0;
       left: 0;
       z-index: 10;
-      opacity: .8; }
+      opacity: 1; }
   .hero .videoplayer {
     position: absolute;
     top: 50%;
@@ -707,13 +773,17 @@ a, button {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     pointer-events: none; }
+    @media (max-width: 768px) {
+      .hero .videoplayer {
+        display: none; } }
 
 .pre-footer {
   padding: 100px 0;
   position: relative; }
   .pre-footer .content {
     z-index: 5;
-    position: relative; }
+    position: relative;
+    text-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); }
   .pre-footer .videowrapper {
     position: absolute;
     top: 0;
@@ -721,10 +791,12 @@ a, button {
     right: 0;
     bottom: 0;
     z-index: 1;
-    overflow: hidden; }
+    overflow: hidden;
+    background: #000 url(http://weownthenitenyc.com/wp-content/uploads/2017/08/We-Own-The-Nite-NYC_AMF-2017_ADE-2017_Armin-van-Buuren_Hardwell_Two-is-One_Armin-van-Buuren-B2B-Hardwell-e1504109947369.jpg) no-repeat 50% 50% scroll;
+    background-size: cover; }
     .pre-footer .videowrapper:before {
       content: "";
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(0, 153, 205, 0.3);
       position: absolute;
       right: 0;
       top: 0;
@@ -743,6 +815,9 @@ a, button {
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     pointer-events: none; }
+    @media (max-width: 768px) {
+      .pre-footer .videoplayer {
+        display: none; } }
 
 .footer {
   padding: 100px 0;
@@ -767,17 +842,19 @@ a, button {
   -moz-border-radius: 50px;
   border-radius: 50px;
   cursor: pointer;
-  width: 300px;
   text-align: center;
   color: #fff !important;
   font-family: "ornitons-demiboldregular", sans-serif; }
   .footer-btn:hover {
     color: #fff;
     background: #D8232A;
-    border-color: #D8232A; }
+    border-color: #D8232A;
+    padding: 15px 50px; }
   @media all and (max-width: 768px) {
     .footer-btn {
-      margin: 0 auto 15px; } }
+      margin: 0 auto 15px;
+      display: block;
+      width: 100%; } }
 
 .footer-socialmedia {
   list-style-type: none;
