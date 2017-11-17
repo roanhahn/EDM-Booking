@@ -1,4 +1,12 @@
 
+// MOBILE NAV
+
+
+$(".nav-mobile-btn").click(function() {
+	$(".header-nav").fadeToggle("fast");
+});
+
+
 // INFO PAGE & FAQ
 
 $(".info-label").click(function() {
@@ -69,6 +77,12 @@ $(document).ready(function() {
 		margin: 15,
 		nav: false,
 		loop: false,
+		animateOut: 'slideOutDown',
+		animateIn: 'flipInX',
+		autoplay:true,
+		autoplayTimeout:5000,
+		loop: true,
+		autoplayHoverPause:true,
 		responsive: {
 			0: {
 				items: 1

@@ -10,6 +10,14 @@
 	-webkit-transition: all .3s ease 0s;
 	transition: all .3s ease 0s;
 
+	@media (max-width: $breakpoint-tablet){
+		overflow: visible;
+	}
+
+	@media (max-width: $breakpoint-mobile){
+		height: 70px;
+	}
+
 	&.scrolled{
 		background: $header-bg-color-scrolled;
 		-webkit-box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.4);
@@ -24,6 +32,10 @@
 		& img{
 			max-height: 60px;
 			width: auto;
+
+			@media (max-width: $breakpoint-mobile){
+				height: 40px;
+			}
 		}
 
 		& span{
@@ -35,12 +47,33 @@
 			font-weight: 500;
 			text-transform: uppercase;
 			display: inline-block;
+
+			@media (max-width: $breakpoint-tablet){
+				display: none;
+			}
 		}
 	}
 
 	&-nav{
 		float: right;
 		vertical-align: middle;
+
+		@media (max-width: $breakpoint-tablet){
+			position: fixed;
+			top: 90px;
+			left: 0;
+			width: 100%;
+			vertical-align: top;
+			float: none;
+			z-index: 200;
+			display: none;
+			padding: 30px 0;
+			background-color: $color-1;
+		}
+
+		@media (max-width: $breakpoint-mobile){
+			top: 70px;
+		}
 		
 
 		&-list{
@@ -53,6 +86,15 @@
 			list-style-type: none;
 			vertical-align: middle;
 
+			@media (max-width: $breakpoint-tablet){
+				display: block;
+				text-align: center;
+
+				&.mobile-menu-no{
+					display: none;
+				}
+			}
+
 			& a{
 				color: #fff;
 				padding: 20px 10px;
@@ -61,6 +103,11 @@
 				font-size: 15px;
 				text-transform: uppercase;
 				font-family: $secondary-font;
+
+				@media (max-width: $breakpoint-tablet){
+					margin: 0 auto;
+					display: inline-block;
+				}
 
 				&:after{
 					display: block;
@@ -236,8 +283,50 @@
 		transform: translate(-50%, -50%);
 		pointer-events: none;
 
-		@media (max-width: $breakpoint-mobile){
+		@media (max-width: $breakpoint-tablet){
 			display: none;
 		}
+	}
+}
+
+.nav-mobile-btn{
+	border: 2px solid $color-1;
+	background: $color-1 url(../img/menu.svg) no-repeat 50% 50% scroll;
+	background-size: 16px auto;
+	width: 40px;
+	height: 40px;
+	border-radius: 100px;
+	cursor: pointer;
+	overflow: hidden;
+	margin-top: 25px;
+	// position: absolute;
+	float: right;
+	display: none;
+
+	&:hover{
+		background-color: #000;
+	}
+	@media (max-width: $breakpoint-tablet){
+		display: block;
+	}
+	@media (max-width: $breakpoint-mobile){
+		margin-top: 15px;
+	}
+}
+
+.header-booking-mob{
+	float: right;
+	display: none;
+	line-height: 90px;
+	font-size: 14px;
+	margin-right: 30px;
+	font-weight: 700;
+
+	@media (max-width: $breakpoint-tablet){
+		display: block;
+	}
+	@media (max-width: $breakpoint-mobile){
+		line-height: 70px;
+		margin-right: 20px;
 	}
 }
