@@ -47,11 +47,11 @@ a, button{
 	font-size: 24px;
 	font-family: $tertiary-font;
 	margin: 0 auto 30px auto;
-	max-width: 60%;
+	max-width: 80%;
 	line-height: 1.2;
 	@media (max-width: $breakpoint-mobile){
 		font-size: 16px;
-		max-width: 80%;
+		max-width: 90%;
 		margin-bottom: 10px;
 	}
 }
