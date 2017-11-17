@@ -204,6 +204,8 @@ jQuery.extend( jQuery.easing,
  *
  */
 
+var headerheight = $(".header").outerHeight();
+
 // MOBILE NAV
 
 
@@ -244,7 +246,7 @@ $(window).scroll(function() {
 $(".scroll").click(function() {
 	var whereto = $(this).data('scroll');
 	console.log(whereto);
-	$('html,body').animate({scrollTop: $("#" + whereto).offset().top-90}, 1000, 'easeInOutCubic');
+	$('html,body').animate({scrollTop: $("#" + whereto).offset().top-headerheight}, 1000, 'easeInOutCubic');
 	return false;
 });
 
@@ -396,6 +398,7 @@ vidRescale();
 
 $( window ).resize(function() {
 	vidRescale();
+	headerheight = $(".header").outerHeight();
 });
 
 // SCROLL REVEAL

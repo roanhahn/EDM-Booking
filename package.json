@@ -1,18 +1,18 @@
 {
-  "name": "Template One",
-  "description": "Full responsive website",
+  "name": "EDM Booking",
+  "description": "",
   "version": "1.0.1",
-  "homepage": "http://roanhahn.github.io/Template-One/",
+  "homepage": "",
   "author": {
     "name": "Roan Hahn",
     "url": "http://github.com/roanhahn/"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/roanhahn/Template-One.git"
+    "url": "git://github.com/roanhahn/EDM-Booking.git"
   },
   "bugs": {
-    "url": "https://github.com/roanhahn/Template-One/issues"
+    "url": "https://github.com/roanhahn/EDM-Booking/issues"
   },
   "engines": {
     "node": ">=0.10"
