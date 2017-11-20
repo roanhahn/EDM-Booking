@@ -210,7 +210,7 @@ var headerheight = $(".header").outerHeight();
 
 
 $(".nav-mobile-btn").click(function() {
-	$(".header-nav").fadeToggle("fast");
+	$(".header-nav").slideToggle("fast");
 });
 
 
@@ -219,15 +219,24 @@ $(".nav-mobile-btn").click(function() {
 $(".info-label").click(function() {
 	console.log($(this).data('list'));
 	$('html, body').animate({
-		scrollTop: $("#" + $(this).data('list')).offset().top
-	}, 1000, 'easeOutQuad');
+		scrollTop: $("#" + $(this).data('list')).offset().top-headerheight
+	}, 1000, 'easeInOutCubic');
 });
 
 $(".info-list-item").click(function() {
-	$(".info-list-question").removeClass("active");
-	$(".info-list-answer").hide(0);
-	$(this).find(".info-list-question").addClass("active");
-	$(this).find(".info-list-answer").slideToggle(500);
+
+	var question = $(this);
+	var question_active = $(question).find(".info-list-answer");
+
+	if( $(question).find(".info-list-question").hasClass("active") ){
+		$(".info-list-answer").slideUp(500, 'easeOutCubic');
+		$(".info-list-question").removeClass("active");
+	} else{
+		$(".info-list-question").removeClass("active");
+		$(".info-list-answer").slideUp(500, 'easeOutCubic');
+		$(question_active).slideDown(500, 'easeOutCubic');
+		$(question).find(".info-list-question").addClass("active");
+	}
 });
 
 // SCROLL HEADER
