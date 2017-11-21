@@ -16,6 +16,7 @@
 
 	@media (max-width: $breakpoint-mobile){
 		height: 70px;
+		position: static;
 	}
 
 	&.scrolled{
@@ -58,6 +59,10 @@
 		float: right;
 		vertical-align: middle;
 
+		@media (min-width: $breakpoint-tablet){
+			display: block !important;
+		}
+
 		@media (max-width: $breakpoint-tablet){
 			position: fixed;
 			top: 90px;
@@ -73,12 +78,17 @@
 
 		@media (max-width: $breakpoint-mobile){
 			top: 70px;
+			padding: 0;
 		}
 		
 
 		&-list{
 			margin: 0;
 			padding: 0;
+
+			@media (max-width: $breakpoint-mobile){
+				padding: 15px 0;
+			}
 		}
 
 		& li{
@@ -88,7 +98,7 @@
 
 			@media (max-width: $breakpoint-tablet){
 				display: block;
-				text-align: center;
+				margin-bottom: 2px;
 
 				&.mobile-menu-no{
 					display: none;
@@ -106,6 +116,7 @@
 
 				@media (max-width: $breakpoint-tablet){
 					margin: 0 auto;
+					padding: 15px 15px 10px 15px;
 					display: inline-block;
 				}
 

@@ -1,54 +1,57 @@
-.form-group{
-	margin-bottom: 22px;
-}
-.form-control{
-	font-family: $font-2;
-	-webkit-border-radius: 0px;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
-	color: $color-2;
-	border-color: $form-border-color;
-	padding: 12px 12px;
-	height: auto;
-	-webkit-box-shadow: none;
-		-moz-box-shadow: none;
-		box-shadow: none;
+.filter{
+	background: #000;
+	border: 1px solid $border-color;
+	// padding: 15px;
 
-	&:focus{
-		border-color: $color-1;
-		-webkit-box-shadow: none;
-		-moz-box-shadow: none;
-		box-shadow: none;
+	&-group{
+		padding: 15px 15px 5px;
+	}
+	& .filter-label{
+		padding: 15px;
+		background-color: $border-color;
+		font-family: $secondary-font;
+	}
+	& .filter-label-big{
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	& label{
+		display: block;
+		// font-family: $secondary-font;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 22px;
+		vertical-align: middle;
+		margin-bottom: 10px;
+
+
+
+		& i{
+			width: auto;
+			font-size: 18px;
+			margin-right: 2px;
+			color: $color-2;
+		}
+	}
+
+	&-textfield{
+		width: 100%;
+		display: block;
+	}
+
+	& .form-check-input{
+		width: 16px;
+		height: 16px;
+		background-color: red;
+		position: static;
+		margin-right: 5px;
 	}
 }
 
-.successContent, .errorContent{
-	text-align: center;
-	margin-bottom: 30px;
-	display: none;
-	font-size: 18px;
-
-	& i{
-		margin-right: 10px;
-	}
+.filter-select{
+	width: 200px;
+	display: inline-block;
+	margin-bottom: 15px;
+	margin-right: 15px;
 }
 
-.errorContent{
-	color: #c0392b;
-}
-
-.successContent{
-	
-}
-
-.form-group .error{
-	border-color: #c0392b;
-}
-
-label.error{
-	color: #c0392b;
-	font-family: $font-1;
-	font-size: 14px;
-	margin-top: 10px;
-	text-transform: uppercase;
-}

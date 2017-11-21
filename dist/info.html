@@ -13,7 +13,7 @@
 	
 	
 	<!-- CSS -->
-	
+	<script src="https://use.fontawesome.com/3d921631f6.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link href="assets/css/styles.min.css" rel="stylesheet">
 	
@@ -24,21 +24,22 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body  class="body-padding" >
 	<header class="header">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="header-logo">
-			<a href="#" title="">
+			<a href="index.html" title="Title goes here">
 				<img src="assets/img/amf/logo.png" alt="AMF Festival Travelsite">
 			</a>
 			<span>Official Travelpackages</span>
 		</div>
 		<nav class="header-nav">
 			<ul class="header-nav-list">
+				<li class="header-nav-listitem"><a href="hotels.html" title="">Packages</a></li>
 				<li class="header-nav-listitem"><a href="#" title="" class="scroll" data-scroll="whybook">Why book</a></li>
-				<li class="header-nav-listitem"><a href="#" title="">More info</a></li>
+				<li class="header-nav-listitem"><a href="info.html" title="">More info</a></li>
 				<li class="header-nav-listitem mobile-menu-no">
-					<a href="#" title="" class="nav-btn"><img src="assets/img/avatar.svg">My booking</a>
+					<a href="#" title="" class="nav-btn"><img src="assets/img/avatar.svg">&euro;329,-  <!--My booking--></a>
 				</li>
 			</ul>
 		</nav>
@@ -56,159 +57,179 @@
 
 <section class="section">
 	<div class="container">
-		<h3>Info</h3>
-		<ul class="info-labels">
-			<li class="info-label" data-list="Algemeen">Algemeen</li>
-			<li class="info-label" data-list="Tickets">Tickets</li>
-			<li class="info-label" data-list="Lineup">Lineup</li>
-			<li class="info-label" data-list="Betalen">Betalen</li>
-		</ul>
-		<div class="row">
-			<div class="col-md-3 info-list-section" id="Algemeen">Algemeen</div>
-			<div class="col-md-9">
-				<ul class="info-list">
-					<li class="info-list-item">
-						<div class="info-list-question">Praesent molestie, felis id pulvinar bibendum?</div>
-						<div class="info-list-answer">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et purus quis orci dignissim finibus id in metus. Donec tempus tempus nibh, vel lobortis metus luctus varius. Nulla vel vehicula lacus. 
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Phasellus porta egestas lacus sit amet egestas. Donec eu dui id libero molestie rutrum eget quis velit. Proin aliquam purus vel interdum aliquet. Cras vestibulum iaculis nisi id congue. Fusce placerat cursus metus, sed fermentum velit vehicula vel. Sed pulvinar lacinia dui, vel accumsan tellus tempus nec. Morbi eget augue malesuada, ornare sem vitae, posuere mauris. Nullam elementum velit in ipsum scelerisque molestie.
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et purus quis orci dignissim finibus id in metus. Donec tempus tempus nibh, vel lobortis metus luctus varius. Nulla vel vehicula lacus. 
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-				</ul>
+		<div class="col-xl-8 offset-xl-2">
+			<h3 class="h3">Info</h3>
+			<ul class="info-labels">
+				<li class="info-label button--label" data-list="Algemeen">Algemeen</li>
+				<li class="info-label button--label" data-list="Tickets">Tickets</li>
+				<li class="info-label button--label" data-list="Lineup">Lineup</li>
+				<li class="info-label button--label" data-list="Betalen">Betalen</li>
+			</ul>
+			<div class="row info-list-category" id="Algemeen">
+				<div class="col-md-3 info-list-section"><span>Algemeen</span></div>
+				<div class="col-md-9">
+					<ul class="info-list">
+						<li class="info-list-item">
+							<div class="info-list-question">When is the party?</div>
+							<div class="info-list-answer">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et purus quis orci dignissim finibus id in metus. Donec tempus tempus nibh, vel lobortis metus luctus varius. <a href="#" title="">Nulla vel vehicula lacus</a>. 
+								<ul>
+									<li>item</li>
+									<li>item</li>
+									<li>item</li>
+								</ul>
+							</div>
+						</li>
+						<li class="info-list-item">
+							<div class="info-list-question">Where is it?</div>
+							<div class="info-list-answer">
+								Phasellus porta egestas lacus sit amet egestas. Donec eu dui id libero molestie rutrum eget quis velit. Proin aliquam purus vel interdum aliquet. Cras vestibulum iaculis nisi id congue. Fusce placerat cursus metus, sed fermentum velit vehicula vel. Sed pulvinar lacinia dui, vel accumsan tellus tempus nec. Morbi eget augue malesuada, ornare sem vitae, posuere mauris. Nullam elementum velit in ipsum scelerisque molestie.
+							</div>
+						</li>
+						<li class="info-list-item">
+							<div class="info-list-question">How do I get there?</div>
+							<div class="info-list-answer">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et purus quis orci dignissim finibus id in metus. Donec tempus tempus nibh, vel lobortis metus luctus varius. Nulla vel vehicula lacus. 
+							</div>
+						</li>
+						<li class="info-list-item">
+							<div class="info-list-question">What time does the afterparty starts?</div>
+							<div class="info-list-answer">
+								Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row info-list-category" id="Tickets">
+				<div class="col-md-3 info-list-section">Tickets</div>
+				<div class="col-md-9">
+					<ul class="info-list">
+						<li class="info-list-item">
+							<div class="info-list-question">Where can i buy tickets?</div>
+							<div class="info-list-answer">
+								Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+							</div>
+						</li>
+						<li class="info-list-item">
+							<div class="info-list-question">I have a problem with my ticket</div>
+							<div class="info-list-answer">
+								Heb je je ticket niet ontvangen? Of perongeluk je verkeerde mailadres ingevoerd? Voor problemen met je ticket kun je contact opnemen 
+							</div>
+						</li>
+						<li class="info-list-item">
+							<div class="info-list-question">Do I need to primt my ticket?</div>
+							<div class="info-list-answer">
+								Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row info-list-category" id="Lineup">
+				<div class="col-md-3 info-list-section">Lineup</div>
+				<div class="col-md-9">
+					<ul class="info-list">
+						<li class="info-list-item">
+							<div class="info-list-question">Who is the mainact?</div>
+							<div class="info-list-answer">
+								Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+							</div>
+						</li>
+						<li class="info-list-item">
+							<div class="info-list-question">Question</div>
+							<div class="info-list-answer">
+								Answer
+							</div>
+						</li>
+						<li class="info-list-item">
+							<div class="info-list-question">Question</div>
+							<div class="info-list-answer">
+								Answer
+							</div>
+						</li>
+						<li class="info-list-item">
+							<div class="info-list-question">Question</div>
+							<div class="info-list-answer">
+								Answer
+							</div>
+						</li>
+						<li class="info-list-item">
+							<div class="info-list-question">Question</div>
+							<div class="info-list-answer">
+								Answer
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row info-list-category" id="Betalen">
+				<div class="col-md-3 info-list-section">Betalen</div>
+				<div class="col-md-9">
+					<ul class="info-list">
+						<li class="info-list-item">
+							<div class="info-list-question">Question</div>
+							<div class="info-list-answer">
+								Answer
+							</div>
+						</li>
+						<li class="info-list-item">
+							<div class="info-list-question">Question</div>
+							<div class="info-list-answer">
+								Answer
+							</div>
+						</li>
+						<li class="info-list-item">
+							<div class="info-list-question">Question</div>
+							<div class="info-list-answer">
+								Answer
+							</div>
+						</li>
+						<li class="info-list-item">
+							<div class="info-list-question">Question</div>
+							<div class="info-list-answer">
+								Answer
+							</div>
+						</li>
+						<li class="info-list-item">
+							<div class="info-list-question">Question</div>
+							<div class="info-list-answer">
+								Answer
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
+	</div>
+</section>
+
+
+<section class="section reveal text-center" id="whybook">
+	<div class="container">
+		<h3 class="h3 m-b-50">Why book with us</h3>
+		
 		<div class="row">
-			<div class="col-md-3 info-list-section" id="Tickets">Tickets</div>
-			<div class="col-md-9">
-				<ul class="info-list">
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-				</ul>
+			<div class="col-md-6 col-lg-3 whybook-item">
+				<img src="assets/img/amf/usp-heart-amf.svg" alt="" class="whybook-icon">
+				<h4 class="whybook-heading">Official AMF Packages</h4>
+				<p class="whybook-p">On Saturday October 21, AMF will return to the Amsterdam ArenA with thousands of worldwide EDM fans to take on the night with some of the best DJs in the world. Join us and book your official AMF package with AMF Travel.</p>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3 info-list-section" id="Lineup">Lineup</div>
-			<div class="col-md-9">
-				<ul class="info-list">
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-				</ul>
+			<div class="col-md-6  col-lg-3 whybook-item">
+				<img src="assets/img/amf/like-amf.svg" alt="" class="whybook-icon">
+				<h4 class="whybook-heading">Select Your Experience</h4>
+				<p class="whybook-p">AMF Travel offers fans a personalised travel experience. You can create your AMF package with entrance tickets, hotel of your choice and camping, transfer to/from the venue and other convenient extra's.</p>
 			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3 info-list-section" id="Betalen">Betalen</div>
-			<div class="col-md-9">
-				<ul class="info-list">
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-					<li class="info-list-item">
-						<div class="info-list-question">Question</div>
-						<div class="info-list-answer">
-							Answer
-						</div>
-					</li>
-				</ul>
+			
+			<div class="col-md-6 col-lg-3 whybook-item">
+				<img src="assets/img/amf/rates-amf.svg" alt="" class="whybook-icon">
+				<h4 class="whybook-heading">Best value</h4>
+				<p class="whybook-p">The AMF travel team has selected the best places to stay for the best rates. We offer you safe and convenient transfer to/from the venue and a 24/7 service number during your stay for a relaxed and carefree stay in Amsterdam</p>
+			</div>
+			<div class="col-md-6 col-lg-3 whybook-item">
+				<img src="assets/img/amf/fast-amf.svg" alt="" class="whybook-icon">
+				<h4 class="whybook-heading">Fast service</h4>
+				<p class="whybook-p">Your official E-tickets and reservation will be send to you straight away, after you have completed your booking. Contact us for large groups and special wishes via info@eventagent.nl or WhatsApp on +31(0)6 52 382 382</p>
 			</div>
 		</div>
 	</div>
@@ -273,6 +294,8 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
 	<script src="assets/js/plugins/owl.carousel.min.js"></script>
 	<script src="assets/js/plugins/scrollreveal.min.js"></script>
+	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
+	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/app.js"></script>
 	
 	<!-- Plugins -->

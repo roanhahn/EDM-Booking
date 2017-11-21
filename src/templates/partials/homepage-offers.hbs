@@ -15,11 +15,62 @@
 		</ul>
 	</div>
 
-	<div id="hotels" class="homepage-category homepage-category--active">
-		<div class="container">
-			{{!-- <h3 class="h3">AMF Hotels</h3> --}}
+	<div class="homepage-offer-wrapper">
+		<div id="hotels" class="homepage-category homepage-category--active">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="scroll-container scroll-container--nowrap">
+							{{> product }}
+							{{> product }}
+							{{> product }}
+							{{> product }}
+						</div>
+					</div>
+				</div>
+				<a href="hotels.html" title="" class="button m-t-30">View all AMF hotels</a>
+			</div>
+		</div>
+
+		<div id="hotels-special" class="homepage-category">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="scroll-container scroll-container--nowrap">
+							{{> product }}
+							{{> product }}
+							{{> product }}
+							{{> product }}
+						</div>
+					</div>
+				</div>
+				<a href="#" title="" class="button m-t-30">View all Special hotels</a>
+			</div>
+		</div>
+
+		<div id="camping" class="homepage-category">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="scroll-container scroll-container--nowrap">
+							{{> product }}
+							{{> product }}
+							{{> product }}
+							{{> product }}
+						</div>
+					</div>
+				</div>
+				<a href="#" title="" class="button m-t-30">View all Camping</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+{{!-- <h3 class="h3">AMF Hotels</h3> --}}
 			{{!-- <p class="subheader">Stay in the special selected AMF hotels</p> --}}
-			<div class="owl-carousel owl-theme owl-offers">
+			{{!-- <div class="owl-carousel owl-theme owl-offers">
 				<div class="item">
 					<div class="product">
 						<div class="product-thumb">
@@ -118,8 +169,4 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<a href="#" title="" class="button m-t-30">View all AMF hotels</a>
-		</div>
-	</div>
-</section>
+			</div> --}}

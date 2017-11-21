@@ -1,0 +1,49 @@
+---
+title: Hotels
+type: page
+layout: default.hbs
+---
+
+
+<section class="section">
+	<div class="container">
+		<h3 class="h3">All AMF Hotels<small>We have <span>24</span> great hotels for you too choose out.</small></h3>
+		<div class="">
+				<form>		
+					<select >
+						<option selected="selected">Sort</option>
+						<option>Price high-low</option>
+						<option>Price low-high</option>
+					</select>
+				
+			</form>
+		</div>
+		
+		<div class="row">
+
+			<div class="col-md-12 col-lg-9 text-center">
+				
+				<div class="scroll-container">
+					{{> product }}
+					{{> product }}
+					{{> product }}
+					{{> product }}
+					{{> product }}
+					{{> product }}
+					{{> product }}
+					{{> product }}
+					{{> product }}
+				</div>
+				
+			</div>
+
+			<div class="col-3 order-first d-none d-lg-block">
+				{{> filter }}
+			</div>
+		</div>
+
+
+
+
+	</div>
+</section>

@@ -26,4 +26,22 @@
 		background-color: $color-2;
 		border-color: $color-2;
 	}
+
+	&--label{
+		padding: 15px 40px;
+		border: 2px solid $button-border-color;
+		-webkit-border-radius: 100px;
+		-moz-border-radius: 100px;
+		border-radius: 100px;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: $secondary-font;
+		-webkit-transition: all .3s ease 0s;
+		transition: all .3s ease 0s;
+		cursor: pointer;
+
+		&:hover{
+			background: $color-1;
+		}
+	}
 }
