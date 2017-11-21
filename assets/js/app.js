@@ -266,23 +266,33 @@ $( ".hide-cookies" ).click(function() {
 	$(".cookies").fadeToggle(500);
 });
 
+// DATEPICKER
+
+$('.input-group.arrival').datepicker({
+	format: "dd/mm/yyyy",
+	autoclose: true,
+	todayHighlight: true
+});
+
 // CATEGORY
-// $( ".toggle-category" ).click(function() {
+$( ".toggle-category" ).click(function() {
 
-// 	var category = $(this).data('toggle');
-// 	// console.log($(this).data('toggle'));
-// 	$(".homepage-category--active").addClass("animated fadeOut");
+	var category = $(this).data('toggle');
+	console.log($(this).data('toggle'));
+	
+	$(".toggle-category").removeClass("active");
+	$(".homepage-category--active").addClass("animated fadeOut");
+	$(this).addClass("active");
+	setTimeout(function() {
+		$(".homepage-category--active").removeClass('homepage-category--active animated fadeOut');
+		$("#" + category).addClass("homepage-category--active animated fadeIn");
+		// alert("bla");
+	}, 200);
+	setTimeout(function() {
+		$(".homepage-category--active").removeClass('animated fadeIn');
+	}, 400);
 
-// 	setTimeout(function() {
-// 		$(".homepage-category--active").removeClass('homepage-category--active animated fadeOut');
-// 		$("#" + category).addClass("homepage-category--active animated fadeIn");
-// 		// alert("bla");
-// 	}, 200);
-// 	setTimeout(function() {
-// 		$(".homepage-category--active").removeClass('animated fadeIn');
-// 	}, 400);
-
-// });
+});
 
 // OWL
 

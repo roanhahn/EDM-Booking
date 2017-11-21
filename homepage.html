@@ -13,7 +13,7 @@
 	
 	
 	<!-- CSS -->
-	
+	<script src="https://use.fontawesome.com/3d921631f6.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link href="assets/css/styles.min.css" rel="stylesheet">
 	
@@ -26,7 +26,7 @@
 </head>
 <body  class="body-padding" >
 	<header class="header">
-	<div class="container">
+	<div class="container-fluid">
 		<div class="header-logo">
 			<a href="/index.html" title="Title goes here">
 				<img src="assets/img/amf/logo.png" alt="AMF Festival Travelsite">
@@ -38,7 +38,7 @@
 				<li class="header-nav-listitem"><a href="#" title="" class="scroll" data-scroll="whybook">Why book</a></li>
 				<li class="header-nav-listitem"><a href="info.html" title="">More info</a></li>
 				<li class="header-nav-listitem mobile-menu-no">
-					<a href="#" title="" class="nav-btn"><img src="assets/img/avatar.svg">My booking</a>
+					<a href="#" title="" class="nav-btn"><img src="assets/img/avatar.svg">&euro;329,-  <!--My booking--></a>
 				</li>
 			</ul>
 		</nav>
@@ -79,114 +79,326 @@
 		</ul>
 	</div>
 
-	<div id="hotels" class="homepage-category homepage-category--active">
-		<div class="container">
-			
-			
-			<div class="owl-carousel owl-theme owl-offers">
-				<div class="item">
-					<div class="product">
-						<div class="product-thumb">
-							<div class="product-label">Populair</div>
-							<img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
-						</div>
-						<div class="product-content product-content--margin">
-							<div class="product-info"></div>
-							<h4 class="product-title">Volkshotel Amsterdam</h4>
-							<div class="extra-price">
-								<strong>€245</strong>
-							</div>
-							<p class="product-description">"Great hub in the centre of Amsterdam"</p>
-						</div>
-						<div class="product-details">
-							<div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
-							<div class="product-rating">
-								<img src="assets/img/amf/star-amf-full.svg">
-								<img src="assets/img/amf/star-amf-full.svg">
-								<img src="assets/img/amf/star-amf.svg">
-								<img src="assets/img/amf/star-amf.svg">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="product">
-						<div class="product-thumb">
-							<div class="product-label">Sold out</div>
-							<img src="assets/img/hotel-2.jpg" alt="" class="img-fluid">
-						</div>
-						<div class="product-content product-content--margin">
-							<div class="product-info"></div>
-							<h4 class="product-title">Amsterdam Grand Hotel Krasnapolsky</h4>
-							<div class="extra-price">
-								<strong>€237</strong>
-							</div>
-							<p class="product-description">"New hotel in the city centre"</p>
-						</div>
-						<div class="product-details">
-							<div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
-							<div class="product-rating">
-								<img src="assets/img/amf/star-amf-full.svg">
-								<img src="assets/img/amf/star-amf-full.svg">
-								<img src="assets/img/amf/star-amf.svg">
-								<img src="assets/img/amf/star-amf.svg">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="product">
-						<div class="product-thumb">
-							<img src="assets/img/hotel-3.jpg" alt="" class="img-fluid">
-						</div>
-						<div class="product-content product-content--margin">
-							<div class="product-info"></div>
-							<h4 class="product-title">Fletcher Hotel Amsterdam</h4>
-							<div class="extra-price">
-								<strong>€145</strong>
-							</div>
-							<p class="product-description">"Great hub in the centre of Amsterdam"</p>
-						</div>
-						<div class="product-details">
-							<div class="product-distance"><img src="assets/img/amf/marker-amf.svg">10.5 km to venue</div>
-							<div class="product-rating">
-								<img src="assets/img/amf/star-amf-full.svg">
-								<img src="assets/img/amf/star-amf-full.svg">
-								<img src="assets/img/amf/star-amf.svg">
-								<img src="assets/img/amf/star-amf.svg">
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="product">
-						<div class="product-thumb">
-							<img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
-						</div>
-						<div class="product-content product-content--margin">
-							<div class="product-info"></div>
-							<h4 class="product-title">Jazz Amsterdam</h4>
-							<div class="extra-price">
-								<strong>€245</strong>
-							</div>
-							<p class="product-description">"Great hub in the centre of Amsterdam"</p>
-						</div>
-						<div class="product-details">
-							<div class="product-distance"><img src="assets/img/amf/marker-amf.svg">4 km to venue</div>
-							<div class="product-rating">
-								<img src="assets/img/amf/star-amf-full.svg">
-								<img src="assets/img/amf/star-amf-full.svg">
-								<img src="assets/img/amf/star-amf.svg">
-								<img src="assets/img/amf/star-amf.svg">
-							</div>
+	<div class="homepage-offer-wrapper">
+		<div id="hotels" class="homepage-category homepage-category--active">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="scroll-container scroll-container--nowrap">
+							<div class="product product--overview">
+    <div class="product-thumb">
+        <div class="product-label">Populair</div>
+        <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="product-content product-content--margin">
+        <div class="product-info"></div>
+        <h4 class="product-title">Volkshotel Amsterdam</h4>
+        <div class="extra-price">
+            <strong>€245</strong>
+        </div>
+        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+    </div>
+    <div class="product-details">
+        <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
+        <div class="product-rating">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf.svg">
+            <img src="assets/img/amf/star-amf.svg">
+        </div>
+    </div>
+</div>
+							<div class="product product--overview">
+    <div class="product-thumb">
+        <div class="product-label">Populair</div>
+        <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="product-content product-content--margin">
+        <div class="product-info"></div>
+        <h4 class="product-title">Volkshotel Amsterdam</h4>
+        <div class="extra-price">
+            <strong>€245</strong>
+        </div>
+        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+    </div>
+    <div class="product-details">
+        <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
+        <div class="product-rating">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf.svg">
+            <img src="assets/img/amf/star-amf.svg">
+        </div>
+    </div>
+</div>
+							<div class="product product--overview">
+    <div class="product-thumb">
+        <div class="product-label">Populair</div>
+        <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="product-content product-content--margin">
+        <div class="product-info"></div>
+        <h4 class="product-title">Volkshotel Amsterdam</h4>
+        <div class="extra-price">
+            <strong>€245</strong>
+        </div>
+        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+    </div>
+    <div class="product-details">
+        <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
+        <div class="product-rating">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf.svg">
+            <img src="assets/img/amf/star-amf.svg">
+        </div>
+    </div>
+</div>
+							<div class="product product--overview">
+    <div class="product-thumb">
+        <div class="product-label">Populair</div>
+        <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="product-content product-content--margin">
+        <div class="product-info"></div>
+        <h4 class="product-title">Volkshotel Amsterdam</h4>
+        <div class="extra-price">
+            <strong>€245</strong>
+        </div>
+        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+    </div>
+    <div class="product-details">
+        <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
+        <div class="product-rating">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf.svg">
+            <img src="assets/img/amf/star-amf.svg">
+        </div>
+    </div>
+</div>
 						</div>
 					</div>
 				</div>
+				<a href="#" title="" class="button m-t-30">View all AMF hotels</a>
 			</div>
-			<a href="#" title="" class="button m-t-30">View all AMF hotels</a>
+		</div>
+
+		<div id="hotels-special" class="homepage-category">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="scroll-container scroll-container--nowrap">
+							<div class="product product--overview">
+    <div class="product-thumb">
+        <div class="product-label">Populair</div>
+        <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="product-content product-content--margin">
+        <div class="product-info"></div>
+        <h4 class="product-title">Volkshotel Amsterdam</h4>
+        <div class="extra-price">
+            <strong>€245</strong>
+        </div>
+        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+    </div>
+    <div class="product-details">
+        <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
+        <div class="product-rating">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf.svg">
+            <img src="assets/img/amf/star-amf.svg">
+        </div>
+    </div>
+</div>
+							<div class="product product--overview">
+    <div class="product-thumb">
+        <div class="product-label">Populair</div>
+        <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="product-content product-content--margin">
+        <div class="product-info"></div>
+        <h4 class="product-title">Volkshotel Amsterdam</h4>
+        <div class="extra-price">
+            <strong>€245</strong>
+        </div>
+        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+    </div>
+    <div class="product-details">
+        <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
+        <div class="product-rating">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf.svg">
+            <img src="assets/img/amf/star-amf.svg">
+        </div>
+    </div>
+</div>
+							<div class="product product--overview">
+    <div class="product-thumb">
+        <div class="product-label">Populair</div>
+        <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="product-content product-content--margin">
+        <div class="product-info"></div>
+        <h4 class="product-title">Volkshotel Amsterdam</h4>
+        <div class="extra-price">
+            <strong>€245</strong>
+        </div>
+        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+    </div>
+    <div class="product-details">
+        <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
+        <div class="product-rating">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf.svg">
+            <img src="assets/img/amf/star-amf.svg">
+        </div>
+    </div>
+</div>
+							<div class="product product--overview">
+    <div class="product-thumb">
+        <div class="product-label">Populair</div>
+        <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="product-content product-content--margin">
+        <div class="product-info"></div>
+        <h4 class="product-title">Volkshotel Amsterdam</h4>
+        <div class="extra-price">
+            <strong>€245</strong>
+        </div>
+        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+    </div>
+    <div class="product-details">
+        <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
+        <div class="product-rating">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf.svg">
+            <img src="assets/img/amf/star-amf.svg">
+        </div>
+    </div>
+</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" title="" class="button m-t-30">View all Special hotels</a>
+			</div>
+		</div>
+
+		<div id="camping" class="homepage-category">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="scroll-container scroll-container--nowrap">
+							<div class="product product--overview">
+    <div class="product-thumb">
+        <div class="product-label">Populair</div>
+        <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="product-content product-content--margin">
+        <div class="product-info"></div>
+        <h4 class="product-title">Volkshotel Amsterdam</h4>
+        <div class="extra-price">
+            <strong>€245</strong>
+        </div>
+        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+    </div>
+    <div class="product-details">
+        <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
+        <div class="product-rating">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf.svg">
+            <img src="assets/img/amf/star-amf.svg">
+        </div>
+    </div>
+</div>
+							<div class="product product--overview">
+    <div class="product-thumb">
+        <div class="product-label">Populair</div>
+        <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="product-content product-content--margin">
+        <div class="product-info"></div>
+        <h4 class="product-title">Volkshotel Amsterdam</h4>
+        <div class="extra-price">
+            <strong>€245</strong>
+        </div>
+        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+    </div>
+    <div class="product-details">
+        <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
+        <div class="product-rating">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf.svg">
+            <img src="assets/img/amf/star-amf.svg">
+        </div>
+    </div>
+</div>
+							<div class="product product--overview">
+    <div class="product-thumb">
+        <div class="product-label">Populair</div>
+        <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="product-content product-content--margin">
+        <div class="product-info"></div>
+        <h4 class="product-title">Volkshotel Amsterdam</h4>
+        <div class="extra-price">
+            <strong>€245</strong>
+        </div>
+        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+    </div>
+    <div class="product-details">
+        <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
+        <div class="product-rating">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf.svg">
+            <img src="assets/img/amf/star-amf.svg">
+        </div>
+    </div>
+</div>
+							<div class="product product--overview">
+    <div class="product-thumb">
+        <div class="product-label">Populair</div>
+        <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
+    </div>
+    <div class="product-content product-content--margin">
+        <div class="product-info"></div>
+        <h4 class="product-title">Volkshotel Amsterdam</h4>
+        <div class="extra-price">
+            <strong>€245</strong>
+        </div>
+        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+    </div>
+    <div class="product-details">
+        <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
+        <div class="product-rating">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf-full.svg">
+            <img src="assets/img/amf/star-amf.svg">
+            <img src="assets/img/amf/star-amf.svg">
+        </div>
+    </div>
+</div>
+						</div>
+					</div>
+				</div>
+				<a href="#" title="" class="button m-t-30">View all Camping</a>
+			</div>
 		</div>
 	</div>
 </section>
+
+
+
+
+			
+			
 
 <section class="section reveal text-center">
 	<div class="container">
@@ -383,6 +595,8 @@
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="crossorigin="anonymous"></script>
 	<script src="assets/js/plugins/owl.carousel.min.js"></script>
 	<script src="assets/js/plugins/scrollreveal.min.js"></script>
+	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
+	
 	<script src="assets/js/app.js"></script>
 	
 	<!-- Plugins -->
