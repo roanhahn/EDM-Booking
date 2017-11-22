@@ -35,6 +35,7 @@
 		</div>
 		<nav class="header-nav">
 			<ul class="header-nav-list">
+				<li class="header-nav-listitem"><a href="hotels.html" title="">Packages</a></li>
 				<li class="header-nav-listitem"><a href="#" title="" class="scroll" data-scroll="whybook">Why book</a></li>
 				<li class="header-nav-listitem"><a href="info.html" title="">More info</a></li>
 				<li class="header-nav-listitem mobile-menu-no">
@@ -56,11 +57,23 @@
 	<div class="container">
 		<h3 class="h3">All AMF Hotels<small>We have <span>24</span> great hotels for you too choose out.</small></h3>
 		<div class="row">
+			<div class="col">
+				<form class="sort">		
+					<select >
+						<option selected="selected">Sort</option>
+						<option>Price high-low</option>
+						<option>Price low-high</option>
+					</select>
 
-			<div class="col-md-12 col-lg-9 text-center">
+				</form>
+			</div>
+		</div>
+		<div class="row">
+
+			<div class="col-md-12 col-lg-9 order-1 order-lg-2 text-center">
 				
-					<div class="scroll-container">
-						<div class="product product--overview">
+				<div class="scroll-container">
+					<a href="hotels.html" class="product product--overview">
     <div class="product-thumb">
         <div class="product-label">Populair</div>
         <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
@@ -82,8 +95,8 @@
             <img src="assets/img/amf/star-amf.svg">
         </div>
     </div>
-</div>
-						<div class="product product--overview">
+</a>
+					<a href="hotels.html" class="product product--overview">
     <div class="product-thumb">
         <div class="product-label">Populair</div>
         <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
@@ -105,8 +118,8 @@
             <img src="assets/img/amf/star-amf.svg">
         </div>
     </div>
-</div>
-						<div class="product product--overview">
+</a>
+					<a href="hotels.html" class="product product--overview">
     <div class="product-thumb">
         <div class="product-label">Populair</div>
         <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
@@ -128,8 +141,8 @@
             <img src="assets/img/amf/star-amf.svg">
         </div>
     </div>
-</div>
-						<div class="product product--overview">
+</a>
+					<a href="hotels.html" class="product product--overview">
     <div class="product-thumb">
         <div class="product-label">Populair</div>
         <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
@@ -151,8 +164,8 @@
             <img src="assets/img/amf/star-amf.svg">
         </div>
     </div>
-</div>
-						<div class="product product--overview">
+</a>
+					<a href="hotels.html" class="product product--overview">
     <div class="product-thumb">
         <div class="product-label">Populair</div>
         <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
@@ -174,8 +187,8 @@
             <img src="assets/img/amf/star-amf.svg">
         </div>
     </div>
-</div>
-						<div class="product product--overview">
+</a>
+					<a href="hotels.html" class="product product--overview">
     <div class="product-thumb">
         <div class="product-label">Populair</div>
         <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
@@ -197,8 +210,8 @@
             <img src="assets/img/amf/star-amf.svg">
         </div>
     </div>
-</div>
-						<div class="product product--overview">
+</a>
+					<a href="hotels.html" class="product product--overview">
     <div class="product-thumb">
         <div class="product-label">Populair</div>
         <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
@@ -220,8 +233,8 @@
             <img src="assets/img/amf/star-amf.svg">
         </div>
     </div>
-</div>
-						<div class="product product--overview">
+</a>
+					<a href="hotels.html" class="product product--overview">
     <div class="product-thumb">
         <div class="product-label">Populair</div>
         <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
@@ -243,8 +256,8 @@
             <img src="assets/img/amf/star-amf.svg">
         </div>
     </div>
-</div>
-						<div class="product product--overview">
+</a>
+					<a href="hotels.html" class="product product--overview">
     <div class="product-thumb">
         <div class="product-label">Populair</div>
         <img src="assets/img/hotel-1.jpg" alt="" class="img-fluid">
@@ -266,15 +279,27 @@
             <img src="assets/img/amf/star-amf.svg">
         </div>
     </div>
-</div>
-					</div>
+</a>
+				</div>
 				
 			</div>
 
-			<div class="col-3 order-first d-none d-lg-block">
+			<div class="col-md-3 order-2 order-lg-1 d-none d-lg-block">
 				<form class="filter">
-	<label for="" class="filter-label">Arrival date</label>
+	<label for="" class="filter-label">Type</label>
+	<div class="filter-group">
+		<div class="form-group">
+			
+			<select>
+				<option selected="selected">Regular hotels</option>
+				<option>AMF Hotels</option>
+				<option>Camping</option>
+			</select>
+			
+		</div>
+	</div>
 
+	<label for="" class="filter-label">Arrival date</label>
 	<div class="filter-group">
 		<div class="form-group">
 			<div class="input-group date" data-provide="datepicker">
@@ -347,6 +372,26 @@
 		</div>
 	</div>
 
+	<label for="" class="filter-label">Distance to venue</label>
+	<div class="filter-group">		
+		<div class="form-group">
+			<div class="form-check">
+				<label class="form-check-label filter-label-big">
+					<input type="checkbox" class="form-check-input">
+					0 km - 5 km
+				</label>
+				<label class="form-check-label filter-label-big">
+					<input type="checkbox" class="form-check-input">
+					5 km - 10 km
+				</label>
+				<label class="form-check-label filter-label-big">
+					<input type="checkbox" class="form-check-input">
+					10 km +
+				</label>
+			</div>
+		</div>
+	</div>
+
 	<label for="" class="filter-label">Stars</label>
 	<div class="filter-group">
 		<div class="form-group">
@@ -394,7 +439,7 @@
 	
 <section class="pre-footer">
 	<div class="content">
-		<div class="container">
+		<div class="container reveal">
 			<div class="row">
 				<div class="col text-center">
 					<h3 class="h3">NEED HELP?</h3>
@@ -412,22 +457,22 @@
 	<div class="container">
 		<div class="row">
 			<div class="col">
-				<a href="" title="" class="footer-btn">info@edm-booking.com</a><button class="footer-btn">+31 (06) 52 382 282</button>
+				<a href="" title="" class="footer-btn reveal">info@edm-booking.com</a><button class="footer-btn reveal">+31 (06) 52 382 282</button>
 
-				<ul class="footer-socialmedia">
+				<ul class="footer-socialmedia reveal">
 					<li><a href="#" title="Facebook"><img src="assets/img/icon-facebook.svg" alt=""></a></li>
 					<li><a href="#" title="Twitter"><img src="assets/img/icon-twitter.svg" alt=""></a></li>
 					<li><a href="#" title="Instagram"><img src="assets/img/icon-instagram.svg" alt=""></a></li>
 				</ul>
 
-				<ul class="footer-logos">
+				<ul class="footer-logos reveal">
 					<li><img src="https://daks2k3a4ib2z.cloudfront.net/59ea0080c3e5160001edb56a/59ea0f76c3e5160001edc727_logo-ams.png" alt="AMF Festival"></li>
 					
 				</ul>
-				<p class="copyright">
+				<p class="copyright reveal">
 					© 2017 AMF Festival - <a href="#" title="EDM Booking">powered by EDM Booking</a>
 				</p>
-				<div class="footer-links">
+				<div class="footer-links reveal">
 					<ul>
 						<li><a href="#" title="Terms and conditions">Terms and conditions</a> </li>
 						<li><a href="#" title="Privacy statement">Privacy statement</a></li>
@@ -438,7 +483,7 @@
 		</div>
 	</div>
 </footer>
-<div class="cookies">
+<div class="cookies d-none">
 	<button class="hide-cookies"><img src="assets/img/close-white.svg"></button>
 	<p>Cookies are used to provide you with the best experience and service. By visiting our website, you consent to the use of <a href="#" title="">cookies</a></p>
 </div>
@@ -448,7 +493,7 @@
 	<script src="assets/js/plugins/owl.carousel.min.js"></script>
 	<script src="assets/js/plugins/scrollreveal.min.js"></script>
 	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
-	
+	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/app.js"></script>
 	
 	<!-- Plugins -->

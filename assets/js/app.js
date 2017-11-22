@@ -246,8 +246,10 @@ $(window).scroll(function() {
 
 	if (scroll >= 90) {
 		$(".header").addClass("scrolled");
+		$(".site-background").addClass("scrolled");
 	} else {
 		$(".header").removeClass("scrolled");
+		$(".site-background").removeClass("scrolled");
 	}
 });
 
@@ -292,6 +294,12 @@ $( ".toggle-category" ).click(function() {
 		$(".homepage-category--active").removeClass('animated fadeIn');
 	}, 400);
 
+});
+
+// CUSTOM SELECT
+
+$(function() {
+	$('select').selectric();
 });
 
 // OWL
@@ -349,7 +357,11 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 			// 3. This function creates an <iframe> (and YouTube player)
 			//    after the API code downloads.
+			var starttime = 103;
+			var endtime = 133;
+
 			var player;
+
 			function onYouTubeIframeAPIReady() {
 				player = new YT.Player('videoplayer', {
 					videoId: '4witGyaCtqk',
@@ -364,11 +376,13 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 					}
 				});
 				player = new YT.Player('hero-video', {
-					videoId: '4witGyaCtqk',
+					videoId: '1ujOdLRl-Ac',
 					playerVars: {
 						controls: '0',
-						playlist: '4witGyaCtqk',
-						loop: 1
+						start: starttime,
+						end: endtime,
+						playlist: '1ujOdLRl-Ac',
+						// loop: 1
 					},
 					events: {
 						'onReady': onPlayerReady,
@@ -378,19 +392,29 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 			}
 			// 4. The API will call this function when the video player is ready.
 			function onPlayerReady(event) {
+				event.target.seekTo(starttime);
 				event.target.setVolume(0);
 				event.target.playVideo();
+				// player.playVideo();
+			}
+			function restartVideoSection() {
+				player.seekTo(starttime);
+				// alert("bla");
 			}
 			// 5. The API calls this function when the player's state changes.
 			//    The function indicates that when playing a video (state=1),
 			//    the player should play for six seconds and then stop.
 			var done = false;
 			function onPlayerStateChange(event) {
+				
 				if (event.data == YT.PlayerState.PLAYING && !done) {
-		//      setTimeout(stopVideo, 6000);
-		done = true;
-	}
-	event.target.setVolume(0);
+					// alert("bla");
+					done = true;
+				}
+				if (event.data == YT.PlayerState.ENDED && done){
+					restartVideoSection();
+				}
+	// event.target.setVolume(0);
 }
 
 function vidRescale(){
@@ -420,17 +444,24 @@ $( window ).resize(function() {
 	headerheight = $(".header").outerHeight();
 });
 
+// FADEIN VIDEO
+setTimeout(function() {
+	$('#hero-video').addClass('animated fadeIn');
+}, 2500);
+
+
 // SCROLL REVEAL
 
-// window.sr = ScrollReveal({ reset: false });
-// sr.reveal('.reveal', { 
-// 	duration: 500,
-// 	useDelay: 'once',
-// 	delay: 0,
-// 	origin: 'bottom',
-// 	distance: '150px',
-// 	mobile: true,
-// 	scale: 1,
-// 	viewFactor: 0.4
-// });
+window.sr = ScrollReveal({ reset: false });
+sr.reveal('.reveal', { 
+	duration: 600,
+	useDelay: 'always',
+	delay: 0,
+	origin: 'bottom',
+	distance: '150px',
+	mobile: true,
+	scale: 1,
+	easing: 'ease-in-out',
+	viewFactor: 0.3
+});
 
