@@ -48,10 +48,15 @@
 	}
 }
 
-.filter-select{
+.sort{
 	width: 200px;
-	display: inline-block;
-	margin-bottom: 15px;
-	margin-right: 15px;
+	margin: 0 15px 15px;
+	float: right;
 }
 
+
+.selectric .label, .input-group .form-control, .input-group-addon, .form-control{
+	font-size: 13px;
+	color: #333;
+	border-radius: 0px;
+}

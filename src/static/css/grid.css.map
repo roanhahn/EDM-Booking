@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAOA,UAAU,CACN,SAAS,CAAE,iBAAiB",
+"mappings": "AAOA,UAAU,CACN,SAAS,CAAE,iBAAiB,CAC5B,SAAS,CAAE,gBAAgB",
 "sources": ["grid.scss"],
 "names": [],
 "file": "grid.css"

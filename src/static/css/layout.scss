@@ -13,35 +13,35 @@ body{
 }
 
 .m-t-10{
-	margin-top: 10px;
+	margin-top: 10px !important;
 }
 .m-t-20{
-	margin-top: 20px;
+	margin-top: 20px !important;
 }
 .m-t-30{
-	margin-top: 30px;
+	margin-top: 30px !important;
 }
 .m-t-40{
-	margin-top: 40px;
+	margin-top: 40px !important;
 }
 .m-t-50{
-	margin-top: 50px;
+	margin-top: 50px !important;
 }
 
 .m-b-10{
-	margin-bottom: 10px;
+	margin-bottom: 10px !important;
 }
 .m-b-20{
-	margin-bottom: 20px;
+	margin-bottom: 20px !important;
 }
 .m-b-30{
-	margin-bottom: 30px;
+	margin-bottom: 30px !important;
 }
 .m-b-40{
-	margin-bottom: 40px;
+	margin-bottom: 40px !important;
 }
 .m-b-50{
-	margin-bottom: 50px;
+	margin-bottom: 50px !important;
 }
 
 .vertical-align{
@@ -88,15 +88,36 @@ body{
 		-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
 		filter: grayscale(100%);
 	}
+
+	&.scrolled:after{
+		display: block;
+		height: 200px;
+		background-color: red;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+		// background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+		// background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		// background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+		position: absolute;
+		top: 90px;
+		left: 0;
+		width: 100%;
+		content:"";
+		z-index: 2;
+	}
 }
 
 .section{
-	padding: 100px 0;
+	padding: 70px 0;
 	background: $secion-bg-color;
 	// border-bottom: 1px solid rgba(255,255,255,.1);
 
 	&-line{
 		border-bottom: 1px solid rgba(255,255,255,.1);
+	}
+
+	&--offers{
+		padding-top: 0px;
 	}
 
 	@media (max-width: $breakpoint-mobile){
@@ -120,10 +141,12 @@ body{
 
 
 .category-menu{
-	margin: 0 0 30px;
+	margin: 30px 0 50px;
 	padding: 0;
 	list-style-type: none;
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 
 
 	@media (max-width: $breakpoint-mobile){
@@ -132,12 +155,16 @@ body{
 
 	& li{
 		display: inline-block;
-		flex-grow: 1;
+		flex-grow: 0;
+		flex-shrink: 1;
 		font-family: $secondary-font;
-		font-size: 28px;
-		padding: 20px 0;
-		margin: 0 20px;
-		border-bottom: 4px solid transparent;
+		font-size: 26px;
+		padding: 15px 0px 12px;
+		margin: 0 30px;
+		border-bottom: 3px solid transparent;
+		// -webkit-border-radius: $button-radius;
+		// -moz-border-radius: $button-radius;
+		// border-radius: $button-radius;
 		text-transform: uppercase;
 		opacity: .5;
 		-webkit-transition: all .3s ease 0s;
@@ -154,6 +181,7 @@ body{
 			
 			margin: 0;
 			font-size: 11px;
+			padding: 10px 15px;
 			// padding: 0;
 		}
 
@@ -217,7 +245,7 @@ body{
 	padding: 0 15px 15px;
 	cursor: pointer;
 	height: 100%;
-	color: #fff;
+	color: $product-color;
 
 
 	&--overview{
@@ -375,6 +403,7 @@ body{
 	&-distance{
 		float: left;
 		font-size: 12px;
+		margin-top: 3px;
 
 		& img{
 			height: 16px !important;
@@ -411,7 +440,7 @@ body{
 	&:hover{
 		border: $product-border-hover;
 		background: $product-bg-hover;
-		color: #fff;
+		color: $product-hover-color;
 		-webkit-box-shadow: inset 0px 0px 15px 0px rgba(0,153,205,1);
 		-moz-box-shadow: inset 0px 0px 15px 0px rgba(0,153,205,1);
 		box-shadow: inset 0px 0px 15px 0px rgba(0,153,205,.3);

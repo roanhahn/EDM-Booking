@@ -1,17 +1,19 @@
 {{!-- 
 <div class="spinner">
-	<div class="double-bounce1"></div>
-	<div class="double-bounce2"></div>
+	<div class="bounce1"></div>
+	<div class="bounce2"></div>
+	<div class="bounce3"></div>
 </div> --}}
 
-<section class="section reveal text-center" id="offers">
+<section class="section section--offers text-center" id="offers">
 	
+	{{!-- <h3 class="h3">Choose your stay</h3>  --}}
 
 	<div class="container">
 		<ul class="category-menu">
-			<li class="active toggle-category" data-toggle="hotels">Regular Hotels</li>
+			<li class="active toggle-category" data-toggle="hotels">Hotels</li>
 			<li class="toggle-category" data-toggle="hotels-special">AMF Hotels</li>
-			<li class="toggle-category" data-toggle="camping">AMF Camping</li>
+			<li class="toggle-category" data-toggle="camping">Camping</li>
 		</ul>
 	</div>
 
@@ -20,6 +22,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
+						<p class="subheader m-b-50">We selected the best hotels for you</p>
 						<div class="scroll-container scroll-container--nowrap">
 							{{> product }}
 							{{> product }}
@@ -36,6 +39,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
+						<p class="subheader">Special AMF Festival Hotels</p>
 						<div class="scroll-container scroll-container--nowrap">
 							{{> product }}
 							{{> product }}
@@ -52,6 +56,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
+						<p class="subheader m-b-30">Stay in a VIP tent only 300m away from the festival</p>
 						<div class="scroll-container scroll-container--nowrap">
 							{{> product }}
 							{{> product }}
@@ -68,9 +73,9 @@
 
 
 
-{{!-- <h3 class="h3">AMF Hotels</h3> --}}
-			{{!-- <p class="subheader">Stay in the special selected AMF hotels</p> --}}
-			{{!-- <div class="owl-carousel owl-theme owl-offers">
+{{!-- <h3 class="h3">AMF Hotels</h3> 
+			<p class="subheader">Stay in the special selected AMF hotels</p>
+			<div class="owl-carousel owl-theme owl-offers">
 				<div class="item">
 					<div class="product">
 						<div class="product-thumb">

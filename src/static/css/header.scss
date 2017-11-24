@@ -180,7 +180,8 @@
 }
 
 .hero{
-	height: 80%;
+	height: 70%;
+	min-height: 500px;
 	position: relative;
 
 	&-content{
@@ -214,6 +215,7 @@
 			font-size: 60px;
 			margin:0 auto 20px;
 			max-width: 80%;
+			// background-color: red;
 
 			@media (max-width: $breakpoint-mobile){
 				font-size: 30px;
@@ -260,6 +262,7 @@
 		bottom: 0;
 		z-index: 2;
 		overflow: hidden;
+
 		background: $main-bg; 
 		background-size: cover;
 
@@ -282,7 +285,7 @@
 
 	& .videoplayer{
 		position: absolute;
-		// display: none;
+		opacity: 0;
 		top: 50%;
 		left: 50%;
 		width: 100%;
@@ -293,6 +296,8 @@
 		-webkit-transform: translate(-50%, -50%);
 		transform: translate(-50%, -50%);
 		pointer-events: none;
+		-webkit-animation-duration : 1s;
+		animation-duration : 1s;
 
 		@media (max-width: $breakpoint-tablet){
 			display: none;

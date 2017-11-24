@@ -8,20 +8,21 @@ layout: default.hbs
 <section class="section">
 	<div class="container">
 		<h3 class="h3">All AMF Hotels<small>We have <span>24</span> great hotels for you too choose out.</small></h3>
-		<div class="">
-				<form>		
+		<div class="row">
+			<div class="col">
+				<form class="sort">		
 					<select >
 						<option selected="selected">Sort</option>
 						<option>Price high-low</option>
 						<option>Price low-high</option>
 					</select>
-				
-			</form>
+
+				</form>
+			</div>
 		</div>
-		
 		<div class="row">
 
-			<div class="col-md-12 col-lg-9 text-center">
+			<div class="col-md-12 col-lg-9 order-1 order-lg-2 text-center">
 				
 				<div class="scroll-container">
 					{{> product }}
@@ -37,7 +38,7 @@ layout: default.hbs
 				
 			</div>
 
-			<div class="col-3 order-first d-none d-lg-block">
+			<div class="col-md-3 order-2 order-lg-1 d-none d-lg-block">
 				{{> filter }}
 			</div>
 		</div>
