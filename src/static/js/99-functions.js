@@ -41,10 +41,10 @@ $(window).scroll(function() {
 
 	if (scroll >= 90) {
 		$(".header").addClass("scrolled");
-		$(".site-background").addClass("scrolled");
+		// $(".site-background").addClass("scrolled");
 	} else {
 		$(".header").removeClass("scrolled");
-		$(".site-background").removeClass("scrolled");
+		// $(".site-background").removeClass("scrolled");
 	}
 });
 
@@ -244,6 +244,19 @@ setTimeout(function() {
 	$('#hero-video').addClass('animated fadeIn');
 }, 2500);
 
+
+// FANCYBOX
+
+// Options for the first group
+$('[data-fancybox="images"]').fancybox({
+  thumbs : {
+    autoStart : true
+  },
+  buttons : [
+    'zoom',
+    'close'
+  ]
+});
 
 // SCROLL REVEAL
 

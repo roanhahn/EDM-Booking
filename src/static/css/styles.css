@@ -4,6 +4,7 @@
 @import url(owl.theme.default.min.css);
 @import url(bootstrap-datepicker3.min.css);
 @import url(selectric.css);
+@import url(jquery.fancybox.min.css);
 @font-face {
   font-family: 'ornitons-bold';
   src: url("../font/ornitons-bold-webfont.eot");
@@ -148,6 +149,8 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
   .section--offers {
     padding-top: 0px; }
+  .section--details {
+    background-color: #000; }
   @media (max-width: 767px) {
     .section {
       padding: 60px 0; } }
@@ -388,6 +391,37 @@ body {
       /* Safari */
       transform: rotate(90deg); }
 
+.details .product-distance {
+  font-size: 16px;
+  margin-right: 15px;
+  padding-right: 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  margin-top: 0px; }
+.details .product-showonmap {
+  float: left;
+  border-right: 1px solid rgba(255, 255, 255, 0.4);
+  padding-right: 15px;
+  margin-right: 15px; }
+.details .product-rating {
+  text-align: left;
+  float: none;
+  margin-top: 0px; }
+.details-content {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  line-height: 27px; }
+  .details-content ul {
+    margin: 0 0 30px;
+    padding: 0; }
+    .details-content ul li {
+      list-style-type: none;
+      background: url(../img/amf/check.svg) no-repeat left center;
+      background-size: 16px auto;
+      padding: 0 0 0 26px;
+      margin: 0; }
+
 @media (max-width: 992px) {
   .whybook-item {
     margin-bottom: 30px; } }
@@ -538,6 +572,11 @@ a, button {
   -o-transition: all .2s ease-out 0s;
   transition: all .2s ease-out 0s; }
 
+.h1 {
+  font-family: "ornitons-demiboldregular", sans-serif;
+  font-size: 36px;
+  margin: 0 0 20px 0; }
+
 .h3 {
   text-transform: uppercase;
   font-family: "ornitons-demiboldregular", sans-serif;
@@ -576,6 +615,11 @@ a, button {
       font-size: 16px;
       max-width: 90%;
       margin-bottom: 10px; } }
+
+.intro {
+  font-size: 22px;
+  font-family: "ornitons-lightregular", sans-serif;
+  margin: 0 0 30px 0; }
 
 .spinner {
   width: 70px;
@@ -653,7 +697,7 @@ a, button {
 
 .sort {
   width: 200px;
-  margin: 0 15px 15px;
+  margin: 0 15px 30px;
   float: right; }
 
 .selectric .label, .input-group .form-control, .input-group-addon, .form-control {
@@ -1237,5 +1281,39 @@ a, button {
       display: inline-block;
       line-height: 40px;
       vertical-align: middle; }
+
+.lightbox {
+  position: relative; }
+  .lightbox a {
+    display: block;
+    float: left;
+    width: calc(100% / 3);
+    position: relative; }
+    .lightbox a img {
+      padding: 2px; }
+  .lightbox .featured {
+    float: none;
+    width: 100%; }
+  .lightbox .amount {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+    text-decoration: underline; }
+    .lightbox .amount span {
+      display: block;
+      position: relative;
+      top: 50%;
+      -ms-transform: translate(0, -50%);
+      -webkit-transform: translate(0, -50%);
+      transform: translate(0, -50%); }
+
+.img-fluid {
+  width: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

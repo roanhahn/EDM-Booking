@@ -34,6 +34,11 @@ a, button{
 
 // HEADINGS
 
+.h1{
+	font-family: $secondary-font;
+	font-size: 36px;
+	margin: 0 0 20px 0;
+}
 .h3{
 	text-transform: uppercase;
 	font-family: $secondary-font;
@@ -79,6 +84,12 @@ a, button{
 		max-width: 90%;
 		margin-bottom: 10px;
 	}
+}
+
+.intro{
+	font-size: 22px;
+	font-family: $tertiary-font;
+	margin: 0 0 30px 0;
 }
 
 // SPINNER
