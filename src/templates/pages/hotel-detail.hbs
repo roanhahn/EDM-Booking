@@ -4,19 +4,30 @@ type: page
 layout: default.hbs
 ---
 
-
+<div class="mobile-book">
+	<div class="container">
+		<div class="row">
+			<div class="col-6 text-right">
+				<div class="mobile-book-price"><span>Starting from</span>&euro; 356,-<span>per person</span></div>
+			</div>
+			<div class="col-6">
+				<a href="#" class="button">Select room</a>
+			</div>
+		</div>
+	</div>
+</div>
 
 <section class="section section--details details">
 	<div class="container">
 		<div class="row">
-			<div class="order-2 order-sm-1 col-sm-8">
+			<div class="order-2 order-md-1 col-md-7">
 				<h1 class="h1">Volkshotel Amsterdam</h1>
 				<p class="intro">"Great hub in the centre of Amsterdam"</p>
 				<div class="row">
 					<div class="col">
 						<div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
 						<div class="product-showonmap">
-							<a href="#">Show on map</a>
+							<a href="#" class="scroll" data-scroll="googleMaps">Show on map</a>
 						</div>
 						<div class="product-rating">
 							<img src="assets/img/amf/star-amf-full.svg">
@@ -24,44 +35,87 @@ layout: default.hbs
 							<img src="assets/img/amf/star-amf.svg">
 							<img src="assets/img/amf/star-amf.svg">
 						</div>
-
+						{{!-- <div class="product-price">
+							&euro; 356,- <span>Starting from per person</span>
+						</div> --}}
 					</div>
 				</div>
 				<div class="details-content">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit iaculis ante, vitae lacinia risus viverra in. Pellentesque malesuada in elit a hendrerit. Vivamus sit amet urna in nisl pellentesque convallis. Nullam bibendum vestibulum risus quis varius. Curabitur vestibulum porttitor faucibus. Quisque lectus justo, pretium ac malesuada ut, mattis nec tortor. Vivamus pharetra ut quam et bibendum. Nulla efficitur ultrices arcu, ut malesuada justo condimentum mollis.</p>
-					<p>Nulla diam nunc, auctor vitae feugiat sit amet, efficitur in nulla. Aliquam lacinia convallis sem ut rutrum. Quisque eleifend ullamcorper orci, at euismod est hendrerit vel. Nullam ut pharetra massa, ac consectetur tellus. Nullam ut velit mi. Vivamus luctus nulla id augue viverra, id lobortis nibh consectetur. In id sodales arcu.</p>
 					<ul>
 						<li>Listitem</li>
 						<li>Listitem</li>
 						<li>Listitem</li>
-						<li>Listitem</li>
-						<li>Listitem</li>
-						<li>Listitem</li>
 					</ul>
-					<h3>Hotel details</h3>
-					<p>
-						Schipholweg 185 Amsterdam 1171 PK
-					</p>
+
+					{{!-- <hr /> --}}
+
+					
+					
+
+					<div class="product-map" id="googleMaps">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.4813319550435!2d4.791810451598501!3d52.325413558284446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e112f81e698b%3A0x6eecac31d92f40fa!2sHotel+ibis+budget+Amsterdam+Airport!5e0!3m2!1snl!2snl!4v1512384129777" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+					
+					<div class="address">
+						<h3 class="product-h3" >Hotel details</h3>
+						<p><img src="assets/img/icon-map.svg">Schipholweg 185, 1171 PK Amsterdam</p>
+						<p><img src="assets/img/icon-phone.svg">020 721 9170</p>
+						<p><img src="assets/img/icon-world.svg"><a href="#">accorhotels.com</a></p>
+					</div>
 				</div>
 			</div>
-			<div class="order-1 order-sm-2 col-sm-4">
-				<div class="lightbox">
+			<div class="order-1 order-md-2 col-md-5 detail-right">
+				<div class="lightbox clearfix">
 					<div class="product-label">Populair</div>
-					<a href="assets/img/1.jpg" data-fancybox="group" data-caption="Caption #1" class="featured">
+					<a href="assets/img/room.jpg" data-fancybox="group" data-caption="Some text goes here" class="featured">
 						<img src="assets/img/hotel-1.jpg" alt="" class="img-fluid" />
 					</a>
-					<a href="assets/img/1.jpg" data-fancybox="group" data-caption="Caption #2">
+					<a href="assets/img/room2.jpg" data-fancybox="group" data-caption="Some text goes here">
 						<img src="assets/img/hotel-2.jpg" alt="" class="img-fluid" />
 					</a>
-					<a href="assets/img/1.jpg" data-fancybox="group" data-caption="Caption #2">
+					<a href="assets/img/room.jpg" data-fancybox="group" data-caption="Some text goes here">
 						<img src="assets/img/hotel-3.jpg" alt="" class="img-fluid" />
 					</a>
-					<a href="assets/img/1.jpg" data-fancybox="group" data-caption="Caption #2">
+					<a href="assets/img/room2.jpg" data-fancybox="group" data-caption="Some text goes here">
 						<div class="amount"><span>+ 30 photos</span></div>
 						<img src="assets/img/hotel-4.jpg" alt="" class="img-fluid" />
 					</a>
+					<div class="lightbox-all">
+						<a href="assets/img/room3.jpg" data-fancybox="group" data-caption="Some text goes here"></a>
+						<a href="assets/img/room4.jpg" data-fancybox="group" data-caption="Some text goes here"></a>
+					</div>
 				</div>
+				<div>
+					<a href="#" class="button button--block scroll" data-scroll="rooms">Select your room</a>
+				</div>
+				<div class="product-price">
+					<div class="amount">&euro; 356,- <span>/ Starting from per person</span></div>
+					<hr class="hr" />
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt luctus tortor, non venenatis libero pulvinar fermentum. Phasellus augue metus, aliquam ut nisi non, mattis bibendum erat.</p>
+				</div>
+				
 			</div>
 		</div>
 	</div>
 </section>
+<section class="section section--rooms rooms" id="rooms">
+	<div class="container text-center">
+		<h3 class="h3">1. Select your room</h3>
+		<p class="subheader m-b-50">Some text goes here</p>
+
+		{{> checkin }}
+
+
+		<div class="row">
+			<div class="col-lg-10 offset-lg-1">
+				
+				{{> room }}
+				{{> room }}
+				{{> room }}
+			</div>
+		</div>
+	</div>
+</section>
+
+{{> prefooter }}

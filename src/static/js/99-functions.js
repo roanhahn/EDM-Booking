@@ -1,5 +1,6 @@
 
 var headerheight = $(".header").outerHeight();
+var sitewidth = $(".header").outerWidth();
 
 // MOBILE NAV
 
@@ -46,6 +47,16 @@ $(window).scroll(function() {
 		$(".header").removeClass("scrolled");
 		// $(".site-background").removeClass("scrolled");
 	}
+
+	if(sitewidth < 768){
+		if (scroll >= 200) {
+			$(".mobile-book").fadeIn(200);
+		}
+		else {
+			$(".mobile-book").fadeOut(200);
+		}
+	}
+	
 });
 
 // SCROLL TO

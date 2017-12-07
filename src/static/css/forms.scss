@@ -56,7 +56,11 @@
 
 
 .selectric .label, .input-group .form-control, .input-group-addon, .form-control{
-	font-size: 13px;
+	font-size: 15px;
 	color: #333;
 	border-radius: 0px;
+}
+
+.input-group .form-control-lg{
+	font-size: 20px;
 }

@@ -15,6 +15,9 @@
 	text-transform: uppercase;
 	cursor: pointer;
 	display: inline-block;
+	white-space: nowrap;
+
+
 
 	&:hover{
 		background-color: $button-bg-hover;
@@ -22,9 +25,31 @@
 		padding: 15px 50px;
 	}
 
+	@media (max-width: $breakpoint-mobile){
+		padding: 10px 20px;
+		font-size: 12px;
+
+		&:hover{
+			padding: 10px 20px;
+		}
+	}
+
 	&--secondary{
 		background-color: $color-2;
 		border-color: $color-2;
+	}
+
+	&--small{
+		font-size: 13px;
+		padding: 10px 20px;
+		&:hover{
+			padding: 10px 20px;
+		}
+	}
+
+	&--block{
+		width: 100%;
+		display: block;
 	}
 
 	&--label{
@@ -44,4 +69,18 @@
 			background: $color-1;
 		}
 	}
+}
+
+.button-info{
+	cursor: pointer;
+	border: none;
+	display: inline-block;
+	width: 22px;
+	height: 22px;
+	margin: 0 10px 0 0;
+	position: relative;
+	top: 3px;
+	line-height: 0;
+	background: url(../img/info.svg) no-repeat center center scroll;
+	background-size: 22px auto;
 }
