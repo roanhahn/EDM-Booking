@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EDM Booking</title>
+	
+	<!-- META -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="EDM Booking" />
+	<meta property="og:url" content="url" />
+	<meta property="og:image" content="url" />
+	
+	
+	<!-- CSS -->
+	<script src="https://use.fontawesome.com/3d921631f6.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link href="assets/css/styles.min.css" rel="stylesheet">
+	
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body  class="body-padding" >
+	<header class="header header--page">
+	<div class="container-fluid">
+		<div class="header-logo">
+			<a href="homepage.html" title="Title goes here">
+				<img src="assets/img/amf/logo.png" alt="AMF Festival Travelsite">
+				<span>Official Travelpackages</span>
+			</a>
+		</div>
+		<nav class="header-nav">
+			<ul class="header-nav-list">
+				<li class="header-nav-listitem"><a href="hotels.html" title="">Packages</a></li>
+				
+				<li class="header-nav-listitem"><a href="info.html" title="">More info</a></li>
+				<li class="header-nav-listitem mobile-menu-no">
+					<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"> <span class="euro">&euro;</span> 469</a>
+				</li>
+			</ul>
+		</nav>
+		<button class="nav-mobile-btn"></button>
+		<div class="header-booking-mob">
+			My booking
+		</div>
+	</div>
+</header>
+	
+		
+
+<div class="checkout">
+	<div class="container">
+		<ul>
+			<li class="checked"><span>Package</span></li>
+			<li class="active"><span>Extra's</span></li>
+			<li><span>Pay</span></li>
+		</ul>
+	</div>
+</div>
+<section class="section section--cart">
+	<div class="container">
+		<div class="alert alert-warning text-center m-b-30" role="alert">Note! There are no festival tickets included in the Hotel packages! To book a festival ticket, please select it in the personal extras!</div>
+		<div class="row">
+			<div class="col-lg-8">
+				
+				
+				<div class="cart-stay">
+					<div class="row">
+						<div class="col-3"><a href="hotel-detail.html"><img src="assets/img/hotel-1.jpg" alt="" class="img-fluid"></a></div>
+						<div class="col">
+							
+							<div class="name">Volkshotel Amsterdam - Great choice!</div>
+							<div class="row data">
+								<div class="col-4">
+									<strong>Check-in</strong>
+									17-02-2018
+								</div>
+								<div class="col-4">
+									<strong>Check-out</strong>
+									17-02-2018
+								</div>
+								<div class="col-4">
+									<strong>Guests</strong>
+									3
+								</div>
+							</div>
+							<a href="#" class="button button--small"><img src="assets/img/change-white.svg" alt="">Change</a>
+						</div>
+					</div>
+				</div>
+				<h3 class="h3 h3-cart">Personal Extras<small>Add a transfer or an upgrade to your booking</small></h3>
+				<ul class="cart-list">
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket VIP
+							</div>
+							<div class="surcharge">€173.60</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info">extra info</div>
+					</li>
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket Regular
+							</div>
+							<div class="surcharge">€100</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info">extra info</div>
+					</li>
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket Hotel only
+							</div>
+							<div class="surcharge">€0</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info">extra info</div>
+					</li>
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info show-extra" data-target="breakfast"></button>Breakfast
+							</div>
+							<div class="surcharge">€10</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info" id="breakfast">
+							<div class="row">
+								<div class="col-3">
+									<img src="assets/img/breakfast.jpg" alt="" class="img-fluid">
+								</div>
+								<div class="col-9">
+									<p>Wake up to a wonderful, extensive breakfast buffet with fresh rolls, croissants, various spreads, fruit, coffee, tea and juices.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info show-extra" data-target="private-transfer"></button>Private Transfer
+							</div>
+							<div class="surcharge">€269</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info" id="private-transfer">
+							<div class="row">
+								<div class="col-3">
+									<img src="assets/img/limousine.jpg" alt="" class="img-fluid">
+								</div>
+								<div class="col-9">
+									<ul>
+										<li>Private car and driver for transfer to A State Of Trance and back to hotel</li>
+										<li>The driver will be stand-by for your convenience </li>
+										<li>Select the number of cars you need </li>
+										<li>ASOT team will contact you with transfer information</li>
+										<li>Price per car for max 4 persons</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<h3 class="h3 h3-cart">General Extras<small>Add a transfer or an upgrade to your booking</small></h3>
+				<ul class="cart-list">
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Exclusive limited AMF flag
+							</div>
+							<div class="surcharge">€18</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info">extra info</div>
+					</li>
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket
+							</div>
+							<div class="surcharge">€173.60</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info">extra info</div>
+					</li>
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket
+							</div>
+							<div class="surcharge">€173.60</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info">extra info</div>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4">
+				<div class="cart fixedcart">
+					<div class="total">Your booking <span>€173.60</span></div>
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									<div class="name">Volkshotel Amsterdam</div>
+									<p>Check in: 17-02-2018</p>
+									<p>Check out: 18-02-2018</p>
+									<p>2 x Comfort Twin Room</p>
+
+								</td>
+								<td class="price">€173.60</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="name">
+										<button class="delete" title="Delete from cart"></button>
+										<span class="cart-item-amount">2</span>
+										Item goes here
+									</div>
+								</td>
+								<td class="price">€60</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="name">
+										<button class="delete" title="Delete from cart"></button>
+										Item goes here
+									</div>
+								</td>
+								<td class="price">€60</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="name">
+										<button class="delete" title="Delete from cart"></button>
+										Item goes here
+									</div>
+								</td>
+								<td class="price">€60</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="name vat">
+										Including 7% V.A.T.
+									</div>
+								</td>
+								<td class="price vat">€128</td>
+							</tr>
+						</tbody>
+					</table>
+					<form>
+						<div class="mycheck">
+							<label class="mycheck-label">
+								<input type="checkbox">
+								<span class="checkmark"></span>
+								I agree to the <a href="#">Terms and Conditions</a>
+							</label>
+						</div>
+					</form>
+					<button class="button button--confirm button--block" disabled>Confirm order</button>
+					<div class="cart-p">Payment details on the next page</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
+</div>
+		<div class="site-background">
+    <div class="site-background-visual"></div>
+</div>
+	
+	
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<a href="" title="" class="footer-btn reveal">info@edm-booking.com</a><button class="footer-btn reveal">+31 (06) 52 382 282</button>
+
+				<ul class="footer-socialmedia reveal">
+					<li><a href="#" title="Facebook"><img src="assets/img/icon-facebook.svg" alt=""></a></li>
+					<li><a href="#" title="Twitter"><img src="assets/img/icon-twitter.svg" alt=""></a></li>
+					<li><a href="#" title="Instagram"><img src="assets/img/icon-instagram.svg" alt=""></a></li>
+				</ul>
+
+				<ul class="footer-logos reveal">
+					<li><img src="https://daks2k3a4ib2z.cloudfront.net/59ea0080c3e5160001edb56a/59ea0f76c3e5160001edc727_logo-ams.png" alt="AMF Festival"></li>
+					
+				</ul>
+				<p class="copyright reveal">
+					© 2017 AMF Festival - <a href="#" title="EDM Booking">powered by EDM Booking</a>
+				</p>
+				<div class="footer-links reveal">
+					<ul>
+						<li><a href="#" title="Terms and conditions">Terms and conditions</a> </li>
+						<li><a href="#" title="Privacy statement">Privacy statement</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</footer>
+<div class="cookies d-none">
+	<button class="hide-cookies"><img src="assets/img/close-white.svg"></button>
+	<p>Cookies are used to provide you with the best experience and service. By visiting our website, you consent to the use of <a href="#" title="">cookies</a></p>
+</div>
+
+	<!-- Our JavaScript -->
+	
+	
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script src="assets/js/plugins/owl.carousel.min.js"></script>
+	<script src="assets/js/plugins/scrollreveal.min.js"></script>
+	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
+	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
+	<script src="assets/js/plugins/jquery.fancybox.min.js"></script>
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/cart.js"></script>
+	
+	<!-- Plugins -->
+	
+	<!-- GoogleMaps -->
+</body>
+</html>
