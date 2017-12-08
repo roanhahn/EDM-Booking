@@ -12,6 +12,9 @@ body{
 	}
 }
 
+*{
+	outline: none !important;
+}
 .clearfix:after{
 	clear: both;
 	display: block;
@@ -145,13 +148,35 @@ body{
 	}
 
 	&--rooms{
-		background: #ececec;
+		background: #F2F1EF;
 		color: #333;
+	}
+
+	&--login{
+		background: #F2F1EF;
+		color: #000;
+		position: relative;
+
+		// &:before{
+		// 	background: $main-bg; 
+		// 	background-size: cover;
+		// 	position: absolute;
+		// 	left: 0;
+		// 	top: 0;
+		// 	bottom: 0;
+		// 	right: 0;
+		// 	content: "";
+		// 	opacity: .2;
+		// 	-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+		// 	filter: grayscale(100%);
+		// }
+		
 	}
 
 	&--cart{
 		background: #fff;
 		color: #000;
+		position: relative;
 	}
 
 	@media (max-width: $breakpoint-mobile){
@@ -340,7 +365,7 @@ body{
 		background: #000;
 
 		& img{
-			opacity: .7;
+			opacity: 1;
 		}
 	}
 	&-content{
@@ -385,6 +410,18 @@ body{
 			z-index: 1;
 			-webkit-transition: all .3s ease 0s;
 			transition: all .3s ease 0s;
+		}
+	}
+
+	&-list{
+		margin: 0;
+		padding: 0;
+
+		& li{
+			padding: 5px 10px;
+		}
+		& li:nth-child(odd){
+			background: rgba(255,255,255,.2);
 		}
 	}
 

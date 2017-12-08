@@ -25,7 +25,7 @@
 	<![endif]-->
 </head>
 <body  class="body-padding" >
-	<header class="header">
+	<header class="header header--page">
 	<div class="container-fluid">
 		<div class="header-logo">
 			<a href="homepage.html" title="Title goes here">
@@ -36,10 +36,10 @@
 		<nav class="header-nav">
 			<ul class="header-nav-list">
 				<li class="header-nav-listitem"><a href="hotels.html" title="">Packages</a></li>
-				<li class="header-nav-listitem"><a href="#" title="" class="scroll" data-scroll="whybook">Why book</a></li>
+				
 				<li class="header-nav-listitem"><a href="info.html" title="">More info</a></li>
 				<li class="header-nav-listitem mobile-menu-no">
-					<a href="#" title="" class="nav-btn"><img src="assets/img/avatar.svg">My booking</a>
+					<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"> <span class="euro">&euro;</span> 469</a>
 				</li>
 			</ul>
 		</nav>
@@ -145,53 +145,72 @@
 		</div>
 	</div>
 </section>
-<section class="section section--rooms rooms" id="rooms">
-	<div class="container text-center">
-		<h3 class="h3">1. Select your room</h3>
-		<p class="subheader m-b-50">Some text goes here</p>
 
-		<form class="text-left">
-	<div class="row">
-		<div class="col">
-			
-			<div class="form-group">
-				<label for="">Check in</label>
-				<div class="input-group date" data-provide="datepicker">
-					<input type="text" class="form-control form-control-lg" placeholder="Arrival date">
-					<div class="input-group-addon">
-						<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+<form class="text-left booking" id="rooms">
+	<div class="container">
+		
+		<div class="row">
+			<div class="col-4">
+
+				<div class="form-group">
+					<label for="">Check in</label>
+					<div class="input-group date" data-provide="datepicker">
+						<input type="text" class="form-control form-control-lg" placeholder="Arrival date">
+						<div class="input-group-addon">
+							<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+						</div>
 					</div>
 				</div>
+
 			</div>
-			
-		</div>
-		<div class="col">
-			
-			<div class="form-group">
-				<label for="">Check out</label>
-				<div class="input-group date" data-provide="datepicker">
-					<input type="text" class="form-control form-control-lg" placeholder="Arrival date">
-					<div class="input-group-addon">
-						<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+			<div class="col-4">
+
+				<div class="form-group">
+					<label for="">Check out</label>
+					<div class="input-group date" data-provide="datepicker">
+						<input type="text" class="form-control form-control-lg" placeholder="Arrival date">
+						<div class="input-group-addon">
+							<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+						</div>
 					</div>
 				</div>
+
 			</div>
-			
-		</div>
-		<div class="col">
-			
-			<div class="form-group">
-				<label for="">Number of guests</label>
-				<div class="input-group">
-					<input type="number" class="form-control form-control-lg" value="1">
+			<div class="col">
+
+				<div class="form-group">
+					<label for="">Number of guests</label>
+					<div class="input-group">
+						<input type="number" class="form-control form-control-lg" value="1">
+					</div>
 				</div>
+
 			</div>
-			
+			<div class="col">
+				<button class="button">Search rooms</button>
+			</div>
 		</div>
 	</div>
 </form>
 
+<div class="spinner">
+	<div class="bounce1"></div>
+	<div class="bounce2"></div>
+	<div class="bounce3"></div>
+</div>
 
+
+<section class="section section--rooms rooms">
+	<div class="container text-center">
+		
+		
+
+
+		
+		<h3 class="h3">Select your room</h3>
+		
+
+		
 
 
 		<div class="row">
@@ -331,6 +350,7 @@
 	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/plugins/jquery.fancybox.min.js"></script>
 	<script src="assets/js/app.js"></script>
+	
 	
 	<!-- Plugins -->
 	

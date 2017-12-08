@@ -55,6 +55,12 @@ a, button{
 	font-size: 36px;
 	margin: 0 0 20px 0;
 
+	&-cart{
+		font-size: 30px;
+	}
+
+
+
 	& small{
 		font-family: $primary-font;
 		display: block;
@@ -75,6 +81,18 @@ a, button{
 	@media (max-width: $breakpoint-mobile){
 		font-size: 22px;
 		margin-bottom: 10px;
+	}
+
+	&-small{
+		font-size: 20px;
+		font-family: $primary-font;
+		font-weight: 400;
+		text-transform: none;
+
+		@media (max-width: $breakpoint-mobile){
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
 	}
 }
 .product-h3{

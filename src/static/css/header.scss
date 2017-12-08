@@ -21,9 +21,13 @@
 
 	&.scrolled{
 		background: $header-bg-color-scrolled;
-		-webkit-box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.4);
-		-moz-box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.4);
-		box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.4);
+		// -webkit-box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.4);
+		// -moz-box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.4);
+		// box-shadow: 0px 10px 16px 0px rgba(0,0,0,0.4);
+	}
+
+	&--page{
+		background: $header-bg-color-scrolled;
 	}
 
 	&-logo{
@@ -150,6 +154,11 @@
 		overflow: hidden;
 		display: block;
 		margin-top: 5px;
+
+		& span{
+			font-family: $primary-font;
+			font-weight: 700;
+		}
 
 		&:after{
 			display: none;

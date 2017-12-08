@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header {{#if type}}header--page{{/if}}">
 	<div class="container-fluid">
 		<div class="header-logo">
 			<a href="homepage.html" title="Title goes here">
@@ -9,10 +9,10 @@
 		<nav class="header-nav">
 			<ul class="header-nav-list">
 				<li class="header-nav-listitem"><a href="hotels.html" title="">Packages</a></li>
-				<li class="header-nav-listitem"><a href="#" title="" class="scroll" data-scroll="whybook">Why book</a></li>
+				{{!-- <li class="header-nav-listitem"><a href="#" title="" class="scroll" data-scroll="whybook">Why book</a></li> --}}
 				<li class="header-nav-listitem"><a href="info.html" title="">More info</a></li>
 				<li class="header-nav-listitem mobile-menu-no">
-					<a href="#" title="" class="nav-btn"><img src="assets/img/avatar.svg">My booking</a>
+					<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg">{{#if type}} <span class="euro">&euro;</span> 469{{else}}My Booking{{/if}}</a>
 				</li>
 			</ul>
 		</nav>

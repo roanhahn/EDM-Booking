@@ -1,3 +1,14 @@
+.booking{
+	background: #fff;
+	padding: 20px 0;
+	color: #333;
+	label{
+		font-weight: 700;
+		font-size: 15px;
+		// text-transform: uppercase;
+	}
+}
+
 .filter{
 	background: #000;
 	border: 1px solid $border-color;
@@ -50,8 +61,16 @@
 
 .sort{
 	width: 200px;
-	margin: 0 15px 30px;
+	margin: 0 0 30px;
 	float: right;
+
+	@media (max-width: $breakpoint-tablet){
+		
+	}
+	@media (max-width: $breakpoint-mobile){
+		float: left;
+		margin-right: 15px;
+	}
 }
 
 
@@ -63,4 +82,115 @@
 
 .input-group .form-control-lg{
 	font-size: 20px;
+}
+
+.loginline{
+	background: #999;
+	height: 400px;
+	width: 1px;
+	margin: 0 auto;
+}
+.login{
+	& .input{
+		display: block;
+		width: 100%;
+		margin: 0;
+		font-size: 18px;
+		padding: 18px;
+		border: 1px solid #999;
+		-webkit-border-radius: 4px 4px 0 0;
+		-moz-border-radius:  4px 4px 0 0;
+		border-radius: 4px 4px 0 0;
+
+		@media (max-width: $breakpoint-mobile){
+			width: 100%;
+		}
+
+		&:focus{
+			// border-color: #000;
+			background-color: #E4F1FE;
+			outline: none;
+		}
+
+		&.password{
+			-webkit-border-radius: 0 0 4px 4px;
+			-moz-border-radius:  0 0 4px 4px;
+			border-radius: 0 0 4px 4px;
+			border-top: none;
+			margin-bottom: 15px;
+		}
+	}
+	& .submit{
+		margin-bottom: 30px;
+	}
+
+	& a{
+		text-decoration: underline;
+
+		&.forgotten{
+			float: right;
+			font-size: 14px;
+			font-weight: 700;
+			margin-top: 15px;
+		}
+	}
+}
+
+.login-facebook, .login-google{
+	background-color: #3c66c4;
+	color: #fff;
+	padding: 20px 40px 20px 60px;
+	font-size: 16px;
+	white-space: nowrap;
+	width: 100%;
+	text-align: center;
+	font-weight: 500;
+	display: inline-block;
+	margin-bottom: 10px;
+	border: none;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+	background-image: url("../img/facebook.svg");
+	background-repeat: no-repeat;
+	background-size: auto 25px;
+	background-position: 15px center;
+
+	@media (max-width: $breakpoint-mobile){
+			width: 100%;
+		}
+
+	&:hover{
+		color: #fff;
+		background-color: #30529d;
+	}
+}
+
+.login-google{
+	background-color: #cf4332;
+	background-image: url("../img/google-plus.svg");
+
+	&:hover{
+		background-color: #a63628;
+	}
+}
+
+.signup-facebook{
+	background-color: #3c66c4;
+	color: #fff;
+	padding: 10px 15px 10px 40px;
+	background: #3c66c4 url("../img/facebook.svg") no-repeat 15px center scroll;
+	background-size: auto 15px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	display: inline-block;
+	border-radius: 4px;
+	margin: 0 0 30px;
+	text-decoration: none !important;
+
+	&:hover{
+		color: #fff;
+		background-color: #30529d;
+	}
 }

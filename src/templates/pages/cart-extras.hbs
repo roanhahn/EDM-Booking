@@ -1,30 +1,226 @@
 ---
 title: Cart extras
 type: page
+cart: true
 layout: default.hbs
 ---
 
-
+<div class="checkout">
+	<div class="container">
+		<ul>
+			<li class="checked"><span>Package</span></li>
+			<li class="active"><span>Extra's</span></li>
+			<li><span>Pay</span></li>
+		</ul>
+	</div>
+</div>
 <section class="section section--cart">
 	<div class="container">
+		<div class="alert alert-warning text-center m-b-30" role="alert">Note! There are no festival tickets included in the Hotel packages! To book a festival ticket, please select it in the personal extras!</div>
 		<div class="row">
-			<div class="col-8">
-				<h3 class="h3">Personal Extras</h3>
+			<div class="col-lg-8">
+				{{!-- <div class="offset" style="position: fixed; z-index: 100; background: red;">asdasd</div>
+				<div style="height: 600px;">asdsa</div> --}}
+				{{!-- <h3 class="h3 h3-cart">Your stay</h3> --}}
+				<div class="cart-stay">
+					<div class="row">
+						<div class="col-3"><a href="hotel-detail.html"><img src="assets/img/hotel-1.jpg" alt="" class="img-fluid"></a></div>
+						<div class="col">
+							{{!-- <p class="lead">Great choice!</p> --}}
+							<div class="name">Volkshotel Amsterdam - Great choice!</div>
+							<div class="row data">
+								<div class="col-4">
+									<strong>Check-in</strong>
+									17-02-2018
+								</div>
+								<div class="col-4">
+									<strong>Check-out</strong>
+									17-02-2018
+								</div>
+								<div class="col-4">
+									<strong>Guests</strong>
+									3
+								</div>
+							</div>
+							<a href="#" class="button button--small"><img src="assets/img/change-white.svg" alt="">Change</a>
+						</div>
+					</div>
+				</div>
+				<h3 class="h3 h3-cart">Personal Extras<small>Add a transfer or an upgrade to your booking</small></h3>
 				<ul class="cart-list">
-					<li>
+					<li class="cart-list-item">
 						<div class="item-type">
-							<div class="name"><button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket</div>
-							<div>€173.60</div>
-							<div class="text-right"><button class="button button--small">Add to cart</button></div>
+							<div class="name">
+								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket VIP
+							</div>
+							<div class="surcharge">€173.60</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info">extra info</div>
+					</li>
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket Regular
+							</div>
+							<div class="surcharge">€100</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info">extra info</div>
+					</li>
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket Hotel only
+							</div>
+							<div class="surcharge">€0</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info">extra info</div>
+					</li>
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info show-extra" data-target="breakfast"></button>Breakfast
+							</div>
+							<div class="surcharge">€10</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info" id="breakfast">
+							<div class="row">
+								<div class="col-3">
+									<img src="assets/img/breakfast.jpg" alt="" class="img-fluid">
+								</div>
+								<div class="col-9">
+									<p>Wake up to a wonderful, extensive breakfast buffet with fresh rolls, croissants, various spreads, fruit, coffee, tea and juices.</p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info show-extra" data-target="private-transfer"></button>Private Transfer
+							</div>
+							<div class="surcharge">€269</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info" id="private-transfer">
+							<div class="row">
+								<div class="col-3">
+									<img src="assets/img/limousine.jpg" alt="" class="img-fluid">
+								</div>
+								<div class="col-9">
+									<ul>
+										<li>Private car and driver for transfer to A State Of Trance and back to hotel</li>
+										<li>The driver will be stand-by for your convenience </li>
+										<li>Select the number of cars you need </li>
+										<li>ASOT team will contact you with transfer information</li>
+										<li>Price per car for max 4 persons</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<h3 class="h3 h3-cart">General Extras<small>Add a transfer or an upgrade to your booking</small></h3>
+				<ul class="cart-list">
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Exclusive limited AMF flag
+							</div>
+							<div class="surcharge">€18</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info">extra info</div>
+					</li>
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket
+							</div>
+							<div class="surcharge">€173.60</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+						</div>
+						<div class="item-info">extra info</div>
+					</li>
+					<li class="cart-list-item">
+						<div class="item-type">
+							<div class="name">
+								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket
+							</div>
+							<div class="surcharge">€173.60</div>
+							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
 						</div>
 						<div class="item-info">extra info</div>
 					</li>
 				</ul>
-				<h3 class="h3">General Extras</h3>
 			</div>
-			<div class="col-4">
-				<div class="">
-					asdasda
+			<div class="col-lg-4">
+				<div class="cart fixedcart">
+					<div class="total">Your booking <span>€173.60</span></div>
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									<div class="name">Volkshotel Amsterdam</div>
+									<p>Check in: 17-02-2018</p>
+									<p>Check out: 18-02-2018</p>
+									<p>2 x Comfort Twin Room</p>
+
+								</td>
+								<td class="price">€173.60</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="name">
+										<button class="delete" title="Delete from cart"></button>
+										<span class="cart-item-amount">2</span>
+										Item goes here
+									</div>
+								</td>
+								<td class="price">€60</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="name">
+										<button class="delete" title="Delete from cart"></button>
+										Item goes here
+									</div>
+								</td>
+								<td class="price">€60</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="name">
+										<button class="delete" title="Delete from cart"></button>
+										Item goes here
+									</div>
+								</td>
+								<td class="price">€60</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="name vat">
+										Including 7% V.A.T.
+									</div>
+								</td>
+								<td class="price vat">€128</td>
+							</tr>
+						</tbody>
+					</table>
+					<form>
+						<div class="mycheck">
+							<label class="mycheck-label">
+								<input type="checkbox">
+								<span class="checkmark"></span>
+								I agree to the <a href="#">Terms and Conditions</a>
+							</label>
+						</div>
+					</form>
+					<button class="button button--confirm button--block" disabled>Confirm order</button>
+					<div class="cart-p">Payment details on the next page</div>
 				</div>
 			</div>
 		</div>
@@ -33,21 +229,21 @@ layout: default.hbs
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		</div>
+	</div>
 </div>
