@@ -290,7 +290,14 @@ $(window).scroll(function() {
 $(".scroll").click(function() {
 	var whereto = $(this).data('scroll');
 	console.log(whereto);
-	$('html,body').animate({scrollTop: $("#" + whereto).offset().top-headerheight}, 1000, 'easeInOutCubic');
+
+	if(sitewidth >= 768){
+		$('html,body').animate({scrollTop: $("#" + whereto).offset().top-headerheight}, 1000, 'easeInOutCubic');
+	}
+	else{
+		$('html,body').animate({scrollTop: $("#" + whereto).offset().top}, 1000, 'easeInOutCubic');
+		// alert("Blaat");
+	}
 	return false;
 });
 
