@@ -30,20 +30,33 @@
 		<div class="header-logo">
 			<a href="homepage.html" title="Title goes here">
 				<img src="assets/img/amf/logo.png" alt="AMF Festival Travelsite">
-				<span>Official Travelpackages</span>
+				<span>Official Travel Packages</span>
 			</a>
 		</div>
 		<nav class="header-nav">
 			<ul class="header-nav-list">
-				<li class="header-nav-listitem"><a href="hotels.html" title="">Packages</a></li>
+				<li class="header-nav-listitem header-nav-dropdown">
+					<a href="#" title="">
+						Packages
+					</a>
+					<div class="dropdown" id="Packages">
+						<div class="container">
+							<div class="row">
+								<div class="col"><a href="hotels.html">Regular Hotels Packages</a></div>
+								<div class="col"><a href="hotels.html">AMF Hotels Packages</a></div>
+								<div class="col"><a href="hotels.html">Camping Packages</a></div>
+							</div>
+						</div>
+					</div>
+				</li>
 				
-				<li class="header-nav-listitem"><a href="info.html" title="">More info</a></li>
+				<li class="header-nav-listitem"><a href="info.html" title="" class="">More info</a></li>
 				<li class="header-nav-listitem mobile-menu-no">
 					<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"> <span class="euro">&euro;</span> 469</a>
 				</li>
 			</ul>
 		</nav>
-		<button class="nav-mobile-btn"></button>
+		<button class="nav-mobile-btn d-lg-none"></button>
 		<div class="header-booking-mob">
 			My booking
 		</div>
@@ -55,16 +68,16 @@
 
 <section class="section">
 	<div class="container">
-		<div class="alert alert-warning text-center m-b-30" role="alert">Note! There are no festival tickets included in the Hotel packages! To book a festival ticket, please select it in the personal extras!</div>
-		<h3 class="h3">All AMF Hotels<small>We have <span>24</span> great hotels for you too choose out.</small></h3>
+		
+		<h3 class="h3">All Regular Hotels<small>We have selected <span>24</span> great hotels for you.</small></h3>
 		<div class="row">
 			<div class="col">
 
 				<form class="sort">		
 					<select >
 						<option selected="selected">Sort</option>
-						<option>Price high-low</option>
-						<option>Price low-high</option>
+						<option>Distance to venue</option>
+						<option>Rating</option>
 					</select>
 
 				</form>
@@ -285,18 +298,7 @@
 			</div>
 			<div class="col-md-3 order-2 order-lg-1 d-none d-lg-block">
 				<form class="filter">
-	<label for="" class="filter-label">Type</label>
-	<div class="filter-group">
-		<div class="form-group">
-			
-			<select>
-				<option selected="selected">Regular hotels</option>
-				<option>AMF Hotels</option>
-				<option>Camping</option>
-			</select>
-			
-		</div>
-	</div>
+	
 
 	<label for="" class="filter-label">Arrival date</label>
 	<div class="filter-group">
@@ -325,31 +327,13 @@
 	<label for="" class="filter-label">Guests</label>
 	<div class="filter-group">		
 		<div class="form-group">
-			<input type="number" class="form-control" value="1">
+			<input type="number" class="form-control" value="1" step="1" min="1" max="12">
 		</div>
 	</div>
 
 	
 
-	<label for="" class="filter-label">Price</label>
-	<div class="filter-group">		
-		<div class="form-group">
-			<div class="form-check">
-				<label class="form-check-label filter-label-big">
-					<input type="checkbox" class="form-check-input">
-					Double Room
-				</label>
-				<label class="form-check-label filter-label-big">
-					<input type="checkbox" class="form-check-input">
-					Twin Room
-				</label>
-				<label class="form-check-label filter-label-big">
-					<input type="checkbox" class="form-check-input">
-					Single Room
-				</label>
-			</div>
-		</div>
-	</div>
+	
 
 	<label for="" class="filter-label">Price</label>
 	<div class="filter-group">		
@@ -432,7 +416,7 @@
 			<div class="row">
 				<div class="col text-center">
 					<h3 class="h3">NEED HELP?</h3>
-					<p class="subheader">Contact us 24/7 via whatsApp or email for special wishes or questions</p>
+					<p class="subheader">Questions or special wishes?<br />Contact us 24/7 via e-mail or WhatsApp.</p>
 					
 				</div>
 			</div>
@@ -462,7 +446,9 @@
 
 				<ul class="footer-logos reveal">
 					<li><img src="https://daks2k3a4ib2z.cloudfront.net/59ea0080c3e5160001edb56a/59ea0f76c3e5160001edc727_logo-ams.png" alt="AMF Festival"></li>
-					
+					<li><a href="#" title=""><img src="assets/img/edm-white.png" alt="EDM Booking"></a></li>
+					<li><a href="#" title=""><img src="https://pbs.twimg.com/profile_images/694170814577442816/qizlUJpz.png" alt="ALDA"></a></li>
+					<li><a href="#" title=""><img src="https://www.valtech.nl/siteassets/cases/radio-538/radio_538-2.png" alt="RADIO 538"></a></li>
 				</ul>
 				<p class="copyright reveal">
 					© 2017 AMF Festival - <a href="#" title="EDM Booking">powered by EDM Booking</a>
@@ -498,6 +484,7 @@
 	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/plugins/jquery.fancybox.min.js"></script>
 	<script src="assets/js/app.js"></script>
+	
 	
 	
 	<!-- Plugins -->

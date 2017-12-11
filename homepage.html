@@ -30,20 +30,33 @@
 		<div class="header-logo">
 			<a href="homepage.html" title="Title goes here">
 				<img src="assets/img/amf/logo.png" alt="AMF Festival Travelsite">
-				<span>Official Travelpackages</span>
+				<span>Official Travel Packages</span>
 			</a>
 		</div>
 		<nav class="header-nav">
 			<ul class="header-nav-list">
-				<li class="header-nav-listitem"><a href="hotels.html" title="">Packages</a></li>
+				<li class="header-nav-listitem header-nav-dropdown">
+					<a href="#" title="">
+						Packages
+					</a>
+					<div class="dropdown" id="Packages">
+						<div class="container">
+							<div class="row">
+								<div class="col"><a href="hotels.html">Regular Hotels Packages</a></div>
+								<div class="col"><a href="hotels.html">AMF Hotels Packages</a></div>
+								<div class="col"><a href="hotels.html">Camping Packages</a></div>
+							</div>
+						</div>
+					</div>
+				</li>
 				
-				<li class="header-nav-listitem"><a href="info.html" title="">More info</a></li>
+				<li class="header-nav-listitem"><a href="info.html" title="" class="">More info</a></li>
 				<li class="header-nav-listitem mobile-menu-no">
 					<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg">My Booking</a>
 				</li>
 			</ul>
 		</nav>
-		<button class="nav-mobile-btn"></button>
+		<button class="nav-mobile-btn d-lg-none"></button>
 		<div class="header-booking-mob">
 			My booking
 		</div>
@@ -57,8 +70,8 @@
         <div class="vertical-align">
             <div class="container text-center">
                 
-                <h1 class="hero-header">Book the best AMF hotel packages and extra's</h1>
-                
+                <h1 class="hero-header">Create your AMF travel experience</h1>
+                <p class="hero-subheader">Make your choice</p>
                 <div class="scroll-down scroll" data-scroll="offers"></div>
             </div>
         </div>
@@ -84,7 +97,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<p class="subheader m-b-50">We selected the best hotels for you</p>
+						<p class="subheader">Choose your favorite hotel in Amsterdam</p>
 						<div class="scroll-container scroll-container--nowrap">
 							<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
@@ -189,7 +202,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<p class="subheader">Special AMF Festival Hotels</p>
+						<p class="subheader">Stay with AMF for the full experience</p>
 						<div class="scroll-container scroll-container--nowrap">
 							<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
@@ -294,7 +307,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<p class="subheader m-b-30">Stay in a VIP tent only 300m away from the festival</p>
+						<p class="subheader m-b-30">Come to AMF in a relaxed way without bringing a tent</p>
 						<div class="scroll-container scroll-container--nowrap">
 							<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
@@ -435,7 +448,7 @@
 								<div class="extra-price">
 									<strong>€269</strong>
 								</div>
-								<p class="product-description">Private transfer between your hotel and the Amsterdam Arena. The driver will be stand-by to pick you up at any time.</p>
+								<p class="product-description">Private transfer between your hotel and the Amsterdam Arena and back. The driver will pick you up at any time.</p>
 							</div>
 						</div>
 						<div class="product product--overview">
@@ -461,7 +474,7 @@
 								<div class="extra-price">
 									<strong>€80</strong>
 								</div>
-								<p class="product-description">Select official AMF Regular tickets or AMF VIP Tickets. VIP ticket includes: separate VIP entrance, access to the VIP deck at the Mainstage and a free locker.</p>
+								<p class="product-description">Select official AMF Regular or AMF VIP Tickets. VIP ticket includes separate VIP entrance, VIP deck at the Mainstage and a free locker.</p>
 							</div>
 						</div>
 						<div class="product product--overview">
@@ -474,7 +487,7 @@
 								<div class="extra-price">
 									<strong>€15</strong>
 								</div>
-								<p class="product-description">Wake up to a wonderful, extensive breakfast buffet with fresh rolls, croissants, various spreads, fruit, coffee, tea and juices.</p>
+								<p class="product-description">Wake up to a wonderful breakfast with fresh rolls, croissants, various spreads, fruit, coffee, tea and juices.</p>
 							</div>
 						</div>
 					</div>
@@ -555,7 +568,7 @@
 			<div class="row">
 				<div class="col text-center">
 					<h3 class="h3">NEED HELP?</h3>
-					<p class="subheader">Contact us 24/7 via whatsApp or email for special wishes or questions</p>
+					<p class="subheader">Questions or special wishes?<br />Contact us 24/7 via e-mail or WhatsApp.</p>
 					
 				</div>
 			</div>
@@ -585,7 +598,9 @@
 
 				<ul class="footer-logos reveal">
 					<li><img src="https://daks2k3a4ib2z.cloudfront.net/59ea0080c3e5160001edb56a/59ea0f76c3e5160001edc727_logo-ams.png" alt="AMF Festival"></li>
-					
+					<li><a href="#" title=""><img src="assets/img/edm-white.png" alt="EDM Booking"></a></li>
+					<li><a href="#" title=""><img src="https://pbs.twimg.com/profile_images/694170814577442816/qizlUJpz.png" alt="ALDA"></a></li>
+					<li><a href="#" title=""><img src="https://www.valtech.nl/siteassets/cases/radio-538/radio_538-2.png" alt="RADIO 538"></a></li>
 				</ul>
 				<p class="copyright reveal">
 					© 2017 AMF Festival - <a href="#" title="EDM Booking">powered by EDM Booking</a>
@@ -621,6 +636,7 @@
 	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/plugins/jquery.fancybox.min.js"></script>
 	<script src="assets/js/app.js"></script>
+	
 	
 	
 	<!-- Plugins -->

@@ -240,6 +240,16 @@ $(".info-list-item").click(function() {
 	}
 });
 
+// Dropdown
+
+// $('*[data-toggle="dropdown"]').click(function()
+// {
+// 	var dropdowntarget = $(this).data('target');
+// 	// console.log(dropdowntarget);
+// 	$(this).toggleClass('active');
+// 	$(dropdowntarget).fadeToggle();
+// });
+
 
 // EXTRA CART INFO
 $(".show-extra").click(function() {
@@ -352,6 +362,35 @@ $(document).ready(function() {
 			},
 			1200: {
 				items: 4
+			}
+		}
+	})
+
+	var owl = $('.owl-pictures');
+	owl.owlCarousel({
+		responsiveRefreshRate: 200, 
+		margin: 15,
+		nav: false,
+		loop: false,
+		dots: true,
+		animateOut: 'slideOutLeft',
+		animateIn: 'slideInRight',
+		autoplay:true,
+		autoplayTimeout:5000,
+		loop: true,
+		autoplayHoverPause:true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 1
+			},
+			1000: {
+				items: 1
+			},
+			1200: {
+				items: 1
 			}
 		}
 	})
