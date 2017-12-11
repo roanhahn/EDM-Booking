@@ -275,14 +275,14 @@ $(window).scroll(function() {
 
 
 
-	// if(sitewidth < 768){
-	// 	if (scroll >= 200) {
-	// 		$(".mobile-book").fadeIn(200);
-	// 	}
-	// 	else {
-	// 		$(".mobile-book").fadeOut(200);
-	// 	}
-	// }
+	if(sitewidth < 768){
+		if (scroll >= 200) {
+			$(".mobile-book").fadeIn(200);
+		}
+		else {
+			$(".mobile-book").fadeOut(200);
+		}
+	}
 	
 });
 
