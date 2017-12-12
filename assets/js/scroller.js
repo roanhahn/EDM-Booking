@@ -4,6 +4,9 @@ var itemwidth = a.outerWidth();
 var itemheight = a.outerHeight();
 var container = $(".scroller").outerHeight();
 var range = 70;
+var header = 90;
+
+var position = range + header;
 
 var limit = container - itemheight;
 
@@ -15,25 +18,45 @@ console.log(limit);
 
 
 $(window).on('resize', function(){
-	offset = a.offset();
-	itemwidth = a.outerWidth();
-	itemheight = a.outerHeight();
-	container = $(".scroller").outerHeight();
-	limit = container - itemheight;
+	// offset = a.offset();
+	// itemwidth = a.outerWidth();
+	// itemheight = a.outerHeight();
+	// container = $(".scroller").outerHeight();
+	// limit = container - itemheight;
+
+	// console.log(container + "container");
+	// console.log(itemheight + "itemheight");
+	// console.log(offset.top  + "position from top");
+	// console.log(limit);
 });
 
 
 $(window).scroll(function() {    
 	var scroll = $(window).scrollTop();
 
-	$(a).css({"position": "fixed", "top": offset.top, "bottom": "auto",  "margin-left": 0, "width": itemwidth});
+	if (offset.top - scroll - header <= range){
+		$(a).css({"position": "fixed", "top": position, "bottom": "auto",  "margin-left": 0, "width": itemwidth});
 
-	if (scroll >= limit) {
-		$(a).css({"position": "absolute", "top": "auto", "bottom": "0px",  "margin-left": 0, "width": itemwidth});
+		if (scroll >= limit) {
+			$(a).css({"position": "absolute", "top": "auto", "bottom": "0px",  "margin-left": 0, "width": itemwidth});
+		}
+		else{
+
+		}
 	}
 	else{
-		$(a).css({"position": "fixed", "top": offset.top, "bottom": "auto",  "margin-left": 0, "width": itemwidth});
+		$(a).css({"position": "", "top": "", "bottom": "",  "margin-left": "", "width": ""});
 	}
+
+
+	// $(a).css({"position": "fixed", "top": offset.top, "bottom": "auto",  "margin-left": 0, "width": itemwidth});
+
+	// if (scroll >= limit) {
+	// 	$(a).css({"position": "absolute", "top": "auto", "bottom": "0px",  "margin-left": 0, "width": itemwidth});
+	// }
+	// else{
+	// 	$(a).css({"position": "fixed", "top": offset.top, "bottom": "auto",  "margin-left": 0, "width": itemwidth});
+	// }
 	// if (scroll >= checkoutheight) {
 	// 	$( ".fixedcart" ).css({"position": "fixed", "top": offset.top - checkoutheight, "bottom": "auto",  "margin-left": 0, "width": cartwitdh});
 
