@@ -30,7 +30,7 @@
 		<div class="header-logo">
 			<a href="homepage.html" title="Title goes here">
 				<img src="assets/img/amf/logo.png" alt="AMF Festival Travelsite">
-				<span>Official Travel Packages</span>
+				<span class="d-none d-sm-inline-block">Official Travel Packages</span>
 			</a>
 		</div>
 		<nav class="header-nav">
@@ -58,7 +58,9 @@
 		</nav>
 		<button class="nav-mobile-btn d-lg-none"></button>
 		<div class="header-booking-mob">
-			My booking
+			<a href="cart-extras.html" class="nav-btn">
+				<img src="assets/img/avatar.svg"> <span class="euro">&euro;</span> 469
+			</a>
 		</div>
 	</div>
 </header>
@@ -72,7 +74,7 @@
 				<div class="mobile-book-price"><span>Starting from</span>&euro; 356,-<span>per person</span></div>
 			</div>
 			<div class="col-6">
-				<a href="#" class="button scroll" data-scroll="rooms">Select your room</a>
+				<a href="#" class="button scroll" data-scroll="#rooms">Select your room</a>
 			</div>
 		</div>
 	</div>
@@ -95,6 +97,17 @@
 	</div>
 </div>
 
+<div class="checkout d-none d-lg-block">
+	<div class="container">
+		<ul>
+			<li class="active"><span>Stay</span></li>
+			<li><span>Extra's</span></li>
+			<li><span>Info</span></li>
+			<li><span>Pay</span></li>
+		</ul>
+	</div>
+</div>
+
 <section class="section section--details details">
 	<div class="container">
 		<div class="row">
@@ -105,7 +118,7 @@
 					<div class="col">
 						<div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
 						<div class="product-showonmap">
-							<a href="#" class="scroll" data-scroll="googleMaps">Show on map</a>
+							<a href="#" class="scroll" data-scroll="#googleMaps">Show on map</a>
 						</div>
 						<div class="product-rating">
 							<img src="assets/img/amf/star-amf-full.svg">
@@ -166,7 +179,7 @@
 						</div>
 					</div>
 					<div class="d-none d-lg-block">
-						<a href="#" class="button button--block scroll" data-scroll="rooms">Select your room</a>
+						<a href="#" class="button button--block scroll" data-scroll="#rooms">Select your room</a>
 					</div>
 					<div class="product-price d-none d-lg-block">
 						<div class="amount">&euro; 356,- <span>/ Starting from per person</span></div>
@@ -245,60 +258,75 @@
 			<div class="col-lg-10 offset-lg-1">
 				
 				<div class="room">
-	<div class="row">
-		<div class="col-4 col-md-3">
-			<img src="assets/img/roomitem.jpg" alt="" class="img-fluid">
-		</div>
-		<div class="col room-content">
-			<div class="room-title">Double standard - bed and breakfast: sleeps 2, 1 bed</div>
-			<div class="row">
-				<div class="col room-max">Max:<img src="assets/img/person.svg">x 2</div>
-			</div>
-			<p class="room-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt luctus tortor, non venenatis libero pulvinar fermentum. Phasellus augue metus, aliquam ut nisi non, mattis bibendum erat. Aliquam volutpat lacus odio, ut ornare ex porta ut.</p>
-		</div>
-	</div>
-	<div class="room-price clearfix">
+	<div class="row no-gutters">
 		
-		€ 104 <span>/ total price</span>
-		<a href="#" class="button">Book room</a>
+		<div class="col">
+			<div class="row no-gutters">
+				<div class="col-sm-8">
+					<div class="room-content">
+						<div class="room-title">Standard Double Room</div>
+						<div class="room-max">Max:<img src="assets/img/person.svg">x 2</div>
+						<p class="room-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div class="col-sm-4 text-right">
+					<div class="room-price clearfix">
+						<div class="room-price-amount">
+							€ 104 <span>total price per person</span>
+						</div>
+						<a href="#" class="button button--small">Book this room</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 				<div class="room">
-	<div class="row">
-		<div class="col-4 col-md-3">
-			<img src="assets/img/roomitem.jpg" alt="" class="img-fluid">
-		</div>
-		<div class="col room-content">
-			<div class="room-title">Double standard - bed and breakfast: sleeps 2, 1 bed</div>
-			<div class="row">
-				<div class="col room-max">Max:<img src="assets/img/person.svg">x 2</div>
-			</div>
-			<p class="room-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt luctus tortor, non venenatis libero pulvinar fermentum. Phasellus augue metus, aliquam ut nisi non, mattis bibendum erat. Aliquam volutpat lacus odio, ut ornare ex porta ut.</p>
-		</div>
-	</div>
-	<div class="room-price clearfix">
+	<div class="row no-gutters">
 		
-		€ 104 <span>/ total price</span>
-		<a href="#" class="button">Book room</a>
+		<div class="col">
+			<div class="row no-gutters">
+				<div class="col-sm-8">
+					<div class="room-content">
+						<div class="room-title">Standard Double Room</div>
+						<div class="room-max">Max:<img src="assets/img/person.svg">x 2</div>
+						<p class="room-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div class="col-sm-4 text-right">
+					<div class="room-price clearfix">
+						<div class="room-price-amount">
+							€ 104 <span>total price per person</span>
+						</div>
+						<a href="#" class="button button--small">Book this room</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 				<div class="room">
-	<div class="row">
-		<div class="col-4 col-md-3">
-			<img src="assets/img/roomitem.jpg" alt="" class="img-fluid">
-		</div>
-		<div class="col room-content">
-			<div class="room-title">Double standard - bed and breakfast: sleeps 2, 1 bed</div>
-			<div class="row">
-				<div class="col room-max">Max:<img src="assets/img/person.svg">x 2</div>
-			</div>
-			<p class="room-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt luctus tortor, non venenatis libero pulvinar fermentum. Phasellus augue metus, aliquam ut nisi non, mattis bibendum erat. Aliquam volutpat lacus odio, ut ornare ex porta ut.</p>
-		</div>
-	</div>
-	<div class="room-price clearfix">
+	<div class="row no-gutters">
 		
-		€ 104 <span>/ total price</span>
-		<a href="#" class="button">Book room</a>
+		<div class="col">
+			<div class="row no-gutters">
+				<div class="col-sm-8">
+					<div class="room-content">
+						<div class="room-title">Standard Double Room</div>
+						<div class="room-max">Max:<img src="assets/img/person.svg">x 2</div>
+						<p class="room-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div class="col-sm-4 text-right">
+					<div class="room-price clearfix">
+						<div class="room-price-amount">
+							€ 104 <span>total price per person</span>
+						</div>
+						<a href="#" class="button button--small">Book this room</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 			</div>
@@ -360,7 +388,7 @@
 		</div>
 	</div>
 </footer>
-<div class="cookies d-none">
+<div class="cookies">
 	<button class="hide-cookies"><img src="assets/img/close-white.svg"></button>
 	<p>Cookies are used to provide you with the best experience and service. By visiting our website, you consent to the use of <a href="#" title="">cookies</a></p>
 </div>
@@ -375,7 +403,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<script src="assets/js/plugins/owl.carousel.min.js"></script>
-	<script src="assets/js/plugins/scrollreveal.min.js"></script>
+	<script src="assets/js/plugins/wow.js"></script>
 	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
 	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/plugins/jquery.fancybox.min.js"></script>

@@ -215,6 +215,21 @@ $(".nav-mobile-btn").click(function() {
 });
 
 
+
+// WOW JS
+
+wow = new WOW(
+  {
+  boxClass:     'wow',      // default
+  animateClass: 'animated', // default
+  offset:       70,          // default
+  mobile:       true,       // default
+  live:         true        // default
+}
+)
+wow.init();
+
+
 // INFO PAGE & FAQ
 
 $(".info-label").click(function() {
@@ -239,6 +254,15 @@ $(".info-list-item").click(function() {
 		$(question).find(".info-list-question").addClass("active");
 	}
 });
+
+// Toggle
+
+$('*[data-type="toggle"]').click(function()
+{
+	var toggletarget = $(this).data('target');
+	$(toggletarget).fadeToggle("fast");
+});
+
 
 // Dropdown
 
@@ -292,10 +316,10 @@ $(".scroll").click(function() {
 	console.log(whereto);
 
 	if(sitewidth >= 768){
-		$('html,body').animate({scrollTop: $("#" + whereto).offset().top-headerheight}, 1000, 'easeInOutCubic');
+		$('html,body').animate({scrollTop: $(whereto).offset().top-headerheight}, 1000, 'easeInOutCubic');
 	}
 	else{
-		$('html,body').animate({scrollTop: $("#" + whereto).offset().top}, 1000, 'easeInOutCubic');
+		$('html,body').animate({scrollTop: $(whereto).offset().top}, 1000, 'easeInOutCubic');
 		// alert("Blaat");
 	}
 	return false;
@@ -382,7 +406,7 @@ $(document).ready(function() {
 		dots: true,
 		animateOut: 'slideOutLeft',
 		animateIn: 'slideInRight',
-		autoplay:true,
+		autoplay:false,
 		autoplayTimeout:5000,
 		loop: true,
 		autoplayHoverPause:true,

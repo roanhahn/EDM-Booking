@@ -30,7 +30,7 @@
 		<div class="header-logo">
 			<a href="homepage.html" title="Title goes here">
 				<img src="assets/img/amf/logo.png" alt="AMF Festival Travelsite">
-				<span>Official Travel Packages</span>
+				<span class="d-none d-sm-inline-block">Official Travel Packages</span>
 			</a>
 		</div>
 		<nav class="header-nav">
@@ -58,7 +58,9 @@
 		</nav>
 		<button class="nav-mobile-btn d-lg-none"></button>
 		<div class="header-booking-mob">
-			My booking
+			<a href="cart-extras.html" class="nav-btn">
+				<img src="assets/img/avatar.svg"> <span class="euro">&euro;</span> 469
+			</a>
 		</div>
 	</div>
 </header>
@@ -68,15 +70,16 @@
 <div class="checkout">
 	<div class="container">
 		<ul>
-			<li class="checked"><span>Package</span></li>
+			<li class="checked"><span>Stay</span></li>
 			<li class="active"><span>Extra's</span></li>
+			<li><span>Info</span></li>
 			<li><span>Pay</span></li>
 		</ul>
 	</div>
 </div>
 <section class="section section--cart">
 	<div class="container">
-		<div class="alert alert-warning text-center m-b-30" role="alert">Note! There are no festival tickets included in the Hotel packages! To book a festival ticket, please select it in the personal extras!</div>
+		
 		<div class="row">
 			<div class="col-lg-8">
 				
@@ -101,7 +104,7 @@
 									3
 								</div>
 							</div>
-							<a href="#" class="button button--small"><img src="assets/img/change-white.svg" alt="">Change</a>
+							<a href="hotels.html" class="button button--small"><img src="assets/img/change-white.svg" alt="">Change</a>
 						</div>
 					</div>
 				</div>
@@ -216,70 +219,72 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-lg-4">
-				<div class="cart fixedcart">
-					<div class="total">Your booking <span>€173.60</span></div>
-					<table>
-						<tbody>
-							<tr>
-								<td>
-									<div class="name">Volkshotel Amsterdam</div>
-									<p>Check in: 17-02-2018</p>
-									<p>Check out: 18-02-2018</p>
-									<p>2 x Comfort Twin Room</p>
+			<div class="col-lg-4 scroller">
+				<div data-scroll="true">
+					<div class="cart">
+						<div class="total">Your booking <span>€173.60</span></div>
+						<table>
+							<tbody>
+								<tr>
+									<td>
+										<div class="name">Volkshotel Amsterdam</div>
+										<p>Check in: 17-02-2018</p>
+										<p>Check out: 18-02-2018</p>
+										<p>2 x Comfort Twin Room</p>
 
-								</td>
-								<td class="price">€173.60</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="name">
-										<button class="delete" title="Delete from cart"></button>
-										<span class="cart-item-amount">2</span>
-										Item goes here
-									</div>
-								</td>
-								<td class="price">€60</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="name">
-										<button class="delete" title="Delete from cart"></button>
-										Item goes here
-									</div>
-								</td>
-								<td class="price">€60</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="name">
-										<button class="delete" title="Delete from cart"></button>
-										Item goes here
-									</div>
-								</td>
-								<td class="price">€60</td>
-							</tr>
-							<tr>
-								<td>
-									<div class="name vat">
-										Including 7% V.A.T.
-									</div>
-								</td>
-								<td class="price vat">€128</td>
-							</tr>
-						</tbody>
-					</table>
-					<form>
-						<div class="mycheck">
-							<label class="mycheck-label">
-								<input type="checkbox">
-								<span class="checkmark"></span>
-								I agree to the <a href="#">Terms and Conditions</a>
-							</label>
-						</div>
-					</form>
-					<button class="button button--confirm button--block" disabled>Confirm order</button>
-					<div class="cart-p">Payment details on the next page</div>
+									</td>
+									<td class="price">€173.60</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="name">
+											<button class="delete" title="Delete from cart"></button>
+											<span class="cart-item-amount">2</span>
+											Item goes here
+										</div>
+									</td>
+									<td class="price">€60</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="name">
+											<button class="delete" title="Delete from cart"></button>
+											Item goes here
+										</div>
+									</td>
+									<td class="price">€60</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="name">
+											<button class="delete" title="Delete from cart"></button>
+											Item goes here
+										</div>
+									</td>
+									<td class="price">€60</td>
+								</tr>
+								<tr>
+									<td>
+										<div class="name vat">
+											Including 7% V.A.T.
+										</div>
+									</td>
+									<td class="price vat">€128</td>
+								</tr>
+							</tbody>
+						</table>
+						<form>
+							<div class="mycheck">
+								<label class="mycheck-label">
+									<input type="checkbox">
+									<span class="checkmark"></span>
+									I agree to the <a href="#">Terms and Conditions</a>
+								</label>
+							</div>
+						</form>
+						<button class="button button--confirm button--block" disabled>Confirm order</button>
+						<div class="cart-p">Payment details on the next page</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -344,7 +349,7 @@
 		</div>
 	</div>
 </footer>
-<div class="cookies d-none">
+<div class="cookies">
 	<button class="hide-cookies"><img src="assets/img/close-white.svg"></button>
 	<p>Cookies are used to provide you with the best experience and service. By visiting our website, you consent to the use of <a href="#" title="">cookies</a></p>
 </div>
@@ -359,12 +364,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<script src="assets/js/plugins/owl.carousel.min.js"></script>
-	<script src="assets/js/plugins/scrollreveal.min.js"></script>
+	<script src="assets/js/plugins/wow.js"></script>
 	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
 	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/plugins/jquery.fancybox.min.js"></script>
 	<script src="assets/js/app.js"></script>
-	<script src="assets/js/cart.js"></script>
+	<script src="assets/js/scroller.js"></script>
 	
 	
 	<!-- Plugins -->

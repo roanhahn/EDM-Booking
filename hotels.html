@@ -30,7 +30,7 @@
 		<div class="header-logo">
 			<a href="homepage.html" title="Title goes here">
 				<img src="assets/img/amf/logo.png" alt="AMF Festival Travelsite">
-				<span>Official Travel Packages</span>
+				<span class="d-none d-sm-inline-block">Official Travel Packages</span>
 			</a>
 		</div>
 		<nav class="header-nav">
@@ -58,7 +58,9 @@
 		</nav>
 		<button class="nav-mobile-btn d-lg-none"></button>
 		<div class="header-booking-mob">
-			My booking
+			<a href="cart-extras.html" class="nav-btn">
+				<img src="assets/img/avatar.svg"> <span class="euro">&euro;</span> 469
+			</a>
 		</div>
 	</div>
 </header>
@@ -69,23 +71,29 @@
 <section class="section">
 	<div class="container">
 		
-		<h3 class="h3">All Regular Hotels<small>We have selected <span>24</span> great hotels for you.</small></h3>
+
+
+		<h3 class="h3 text-center wow">All Regular Hotels<small>We have selected <span>24</span> great hotels for you.</small></h3>
+
 		<div class="row">
 			<div class="col">
-
-				<form class="sort">		
-					<select >
-						<option selected="selected">Sort</option>
-						<option>Distance to venue</option>
-						<option>Rating</option>
+				<button class="button button--small btn-filter d-inlineblock d-lg-none m-b-20 scroll" data-scroll="#filters" data-type="toggle" data-target="#filters"><img src="assets/img/filter.svg" alt="">Filters</button>
+				<form class="sort">	
+					<select>
+						<option value="price_l2h">Sort by</option>
+						<option value="price_l2h">Price (low to high)</option>
+						<option value="price_h2l">Price (high to low)</option>
+						<option value="distance_l2h">Distance to event (low to high)</option>
+						<option value="distance_h2l">Distance to event (high to low)</option>
+						<option value="rating_l2h">Rating (low to high)</option>
+						<option value="rating_h2l">Rating (high to low)</option>
 					</select>
-
 				</form>
-				<button class="button d-block d-lg-none">Filter hotels</button>
+				
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12 col-lg-9 order-1 order-lg-2 text-center">
+			<div class="col-lg-9 order-1 order-lg-2 text-center">
 				<div class="scroll-container">
 					<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
@@ -296,7 +304,7 @@
 </a>
 				</div>
 			</div>
-			<div class="col-md-3 order-2 order-lg-1 d-none d-lg-block">
+			<div class="col-lg-3 order-2 order-lg-1" id="filters">
 				<form class="filter">
 	
 
@@ -408,6 +416,42 @@
 </form>
 			</div>
 		</div>
+
+		
+
+
+	</div>
+</section>
+<section class="section">
+	<h3 class="h3 text-center">AMF Camping</h3>
+	<p class="subheader text-center">It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-md-7 wow fadeIn" data-wow-duration=".5s" data-wow-delay=".2s">
+				<img src="assets/img/camping1.jpg" alt="" class="img-fluid img-curved">
+			</div>
+			<div class="col-md-5">
+				<div class="curved text-center wow fadeIn" data-wow-duration=".5s" data-wow-delay="0s">
+					<img src="assets/img/tent.svg" class="curved-icon">
+					<h3>Pre-build tents</h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<a href="#" class="button">Download</a>
+				</div>
+			</div>
+		</div>
+		<div class="row no-gutters">
+			<div class="col-md-5 order-2 order-md-1 wow fadeInLeft" data-wow-duration=".5s" data-wow-delay="0s">
+				<div class="curved curved-left text-center">
+					<img src="assets/img/tent.svg" class="curved-icon">
+					<h3>Camping Packages</h3>
+					<p>A spot on our camping in a pre-set tent. Access to our exclusive pre- and afterparties, on Friday and Saturday evening. Access both festival days on Saturday and Sunday.</p>
+					<a href="#" class="button">Download</a>
+				</div>
+			</div>
+			<div class="col-md-7 order-1 order-md-2 wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".2s">
+				<img src="assets/img/camping2.jpg" alt="" class="img-fluid img-curved">
+			</div>
+		</div>
 	</div>
 </section>
 <section class="pre-footer">
@@ -464,7 +508,7 @@
 		</div>
 	</div>
 </footer>
-<div class="cookies d-none">
+<div class="cookies">
 	<button class="hide-cookies"><img src="assets/img/close-white.svg"></button>
 	<p>Cookies are used to provide you with the best experience and service. By visiting our website, you consent to the use of <a href="#" title="">cookies</a></p>
 </div>
@@ -479,7 +523,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<script src="assets/js/plugins/owl.carousel.min.js"></script>
-	<script src="assets/js/plugins/scrollreveal.min.js"></script>
+	<script src="assets/js/plugins/wow.js"></script>
 	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
 	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/plugins/jquery.fancybox.min.js"></script>

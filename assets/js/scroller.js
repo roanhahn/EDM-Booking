@@ -5,10 +5,10 @@ var itemheight = a.outerHeight();
 var container = $(".scroller").outerHeight();
 var range = 70;
 var header = 90;
-
+var sitewidth = $(".header").outerWidth();
 var position = range + header;
 
-var limit = container - itemheight;
+var limit = container - itemheight + offset.top - position;
 
 console.log(container + "container");
 console.log(itemheight + "itemheight");
@@ -18,55 +18,31 @@ console.log(limit);
 
 
 $(window).on('resize', function(){
-	// offset = a.offset();
-	// itemwidth = a.outerWidth();
-	// itemheight = a.outerHeight();
-	// container = $(".scroller").outerHeight();
-	// limit = container - itemheight;
-
-	// console.log(container + "container");
-	// console.log(itemheight + "itemheight");
-	// console.log(offset.top  + "position from top");
-	// console.log(limit);
+	sitewidth = $(".header").outerWidth();
 });
+
+
 
 
 $(window).scroll(function() {    
 	var scroll = $(window).scrollTop();
 
-	if (offset.top - scroll - header <= range){
-		$(a).css({"position": "fixed", "top": position, "bottom": "auto",  "margin-left": 0, "width": itemwidth});
+	if(sitewidth > 768){
+		if (offset.top - scroll - header <= range){
+			$(a).css({"position": "fixed", "top": position, "bottom": "auto",  "margin-left": 0, "width": itemwidth});
 
-		if (scroll >= limit) {
-			$(a).css({"position": "absolute", "top": "auto", "bottom": "0px",  "margin-left": 0, "width": itemwidth});
+			if (scroll >= limit) {
+				$(a).css({"position": "absolute", "top": "auto", "bottom": "0px",  "margin-left": 0, "width": itemwidth});
+			}
+			else{
+
+			}
 		}
 		else{
-
+			$(a).css({"position": "", "top": "", "bottom": "",  "margin-left": "", "width": ""});
 		}
 	}
 	else{
 		$(a).css({"position": "", "top": "", "bottom": "",  "margin-left": "", "width": ""});
 	}
-
-
-	// $(a).css({"position": "fixed", "top": offset.top, "bottom": "auto",  "margin-left": 0, "width": itemwidth});
-
-	// if (scroll >= limit) {
-	// 	$(a).css({"position": "absolute", "top": "auto", "bottom": "0px",  "margin-left": 0, "width": itemwidth});
-	// }
-	// else{
-	// 	$(a).css({"position": "fixed", "top": offset.top, "bottom": "auto",  "margin-left": 0, "width": itemwidth});
-	// }
-	// if (scroll >= checkoutheight) {
-	// 	$( ".fixedcart" ).css({"position": "fixed", "top": offset.top - checkoutheight, "bottom": "auto",  "margin-left": 0, "width": cartwitdh});
-
-	// 	if (scroll >= slc) {
-	// 		$( ".fixedcart" ).css({"position": "absolute", "bottom": "0px", "top": "auto", "margin-left": 0, "width": cartwitdh});
-	// 	} else {
-
-	// 	}
-	// }
-	// else{
-	// 	$( ".fixedcart" ).css({"position": "", "top": "", "bottom": "",  "margin-left": "", "width": ""});
-	// }
 });
