@@ -2,9 +2,8 @@
 // BREAKPOINTS
 $breakpoint-desktop: 1200px;
 $breakpoint-tablet: 992px;
-$breakpoint-mobile: 767px;
-
-
+$breakpoint-mobile: 768px;
+$breakpoint-sm: 575px;
 
 
 $bg-color: #000;
@@ -64,10 +63,10 @@ $prefooter-overlay: rgba(0,153,205,.3);
 
 $footer-padding: 100px 0;
 $footer-bg-color: #000;
-$footer-font-size: 14px;
+$footer-font-size: 16px;
 $footer-opacity: .3;
-$footer-text-color: rgba(255,255,255,.3);
-$footer-link-color: rgba(255,255,255,.3);
+$footer-text-color: rgba(255,255,255,.5);
+$footer-link-color: rgba(255,255,255,.5);
 $footer-link-hover-color: rgba(255,255,255,1);
 
 $cookie-radius: 4px;

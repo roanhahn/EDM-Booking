@@ -1,0 +1,72 @@
+.venue-hero{
+	background: $color-2;
+	min-height: 400px;
+}
+
+.venue{
+	position: relative;
+	display: block;
+	color: #fff;
+	overflow: hidden;
+	font-size: 18px;
+	margin-bottom: 30px;
+
+
+
+	&:before{
+		display: block;
+		content: "";
+		background: rgba(0,0,0,.6);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		-webkit-transition: all .2s ease-out 0s;
+		-moz-transition: all .2s ease-out 0s;
+		-o-transition: all .2s ease-out 0s;
+		transition: all .2s ease-out 0s;
+	}
+	&:hover{
+		color: #fff;
+	}
+	&:hover:before{
+		background: rgba(0,0,0,.2);
+	}
+	&-img{
+		// position: relative;
+		// z-index: 1;
+		
+		-webkit-transition: all .2s ease-out 0s;
+		-moz-transition: all .2s ease-out 0s;
+		-o-transition: all .2s ease-out 0s;
+		transition: all .2s ease-out 0s;
+	}
+	&:hover img{
+		// -ms-transform: scale(1.2, 1.2);
+		// -webkit-transform: scale(1.2, 1.2);
+		// transform: scale(1.2, 1.2);
+	}
+	&-content{
+		position: absolute;
+		z-index: 2;
+		top: 50%;
+		width: 100%;
+		// background: red;
+		text-align: center;
+		-ms-transform: translate(0, -50%);
+		-webkit-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+	}
+
+	&-title{
+		font-family: $secondary-font;
+		text-transform: uppercase;
+		font-size: 30px;
+		margin-bottom: 5px;
+	}
+	&-date{
+		font-weight: 500;
+		text-transform: uppercase;
+	}
+}

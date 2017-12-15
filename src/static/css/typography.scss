@@ -49,6 +49,13 @@ a, button{
 		margin-bottom: 10px;
 	}
 }
+.h2{
+	font-family: $tertiary-font;
+	max-width: 80%;
+	text-transform: uppercase;
+	font-size: 30px;
+	margin: 0 auto;
+}
 .h3{
 	text-transform: uppercase;
 	font-family: $secondary-font;
@@ -109,13 +116,14 @@ a, button{
 .subheader{
 	font-size: 24px;
 	font-family: $tertiary-font;
-	margin: 0 auto 30px auto;
+	margin: 0 auto 40px auto;
 	max-width: 80%;
 	line-height: 1.2;
+
 	@media (max-width: $breakpoint-mobile){
-		font-size: 16px;
+		font-size: 20px;
 		max-width: 90%;
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 	}
 }
 

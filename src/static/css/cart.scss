@@ -1,8 +1,10 @@
 .checkout{
 	
-	background: #ECECEC;
+	background: #333;
 	color: #000;
 	// height: 100px;
+
+
 
 
 	& ul{
@@ -20,25 +22,31 @@
 		flex-grow: 1;
 		font-family: $secondary-font;
 		text-transform: uppercase;
-		color: #666;
+		color: #999;
+		// background: yellow;
+		margin: 0;
+		position: relative;
 		// border-left: 2px solid #fff;
 		
 		font-size: 17px;
 		font-weight: 500;
 
 		& span{
-			display: inline-block;
-			padding: 24px 0 20px;
-			border-bottom: 4px solid transparent;
+			display:inline-block;
+			margin: 0;
+			padding: 20px 0 15px;
+			border-bottom: 5px solid transparent;
 		}
 
 		&.active{ 
-			color: $color-1;
+			color: #fff;
 			& span{
-				border-bottom: 3px solid $color-1;
+				border-bottom: 5px solid $color-1;
 			}
 		}
-
+		&.checked{
+			color: $checkout-color;
+		}
 		&.checked:after{
 			display: inline-block;
 			content: "";
@@ -107,10 +115,17 @@
 		& div{
 			flex-grow: 1;
 			vertical-align: middle;
+			white-space: nowrap;
+
+			@media (max-width: $breakpoint-mobile){
+					font-size: 13px;
+				}
 
 			&.name{
 				// flex-basis: 300px;
 				width: 100%;
+
+				
 			}
 
 			&.surcharge{
@@ -136,19 +151,19 @@
 }
 
 .cart{
-	border: 1px solid #cecece;
+	// border: 1px solid #cecece;
 	padding: 15px;
 	font-size: 14px;
-	color: #666;
+	color: #000;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
-	// -webkit-box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.15);
-	// -moz-box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.15);
-	// box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.15);
+	-webkit-box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.15);
+	-moz-box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.15);
+	box-shadow: 5px 5px 20px 2px rgba(0,0,0,0.15);
 
 	& .total{
-		color: $checkout-color;
+		
 		font-weight: 700;
 		font-size: 20px;
 		padding-bottom: 16px;
@@ -157,6 +172,7 @@
 		& span{
 			display: inline-block;
 			text-align: right;
+			color: $checkout-color;
 			float: right;
 		}
 	}

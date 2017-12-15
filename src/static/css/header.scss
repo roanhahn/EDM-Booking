@@ -6,7 +6,7 @@
 	width: 100%;
 	height: 90px;
 	z-index: 100;
-	overflow: hidden;
+	// overflow: hidden;
 	-webkit-transition: all .3s ease 0s;
 	transition: all .3s ease 0s;
 
@@ -53,9 +53,9 @@
 			text-transform: uppercase;
 			display: inline-block;
 
-			@media (max-width: $breakpoint-tablet){
-				display: none;
-			}
+			// @media (max-width: $breakpoint-tablet){
+			// 	display: none;
+			// }
 		}
 	}
 
@@ -63,12 +63,12 @@
 		float: right;
 		vertical-align: middle;
 
-		@media (min-width: $breakpoint-tablet){
+		@media (min-width: 992px){
 			display: block !important;
 		}
 
 		@media (max-width: $breakpoint-tablet){
-			position: fixed;
+			position: absolute;
 			top: 90px;
 			left: 0;
 			width: 100%;
@@ -79,6 +79,9 @@
 			padding: 30px 0;
 			background-color: $color-1;
 		}
+		// @media (min-width: $breakpoint-tablet){
+		// 	display: none !important;
+		// }
 
 		@media (max-width: $breakpoint-mobile){
 			top: 70px;
@@ -95,10 +98,41 @@
 			}
 		}
 
-		& li{
+		&-listitem{
 			display: inline-block;
 			list-style-type: none;
 			vertical-align: middle;
+			position: relative;
+			margin: 0 10px;
+
+			&:last-child{
+				margin-right: 0;
+			}
+
+
+			&.header-nav-dropdown:after{
+				display: inline-block;
+				content: "\25BE";
+				margin-left: 10px;
+				position: absolute;
+				top: 50%;
+				right: 0;
+				-ms-transform: translate(0%, -50%);
+				-webkit-transform: translate(0%, -50%);
+				transform: translate(0%, -50%);
+				margin-top: -2px;
+
+				@media (max-width: $breakpoint-tablet){
+					top: 0px;
+					display: none;
+					-ms-transform: translate(0%, 0%);
+					-webkit-transform: translate(0%, 0%);
+					transform: translate(0%, 0%);
+					margin-top: 12px;
+					right: 10px;
+				}
+			}
+			
 
 			@media (max-width: $breakpoint-tablet){
 				display: block;
@@ -111,9 +145,10 @@
 
 			& a{
 				color: #fff;
-				padding: 20px 10px;
-				margin: 15px 15px 0;
+				padding: 34px 15px 30px;
+				// margin: 15px 15px 0;
 				display: block;
+				// background: yellow;
 				font-size: 15px;
 				text-transform: uppercase;
 				font-family: $secondary-font;
@@ -138,10 +173,9 @@
 				&:hover:after{
 					width: 100%;
 				}
+
 			}
-			&:last-child a{
-				margin-right: 0;
-			}
+			
 		}
 	}
 
@@ -153,7 +187,7 @@
 		position: relative;
 		overflow: hidden;
 		display: block;
-		margin-top: 5px;
+		// margin-top: 3px;
 
 		& span{
 			font-family: $primary-font;
@@ -184,6 +218,98 @@
 		&:hover{
 			background-color: $button-bg-hover;
 			color: $button-hover-color;
+		}
+
+		@media (max-width: $breakpoint-tablet){
+			border-radius: 20px;
+			padding: 10px 15px 10px 42px;
+			margin-top: 25px;
+			height: 40px;
+			color: #fff;
+			line-height: 1;
+			white-space: nowrap;
+
+			& img{
+				width: 28px;
+				height: 28px;
+			}
+		}
+		@media (max-width: $breakpoint-mobile){
+			margin-top: 15px;
+		}
+	}
+}
+
+
+.header-nav-dropdown.active:before{
+	-ms-transform: rotate(180deg); /* IE 9 */
+	-webkit-transform: rotate(180deg); /* Safari */
+	transform: rotate(180deg);
+}
+
+.header-nav-dropdown:hover{
+	.dropdown{
+		display: block;
+	}
+}
+.dropdown{
+	position: fixed;
+	display: none;
+	background: #fff;
+	z-index: 100;
+
+	padding: 30px 0;
+	top: 90px;
+	right: 0;
+	text-align: center;
+	width: 100%;
+	border-bottom: 4px solid $color-1;
+
+
+
+	& a{
+		font-size: 18px;
+		color: #000;
+		white-space: nowrap;
+		display: inline-block;
+		// font-family: $primary-font;
+		// text-transform: none;
+
+		&:after{
+			display: block;
+			content: "";
+			height: 2px;
+			background-color: #000;
+			width: 0px;
+			margin-top: 5px;
+			-webkit-transition: all .3s ease 0s;
+			transition: all .3s ease 0s;
+		}
+
+		&:hover:after{
+			width: 100%;
+		}
+	}
+
+	@media (max-width: $breakpoint-tablet){
+		position: relative;
+		background: transparent;
+		display: block;
+		text-align: left;
+		padding: 0;
+		top: 0;
+		z-index: inherit;
+
+
+		& a{
+			// display: block;
+			padding: 0 0 0 5px;
+			font-size: 13px;
+			color: #fff;
+
+			&:after{
+				background: #fff;
+			}
 		}
 	}
 }
@@ -326,13 +452,10 @@
 	margin-top: 25px;
 	// position: absolute;
 	float: right;
-	display: none;
+	// display: none;
 
 	&:hover{
 		background-color: #000;
-	}
-	@media (max-width: $breakpoint-tablet){
-		display: block;
 	}
 	@media (max-width: $breakpoint-mobile){
 		margin-top: 15px;
@@ -342,16 +465,16 @@
 .header-booking-mob{
 	float: right;
 	display: none;
-	line-height: 90px;
+	// line-height: 90px;
 	font-size: 14px;
-	margin-right: 30px;
+	margin-right: 15px;
 	font-weight: 700;
 
 	@media (max-width: $breakpoint-tablet){
 		display: block;
 	}
 	@media (max-width: $breakpoint-mobile){
-		line-height: 70px;
-		margin-right: 20px;
+		// line-height: 70px;
+		margin-right: 10px;
 	}
 }

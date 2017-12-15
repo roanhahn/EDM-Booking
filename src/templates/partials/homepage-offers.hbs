@@ -1,7 +1,4 @@
-<section class="section section--offers text-center" id="offers">
-	
-	{{!-- <h3 class="h3">Choose your stay</h3>  --}}
-
+<div class="category-wrapper">
 	<div class="container">
 		<ul class="category-menu">
 			<li class="active toggle-category" data-toggle="hotels">Regular Hotels</li>
@@ -9,13 +6,19 @@
 			<li class="toggle-category" data-toggle="camping">Camping</li>
 		</ul>
 	</div>
+</div>
+<section class="section section--offers text-center" id="offers">
+	
+	{{!-- <h3 class="h3">Choose your stay</h3>  --}}
+
+	
 
 	<div class="homepage-offer-wrapper">
 		<div id="hotels" class="homepage-category homepage-category--active">
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<p class="subheader m-b-50">We selected the best hotels for you</p>
+						<p class="subheader">Choose your favorite hotel in Amsterdam</p>
 						<div class="scroll-container scroll-container--nowrap">
 							{{> product }}
 							{{> product }}
@@ -32,7 +35,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<p class="subheader">Special AMF Festival Hotels</p>
+						<p class="subheader">Stay with AMF for the full experience</p>
 						<div class="scroll-container scroll-container--nowrap">
 							{{> product }}
 							{{> product }}
@@ -49,7 +52,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col">
-						<p class="subheader m-b-30">Stay in a VIP tent only 300m away from the festival</p>
+						<p class="subheader m-b-30">Come to AMF in a relaxed way without bringing a tent</p>
 						<div class="scroll-container scroll-container--nowrap">
 							{{> tent }}
 							{{> tent }}

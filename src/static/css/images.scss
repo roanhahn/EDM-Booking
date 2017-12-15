@@ -57,7 +57,40 @@
 		}
 	}
 }
+.img-curved{
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	margin-bottom: 70px;
 
+	@media (max-width: $breakpoint-mobile){
+		margin-bottom: 0;
+	}
+}
 .img-fluid{
 	width: 100%;
+}
+
+.owl-pictures .owl-dots{
+	margin: -30px 0 7px 0 !important;
+	z-index: 10;
+	position: relative;
+}
+
+.owl-dots span{
+	width: 8px !important;
+	height: 8px !important;
+	background-color: #fff !important;
+	margin: 4px !important;
+}
+
+.owl-dot.active span{
+	background-color: $color-1 !important;
+}
+
+.roan{
+	// position: absolute;
+	// left: 0;
+	// width: 100%;
+	// top: 0;
 }

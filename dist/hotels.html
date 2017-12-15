@@ -30,22 +30,39 @@
 		<div class="header-logo">
 			<a href="homepage.html" title="Title goes here">
 				<img src="assets/img/amf/logo.png" alt="AMF Festival Travelsite">
-				<span>Official Travelpackages</span>
+				<span class="d-none d-sm-inline-block">Official Travel Packages</span>
 			</a>
 		</div>
 		<nav class="header-nav">
 			<ul class="header-nav-list">
-				<li class="header-nav-listitem"><a href="hotels.html" title="">Packages</a></li>
+				<li class="header-nav-listitem header-nav-dropdown">
+					<a href="#" title="">
+						Packages
+					</a>
+					<div class="dropdown" id="Packages">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-4"><a href="hotels.html">Regular Hotels Packages</a></div>
+								<div class="col-lg-4"><a href="hotels.html">AMF Hotels Packages</a></div>
+								<div class="col-lg-4"><a href="hotels.html">Camping Packages</a></div>
+							</div>
+						</div>
+					</div>
+				</li>
 				
-				<li class="header-nav-listitem"><a href="info.html" title="">More info</a></li>
+				<li class="header-nav-listitem"><a href="info.html" title="" class="">More info</a></li>
 				<li class="header-nav-listitem mobile-menu-no">
-					<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"> <span class="euro">&euro;</span> 469</a>
+					
+					<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"><span class="euro">&euro;</span> 469</a>
+					
 				</li>
 			</ul>
 		</nav>
-		<button class="nav-mobile-btn"></button>
+		<button class="nav-mobile-btn d-lg-none"></button>
 		<div class="header-booking-mob">
-			My booking
+			
+			<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"><span class="euro">&euro;</span> 469</a>
+			
 		</div>
 	</div>
 </header>
@@ -55,29 +72,73 @@
 
 <section class="section">
 	<div class="container">
-		<div class="alert alert-warning text-center m-b-30" role="alert">Note! There are no festival tickets included in the Hotel packages! To book a festival ticket, please select it in the personal extras!</div>
-		<h3 class="h3">All AMF Hotels<small>We have <span>24</span> great hotels for you too choose out.</small></h3>
-		<div class="row">
-			<div class="col">
+		
 
-				<form class="sort">		
-					<select >
-						<option selected="selected">Sort</option>
-						<option>Price high-low</option>
-						<option>Price low-high</option>
-					</select>
 
-				</form>
-				<button class="button d-block d-lg-none">Filter hotels</button>
+		<h3 class="h3">All Regular Hotels<small>We have selected <span>24</span> great hotels for you.</small></h3>
+		<div>
+			<ul class="cat-menu">
+				<li class="active"><a href="hotels.html">Regular Hotels</a></li>
+				<li><a href="hotels.html">AMF Hotels</a></li>
+				<li><a href="hotels.html">Camping</a></li>
+			</ul>
+		</div>
+		<div>
+			<filter>
+	<div class="row">
+		<div class="col-2">
+			<div class="">
+				<div class="form-group">
+					<div class="input-group date" data-provide="datepicker">
+						<input type="text" class="form-control" placeholder="Arrival date">
+						<div class="input-group-addon">
+							<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+		<div class="col-2">
+			<div class="">
+				<div class="form-group">
+					<div class="input-group date" data-provide="datepicker">
+						<input type="text" class="form-control" placeholder="Departure date">
+						<div class="input-group-addon">
+							<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-2">
+			<div class="">		
+				<div class="form-group">
+					<select>
+						<option value="price_l2h">Sort by</option>
+						<option value="price_l2h">Price (low to high)</option>
+						<option value="price_h2l">Price (high to low)</option>
+						<option value="distance_l2h">Distance to event (low to high)</option>
+						<option value="distance_h2l">Distance to event (high to low)</option>
+						<option value="rating_l2h">Rating (low to high)</option>
+						<option value="rating_h2l">Rating (high to low)</option>
+					</select>
+				</div>
+			</div>
+		</div>
+	</div>
+</filter>
+		</div>
+		
 		<div class="row">
-			<div class="col-md-12 col-lg-9 order-1 order-lg-2 text-center">
+			<div class=" col text-center">
 				<div class="scroll-container">
 					<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -85,7 +146,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -99,8 +165,11 @@
 </a>
 					<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -108,7 +177,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -122,8 +196,11 @@
 </a>
 					<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -131,7 +208,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -145,8 +227,11 @@
 </a>
 					<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -154,7 +239,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -168,8 +258,11 @@
 </a>
 					<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -177,7 +270,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -191,8 +289,11 @@
 </a>
 					<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -200,7 +301,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -214,8 +320,11 @@
 </a>
 					<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -223,7 +332,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -237,8 +351,11 @@
 </a>
 					<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -246,7 +363,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -260,8 +382,11 @@
 </a>
 					<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -269,7 +394,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -283,145 +413,42 @@
 </a>
 				</div>
 			</div>
-			<div class="col-md-3 order-2 order-lg-1 d-none d-lg-block">
-				<form class="filter">
-	<label for="" class="filter-label">Type</label>
-	<div class="filter-group">
-		<div class="form-group">
 			
-			<select>
-				<option selected="selected">Regular hotels</option>
-				<option>AMF Hotels</option>
-				<option>Camping</option>
-			</select>
-			
 		</div>
-	</div>
 
-	<label for="" class="filter-label">Arrival date</label>
-	<div class="filter-group">
-		<div class="form-group">
-			<div class="input-group date" data-provide="datepicker">
-				<input type="text" class="form-control" placeholder="Arrival date">
-				<div class="input-group-addon">
-					<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+		
+
+
+	</div>
+</section>
+<section class="section">
+	<h3 class="h3 text-center">AMF Camping</h3>
+	<p class="subheader text-center">It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+	<div class="container">
+		<div class="row no-gutters">
+			<div class="col-md-7 wow fadeIn" data-wow-duration=".5s" data-wow-delay=".2s">
+				<img src="assets/img/camping1.jpg" alt="" class="img-fluid img-curved">
+			</div>
+			<div class="col-md-5">
+				<div class="curved text-center wow fadeIn" data-wow-duration=".5s" data-wow-delay="0s">
+					<img src="assets/img/tent.svg" class="curved-icon">
+					<h3>Pre-build tents</h3>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+					<a href="#" class="button">Download</a>
 				</div>
 			</div>
 		</div>
-	</div>
-
-	<label for="" class="filter-label">Departure date</label>
-	<div class="filter-group">
-		<div class="form-group">
-			<div class="input-group date" data-provide="datepicker">
-				<input type="text" class="form-control" placeholder="Departure date">
-				<div class="input-group-addon">
-					<span class="glyphicon glyphicon-th"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+		<div class="row no-gutters">
+			<div class="col-md-5 order-2 order-md-1 wow fadeInLeft" data-wow-duration=".5s" data-wow-delay="0s">
+				<div class="curved curved-left text-center">
+					<img src="assets/img/tent.svg" class="curved-icon">
+					<h3>Camping Packages</h3>
+					<p>A spot on our camping in a pre-set tent. Access to our exclusive pre- and afterparties, on Friday and Saturday evening. Access both festival days on Saturday and Sunday.</p>
+					<a href="#" class="button">Download</a>
 				</div>
 			</div>
-		</div>
-	</div>
-
-	<label for="" class="filter-label">Guests</label>
-	<div class="filter-group">		
-		<div class="form-group">
-			<input type="number" class="form-control" value="1">
-		</div>
-	</div>
-
-	
-
-	<label for="" class="filter-label">Price</label>
-	<div class="filter-group">		
-		<div class="form-group">
-			<div class="form-check">
-				<label class="form-check-label filter-label-big">
-					<input type="checkbox" class="form-check-input">
-					Double Room
-				</label>
-				<label class="form-check-label filter-label-big">
-					<input type="checkbox" class="form-check-input">
-					Twin Room
-				</label>
-				<label class="form-check-label filter-label-big">
-					<input type="checkbox" class="form-check-input">
-					Single Room
-				</label>
-			</div>
-		</div>
-	</div>
-
-	<label for="" class="filter-label">Price</label>
-	<div class="filter-group">		
-		<div class="form-group">
-			<div class="form-check">
-				<label class="form-check-label filter-label-big">
-					<input type="checkbox" class="form-check-input">
-					&euro;0 - &euro;300
-				</label>
-				<label class="form-check-label filter-label-big">
-					<input type="checkbox" class="form-check-input">
-					&euro;301 - &euro;600
-				</label>
-				<label class="form-check-label filter-label-big">
-					<input type="checkbox" class="form-check-input">
-					&euro;601 - &euro;900
-				</label>
-			</div>
-		</div>
-	</div>
-
-	<label for="" class="filter-label">Distance to venue</label>
-	<div class="filter-group">		
-		<div class="form-group">
-			<div class="form-check">
-				<label class="form-check-label filter-label-big">
-					<input type="checkbox" class="form-check-input">
-					0 km - 5 km
-				</label>
-				<label class="form-check-label filter-label-big">
-					<input type="checkbox" class="form-check-input">
-					5 km - 10 km
-				</label>
-				<label class="form-check-label filter-label-big">
-					<input type="checkbox" class="form-check-input">
-					10 km +
-				</label>
-			</div>
-		</div>
-	</div>
-
-	<label for="" class="filter-label">Stars</label>
-	<div class="filter-group">
-		<div class="form-group">
-			<label class="form-check-label">
-				<input type="checkbox" class="form-check-input">
-				<i class="fa fa-star" aria-hidden="true"></i>
-			</label>
-
-			<label class="form-check-label">
-				<input type="checkbox" class="form-check-input">
-				<i class="fa fa-star" aria-hidden="true"></i>
-				<i class="fa fa-star" aria-hidden="true"></i>
-			</label>
-
-			<label class="form-check-label">
-				<input type="checkbox" class="form-check-input">
-				<i class="fa fa-star" aria-hidden="true"></i>
-				<i class="fa fa-star" aria-hidden="true"></i>
-				<i class="fa fa-star" aria-hidden="true"></i>
-			</label>
-
-			<label class="form-check-label">
-				<input type="checkbox" class="form-check-input">
-				<i class="fa fa-star" aria-hidden="true"></i>
-				<i class="fa fa-star" aria-hidden="true"></i>
-				<i class="fa fa-star" aria-hidden="true"></i>
-				<i class="fa fa-star" aria-hidden="true"></i>
-			</label>
-		</div>
-	</div>
-</form>
+			<div class="col-md-7 order-1 order-md-2 wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".2s">
+				<img src="assets/img/camping2.jpg" alt="" class="img-fluid img-curved">
 			</div>
 		</div>
 	</div>
@@ -432,7 +459,7 @@
 			<div class="row">
 				<div class="col text-center">
 					<h3 class="h3">NEED HELP?</h3>
-					<p class="subheader">Contact us 24/7 via whatsApp or email for special wishes or questions</p>
+					<p class="subheader">Questions or special wishes?<br />Contact us 24/7 via e-mail or WhatsApp.</p>
 					
 				</div>
 			</div>
@@ -462,7 +489,9 @@
 
 				<ul class="footer-logos reveal">
 					<li><img src="https://daks2k3a4ib2z.cloudfront.net/59ea0080c3e5160001edb56a/59ea0f76c3e5160001edc727_logo-ams.png" alt="AMF Festival"></li>
-					
+					<li><a href="#" title=""><img src="assets/img/edm-white.png" alt="EDM Booking"></a></li>
+					<li><a href="#" title=""><img src="https://pbs.twimg.com/profile_images/694170814577442816/qizlUJpz.png" alt="ALDA"></a></li>
+					<li><a href="#" title=""><img src="https://www.valtech.nl/siteassets/cases/radio-538/radio_538-2.png" alt="RADIO 538"></a></li>
 				</ul>
 				<p class="copyright reveal">
 					© 2017 AMF Festival - <a href="#" title="EDM Booking">powered by EDM Booking</a>
@@ -478,7 +507,7 @@
 		</div>
 	</div>
 </footer>
-<div class="cookies d-none">
+<div class="cookies">
 	<button class="hide-cookies"><img src="assets/img/close-white.svg"></button>
 	<p>Cookies are used to provide you with the best experience and service. By visiting our website, you consent to the use of <a href="#" title="">cookies</a></p>
 </div>
@@ -493,11 +522,12 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<script src="assets/js/plugins/owl.carousel.min.js"></script>
-	<script src="assets/js/plugins/scrollreveal.min.js"></script>
+	<script src="assets/js/plugins/wow.js"></script>
 	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
 	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/plugins/jquery.fancybox.min.js"></script>
 	<script src="assets/js/app.js"></script>
+	
 	
 	
 	<!-- Plugins -->

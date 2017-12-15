@@ -215,6 +215,21 @@ $(".nav-mobile-btn").click(function() {
 });
 
 
+
+// WOW JS
+
+wow = new WOW(
+  {
+  boxClass:     'wow',      // default
+  animateClass: 'animated', // default
+  offset:       70,          // default
+  mobile:       true,       // default
+  live:         true        // default
+}
+)
+wow.init();
+
+
 // INFO PAGE & FAQ
 
 $(".info-label").click(function() {
@@ -239,6 +254,25 @@ $(".info-list-item").click(function() {
 		$(question).find(".info-list-question").addClass("active");
 	}
 });
+
+// Toggle
+
+$('*[data-type="toggle"]').click(function()
+{
+	var toggletarget = $(this).data('target');
+	$(toggletarget).fadeToggle("fast");
+});
+
+
+// Dropdown
+
+// $('*[data-toggle="dropdown"]').click(function()
+// {
+// 	var dropdowntarget = $(this).data('target');
+// 	// console.log(dropdowntarget);
+// 	$(this).toggleClass('active');
+// 	$(dropdowntarget).fadeToggle();
+// });
 
 
 // EXTRA CART INFO
@@ -265,14 +299,14 @@ $(window).scroll(function() {
 
 
 
-	// if(sitewidth < 768){
-	// 	if (scroll >= 200) {
-	// 		$(".mobile-book").fadeIn(200);
-	// 	}
-	// 	else {
-	// 		$(".mobile-book").fadeOut(200);
-	// 	}
-	// }
+	if(sitewidth < 768){
+		if (scroll >= 200) {
+			$(".mobile-book").fadeIn(200);
+		}
+		else {
+			$(".mobile-book").fadeOut(200);
+		}
+	}
 	
 });
 
@@ -280,7 +314,14 @@ $(window).scroll(function() {
 $(".scroll").click(function() {
 	var whereto = $(this).data('scroll');
 	console.log(whereto);
-	$('html,body').animate({scrollTop: $("#" + whereto).offset().top-headerheight}, 1000, 'easeInOutCubic');
+
+	if(sitewidth >= 768){
+		$('html,body').animate({scrollTop: $(whereto).offset().top-headerheight}, 1000, 'easeInOutCubic');
+	}
+	else{
+		$('html,body').animate({scrollTop: $(whereto).offset().top}, 1000, 'easeInOutCubic');
+		// alert("Blaat");
+	}
 	return false;
 });
 
@@ -352,6 +393,35 @@ $(document).ready(function() {
 			},
 			1200: {
 				items: 4
+			}
+		}
+	})
+
+	var owl = $('.owl-pictures');
+	owl.owlCarousel({
+		responsiveRefreshRate: 200, 
+		margin: 15,
+		nav: false,
+		loop: false,
+		dots: true,
+		animateOut: 'slideOutLeft',
+		animateIn: 'slideInRight',
+		autoplay:false,
+		autoplayTimeout:5000,
+		loop: true,
+		autoplayHoverPause:true,
+		responsive: {
+			0: {
+				items: 1
+			},
+			768: {
+				items: 1
+			},
+			1000: {
+				items: 1
+			},
+			1200: {
+				items: 1
 			}
 		}
 	})

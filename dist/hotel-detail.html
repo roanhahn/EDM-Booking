@@ -30,22 +30,39 @@
 		<div class="header-logo">
 			<a href="homepage.html" title="Title goes here">
 				<img src="assets/img/amf/logo.png" alt="AMF Festival Travelsite">
-				<span>Official Travelpackages</span>
+				<span class="d-none d-sm-inline-block">Official Travel Packages</span>
 			</a>
 		</div>
 		<nav class="header-nav">
 			<ul class="header-nav-list">
-				<li class="header-nav-listitem"><a href="hotels.html" title="">Packages</a></li>
+				<li class="header-nav-listitem header-nav-dropdown">
+					<a href="#" title="">
+						Packages
+					</a>
+					<div class="dropdown" id="Packages">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-4"><a href="hotels.html">Regular Hotels Packages</a></div>
+								<div class="col-lg-4"><a href="hotels.html">AMF Hotels Packages</a></div>
+								<div class="col-lg-4"><a href="hotels.html">Camping Packages</a></div>
+							</div>
+						</div>
+					</div>
+				</li>
 				
-				<li class="header-nav-listitem"><a href="info.html" title="">More info</a></li>
+				<li class="header-nav-listitem"><a href="info.html" title="" class="">More info</a></li>
 				<li class="header-nav-listitem mobile-menu-no">
-					<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"> <span class="euro">&euro;</span> 469</a>
+					
+					<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"><span class="euro">&euro;</span> 469</a>
+					
 				</li>
 			</ul>
 		</nav>
-		<button class="nav-mobile-btn"></button>
+		<button class="nav-mobile-btn d-lg-none"></button>
 		<div class="header-booking-mob">
-			My booking
+			
+			<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"><span class="euro">&euro;</span> 469</a>
+			
 		</div>
 	</div>
 </header>
@@ -59,23 +76,51 @@
 				<div class="mobile-book-price"><span>Starting from</span>&euro; 356,-<span>per person</span></div>
 			</div>
 			<div class="col-6">
-				<a href="#" class="button">Select room</a>
+				<a href="#" class="button scroll" data-scroll="#rooms">Select your room</a>
 			</div>
 		</div>
+	</div>
+</div>
+
+<div class="d-lg-none mobile-pictures">
+	<div class="owl-carousel owl-theme owl-pictures">
+		<div class="item">
+			<img src="assets/img/room1.jpg" alt="" class="img-fluid" />
+		</div>
+		<div class="item">
+			<img src="assets/img/room2.jpg" alt="" class="img-fluid" />
+		</div>
+		<div class="item">
+			<img src="assets/img/room3.jpg" alt="" class="img-fluid" />
+		</div>
+		<div class="item">
+			<img src="assets/img/room4.jpg" alt="" class="img-fluid" />
+		</div>
+	</div>
+</div>
+
+<div class="checkout d-none d-lg-block">
+	<div class="container">
+		<ul>
+			<li class="active"><span>Accomodation</span></li>
+			<li><span>Extra's</span></li>
+			<li><span>Details</span></li>
+			<li><span>Pay</span></li>
+		</ul>
 	</div>
 </div>
 
 <section class="section section--details details">
 	<div class="container">
 		<div class="row">
-			<div class="order-2 order-md-1 col-md-7">
+			<div class="order-2 order-lg-1 col-lg-7">
 				<h1 class="h1">Volkshotel Amsterdam</h1>
 				<p class="intro">"Great hub in the centre of Amsterdam"</p>
 				<div class="row">
 					<div class="col">
 						<div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
 						<div class="product-showonmap">
-							<a href="#" class="scroll" data-scroll="googleMaps">Show on map</a>
+							<a href="#" class="scroll" data-scroll="#googleMaps">Show on map</a>
 						</div>
 						<div class="product-rating">
 							<img src="assets/img/amf/star-amf-full.svg">
@@ -87,6 +132,7 @@
 					</div>
 				</div>
 				<div class="details-content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit iaculis ante, vitae lacinia risus viverra in. Pellentesque malesuada in elit a hendrerit. Vivamus sit amet urna in nisl pellentesque convallis. Nullam bibendum vestibulum risus quis varius. Curabitur vestibulum porttitor faucibus. Quisque lectus justo, pretium ac malesuada ut, mattis nec tortor. Vivamus pharetra ut quam et bibendum. Nulla efficitur ultrices arcu, ut malesuada justo condimentum mollis.</p>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc hendrerit iaculis ante, vitae lacinia risus viverra in. Pellentesque malesuada in elit a hendrerit. Vivamus sit amet urna in nisl pellentesque convallis. Nullam bibendum vestibulum risus quis varius. Curabitur vestibulum porttitor faucibus. Quisque lectus justo, pretium ac malesuada ut, mattis nec tortor. Vivamus pharetra ut quam et bibendum. Nulla efficitur ultrices arcu, ut malesuada justo condimentum mollis.</p>
 					<ul>
 						<li>Listitem</li>
@@ -100,7 +146,7 @@
 					
 
 					<div class="product-map" id="googleMaps">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.4813319550435!2d4.791810451598501!3d52.325413558284446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e112f81e698b%3A0x6eecac31d92f40fa!2sHotel+ibis+budget+Amsterdam+Airport!5e0!3m2!1snl!2snl!4v1512384129777" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2438.4813319550435!2d4.791810451598501!3d52.325413558284446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5e112f81e698b%3A0x6eecac31d92f40fa!2sHotel+ibis+budget+Amsterdam+Airport!5e0!3m2!1snl!2snl!4v1512384129777" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 					
 					<div class="address">
@@ -111,36 +157,37 @@
 					</div>
 				</div>
 			</div>
-			<div class="order-1 order-md-2 col-md-5 detail-right">
-				<div class="lightbox clearfix">
-					<div class="product-label">Populair</div>
-					<a href="assets/img/room.jpg" data-fancybox="group" data-caption="Some text goes here" class="featured">
-						<img src="assets/img/hotel-1.jpg" alt="" class="img-fluid" />
-					</a>
-					<a href="assets/img/room2.jpg" data-fancybox="group" data-caption="Some text goes here">
-						<img src="assets/img/hotel-2.jpg" alt="" class="img-fluid" />
-					</a>
-					<a href="assets/img/room.jpg" data-fancybox="group" data-caption="Some text goes here">
-						<img src="assets/img/hotel-3.jpg" alt="" class="img-fluid" />
-					</a>
-					<a href="assets/img/room2.jpg" data-fancybox="group" data-caption="Some text goes here">
-						<div class="amount"><span>+ 30 photos</span></div>
-						<img src="assets/img/hotel-4.jpg" alt="" class="img-fluid" />
-					</a>
-					<div class="lightbox-all">
-						<a href="assets/img/room3.jpg" data-fancybox="group" data-caption="Some text goes here"></a>
-						<a href="assets/img/room4.jpg" data-fancybox="group" data-caption="Some text goes here"></a>
+			<div class="order-1 order-lg-2 col-lg-5 detail-right scroller">
+				
+				<div data-scroll="true">
+					<div class="d-none d-lg-block lightbox clearfix">
+						<div class="product-label">Populair</div>
+						<a href="assets/img/room1.jpg" data-fancybox="group" data-caption="Some text goes here" class="featured">
+							<img src="assets/img/room1.jpg" alt="" class="img-fluid" />
+						</a>
+						<a href="assets/img/room2.jpg" data-fancybox="group" data-caption="Some text goes here">
+							<img src="assets/img/room2.jpg" alt="" class="img-fluid" />
+						</a>
+						<a href="assets/img/room3.jpg" data-fancybox="group" data-caption="Some text goes here">
+							<img src="assets/img/room3.jpg" alt="" class="img-fluid" />
+						</a>
+						<a href="assets/img/room4.jpg" data-fancybox="group" data-caption="Some text goes here">
+							<div class="amount"><span>+ 30 photos</span></div>
+							<img src="assets/img/room4.jpg" alt="" class="img-fluid" />
+						</a>
+						<div class="lightbox-all">
+							<a href="assets/img/room1.jpg" data-fancybox="group" data-caption="Some text goes here"></a>
+							<a href="assets/img/room2.jpg" data-fancybox="group" data-caption="Some text goes here"></a>
+						</div>
+					</div>
+					<div class="d-none d-lg-block">
+						<a href="#" class="button button--block scroll" data-scroll="#rooms">Select your room</a>
+					</div>
+					<div class="product-price d-none d-lg-block">
+						<div class="amount">&euro; 356,- <span>/ Starting from per person</span></div>
+						
 					</div>
 				</div>
-				<div>
-					<a href="#" class="button button--block scroll" data-scroll="rooms">Select your room</a>
-				</div>
-				<div class="product-price">
-					<div class="amount">&euro; 356,- <span>/ Starting from per person</span></div>
-					<hr class="hr" />
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt luctus tortor, non venenatis libero pulvinar fermentum. Phasellus augue metus, aliquam ut nisi non, mattis bibendum erat.</p>
-				</div>
-				
 			</div>
 		</div>
 	</div>
@@ -193,11 +240,7 @@
 	</div>
 </form>
 
-<div class="spinner">
-	<div class="bounce1"></div>
-	<div class="bounce2"></div>
-	<div class="bounce3"></div>
-</div>
+
 
 
 <section class="section section--rooms rooms">
@@ -217,60 +260,75 @@
 			<div class="col-lg-10 offset-lg-1">
 				
 				<div class="room">
-	<div class="row">
-		<div class="col-4 col-md-3">
-			<img src="assets/img/roomitem.jpg" alt="" class="img-fluid">
-		</div>
-		<div class="col room-content">
-			<div class="room-title">Double standard - bed and breakfast: sleeps 2, 1 bed</div>
-			<div class="row">
-				<div class="col room-max">Max:<img src="assets/img/person.svg">x 2</div>
-			</div>
-			<p class="room-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt luctus tortor, non venenatis libero pulvinar fermentum. Phasellus augue metus, aliquam ut nisi non, mattis bibendum erat. Aliquam volutpat lacus odio, ut ornare ex porta ut.</p>
-		</div>
-	</div>
-	<div class="room-price clearfix">
+	<div class="row no-gutters">
 		
-		€ 104 <span>/ total price</span>
-		<a href="#" class="button">Book room</a>
+		<div class="col">
+			<div class="row no-gutters">
+				<div class="col-sm-8">
+					<div class="room-content">
+						<div class="room-title">Standard Double Room</div>
+						<div class="room-max">Max:<img src="assets/img/person.svg">x 2</div>
+						<p class="room-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div class="col-sm-4 text-right">
+					<div class="room-price clearfix">
+						<div class="room-price-amount">
+							€ 104 <span>total price per person</span>
+						</div>
+						<a href="#" class="button button--small">Book this room</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 				<div class="room">
-	<div class="row">
-		<div class="col-4 col-md-3">
-			<img src="assets/img/roomitem.jpg" alt="" class="img-fluid">
-		</div>
-		<div class="col room-content">
-			<div class="room-title">Double standard - bed and breakfast: sleeps 2, 1 bed</div>
-			<div class="row">
-				<div class="col room-max">Max:<img src="assets/img/person.svg">x 2</div>
-			</div>
-			<p class="room-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt luctus tortor, non venenatis libero pulvinar fermentum. Phasellus augue metus, aliquam ut nisi non, mattis bibendum erat. Aliquam volutpat lacus odio, ut ornare ex porta ut.</p>
-		</div>
-	</div>
-	<div class="room-price clearfix">
+	<div class="row no-gutters">
 		
-		€ 104 <span>/ total price</span>
-		<a href="#" class="button">Book room</a>
+		<div class="col">
+			<div class="row no-gutters">
+				<div class="col-sm-8">
+					<div class="room-content">
+						<div class="room-title">Standard Double Room</div>
+						<div class="room-max">Max:<img src="assets/img/person.svg">x 2</div>
+						<p class="room-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div class="col-sm-4 text-right">
+					<div class="room-price clearfix">
+						<div class="room-price-amount">
+							€ 104 <span>total price per person</span>
+						</div>
+						<a href="#" class="button button--small">Book this room</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 				<div class="room">
-	<div class="row">
-		<div class="col-4 col-md-3">
-			<img src="assets/img/roomitem.jpg" alt="" class="img-fluid">
-		</div>
-		<div class="col room-content">
-			<div class="room-title">Double standard - bed and breakfast: sleeps 2, 1 bed</div>
-			<div class="row">
-				<div class="col room-max">Max:<img src="assets/img/person.svg">x 2</div>
-			</div>
-			<p class="room-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt luctus tortor, non venenatis libero pulvinar fermentum. Phasellus augue metus, aliquam ut nisi non, mattis bibendum erat. Aliquam volutpat lacus odio, ut ornare ex porta ut.</p>
-		</div>
-	</div>
-	<div class="room-price clearfix">
+	<div class="row no-gutters">
 		
-		€ 104 <span>/ total price</span>
-		<a href="#" class="button">Book room</a>
+		<div class="col">
+			<div class="row no-gutters">
+				<div class="col-sm-8">
+					<div class="room-content">
+						<div class="room-title">Standard Double Room</div>
+						<div class="room-max">Max:<img src="assets/img/person.svg">x 2</div>
+						<p class="room-intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+					</div>
+				</div>
+				<div class="col-sm-4 text-right">
+					<div class="room-price clearfix">
+						<div class="room-price-amount">
+							€ 104 <span>total price per person</span>
+						</div>
+						<a href="#" class="button button--small">Book this room</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 			</div>
@@ -284,7 +342,7 @@
 			<div class="row">
 				<div class="col text-center">
 					<h3 class="h3">NEED HELP?</h3>
-					<p class="subheader">Contact us 24/7 via whatsApp or email for special wishes or questions</p>
+					<p class="subheader">Questions or special wishes?<br />Contact us 24/7 via e-mail or WhatsApp.</p>
 					
 				</div>
 			</div>
@@ -314,7 +372,9 @@
 
 				<ul class="footer-logos reveal">
 					<li><img src="https://daks2k3a4ib2z.cloudfront.net/59ea0080c3e5160001edb56a/59ea0f76c3e5160001edc727_logo-ams.png" alt="AMF Festival"></li>
-					
+					<li><a href="#" title=""><img src="assets/img/edm-white.png" alt="EDM Booking"></a></li>
+					<li><a href="#" title=""><img src="https://pbs.twimg.com/profile_images/694170814577442816/qizlUJpz.png" alt="ALDA"></a></li>
+					<li><a href="#" title=""><img src="https://www.valtech.nl/siteassets/cases/radio-538/radio_538-2.png" alt="RADIO 538"></a></li>
 				</ul>
 				<p class="copyright reveal">
 					© 2017 AMF Festival - <a href="#" title="EDM Booking">powered by EDM Booking</a>
@@ -330,7 +390,7 @@
 		</div>
 	</div>
 </footer>
-<div class="cookies d-none">
+<div class="cookies">
 	<button class="hide-cookies"><img src="assets/img/close-white.svg"></button>
 	<p>Cookies are used to provide you with the best experience and service. By visiting our website, you consent to the use of <a href="#" title="">cookies</a></p>
 </div>
@@ -345,12 +405,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<script src="assets/js/plugins/owl.carousel.min.js"></script>
-	<script src="assets/js/plugins/scrollreveal.min.js"></script>
+	<script src="assets/js/plugins/wow.js"></script>
 	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
 	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/plugins/jquery.fancybox.min.js"></script>
 	<script src="assets/js/app.js"></script>
 	
+	<script src="assets/js/scroller.js"></script>
 	
 	<!-- Plugins -->
 	

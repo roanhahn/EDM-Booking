@@ -3,22 +3,41 @@
 		<div class="header-logo">
 			<a href="homepage.html" title="Title goes here">
 				<img src="assets/img/amf/logo.png" alt="AMF Festival Travelsite">
-				<span>Official Travelpackages</span>
+				<span class="d-none d-sm-inline-block">Official Travel Packages</span>
 			</a>
 		</div>
 		<nav class="header-nav">
 			<ul class="header-nav-list">
-				<li class="header-nav-listitem"><a href="hotels.html" title="">Packages</a></li>
+				<li class="header-nav-listitem header-nav-dropdown">
+					<a href="#" title="">
+						Packages
+					</a>
+					<div class="dropdown" id="Packages">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-4"><a href="hotels.html">Regular Hotels Packages</a></div>
+								<div class="col-lg-4"><a href="hotels.html">AMF Hotels Packages</a></div>
+								<div class="col-lg-4"><a href="hotels.html">Camping Packages</a></div>
+							</div>
+						</div>
+					</div>
+				</li>
 				{{!-- <li class="header-nav-listitem"><a href="#" title="" class="scroll" data-scroll="whybook">Why book</a></li> --}}
-				<li class="header-nav-listitem"><a href="info.html" title="">More info</a></li>
+				<li class="header-nav-listitem"><a href="info.html" title="" class="">More info</a></li>
 				<li class="header-nav-listitem mobile-menu-no">
-					<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg">{{#if type}} <span class="euro">&euro;</span> 469{{else}}My Booking{{/if}}</a>
+					{{#if type}}
+					<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"><span class="euro">&euro;</span> 469</a>
+					{{else}}
+					<a href="login.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg">My Booking</a>{{/if}}
 				</li>
 			</ul>
 		</nav>
-		<button class="nav-mobile-btn"></button>
+		<button class="nav-mobile-btn d-lg-none"></button>
 		<div class="header-booking-mob">
-			My booking
+			{{#if type}}
+			<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"><span class="euro">&euro;</span> 469</a>
+			{{else}}
+			<a href="login.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg">My Booking</a>{{/if}}
 		</div>
 	</div>
 </header>

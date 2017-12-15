@@ -30,22 +30,39 @@
 		<div class="header-logo">
 			<a href="homepage.html" title="Title goes here">
 				<img src="assets/img/amf/logo.png" alt="AMF Festival Travelsite">
-				<span>Official Travelpackages</span>
+				<span class="d-none d-sm-inline-block">Official Travel Packages</span>
 			</a>
 		</div>
 		<nav class="header-nav">
 			<ul class="header-nav-list">
-				<li class="header-nav-listitem"><a href="hotels.html" title="">Packages</a></li>
+				<li class="header-nav-listitem header-nav-dropdown">
+					<a href="#" title="">
+						Packages
+					</a>
+					<div class="dropdown" id="Packages">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-4"><a href="hotels.html">Regular Hotels Packages</a></div>
+								<div class="col-lg-4"><a href="hotels.html">AMF Hotels Packages</a></div>
+								<div class="col-lg-4"><a href="hotels.html">Camping Packages</a></div>
+							</div>
+						</div>
+					</div>
+				</li>
 				
-				<li class="header-nav-listitem"><a href="info.html" title="">More info</a></li>
+				<li class="header-nav-listitem"><a href="info.html" title="" class="">More info</a></li>
 				<li class="header-nav-listitem mobile-menu-no">
-					<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"> <span class="euro">&euro;</span> 469</a>
+					
+					<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"><span class="euro">&euro;</span> 469</a>
+					
 				</li>
 			</ul>
 		</nav>
-		<button class="nav-mobile-btn"></button>
+		<button class="nav-mobile-btn d-lg-none"></button>
 		<div class="header-booking-mob">
-			My booking
+			
+			<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"><span class="euro">&euro;</span> 469</a>
+			
 		</div>
 	</div>
 </header>
@@ -54,9 +71,9 @@
 
 
 
-<div class="slope">
-	<div class="container">
-		<div class="col" style="height: 500px; background: #000;">asdadasd</div>
+<div class="scroller" style="height: 800px; background: yellow; padding: 70px;">
+	<div data-scroll="true" style="width: 400px; height: 400px; background: red;">
+		asdadsad
 	</div>
 </div>
 		<div class="site-background">
@@ -79,7 +96,9 @@
 
 				<ul class="footer-logos reveal">
 					<li><img src="https://daks2k3a4ib2z.cloudfront.net/59ea0080c3e5160001edb56a/59ea0f76c3e5160001edc727_logo-ams.png" alt="AMF Festival"></li>
-					
+					<li><a href="#" title=""><img src="assets/img/edm-white.png" alt="EDM Booking"></a></li>
+					<li><a href="#" title=""><img src="https://pbs.twimg.com/profile_images/694170814577442816/qizlUJpz.png" alt="ALDA"></a></li>
+					<li><a href="#" title=""><img src="https://www.valtech.nl/siteassets/cases/radio-538/radio_538-2.png" alt="RADIO 538"></a></li>
 				</ul>
 				<p class="copyright reveal">
 					© 2017 AMF Festival - <a href="#" title="EDM Booking">powered by EDM Booking</a>
@@ -95,7 +114,7 @@
 		</div>
 	</div>
 </footer>
-<div class="cookies d-none">
+<div class="cookies">
 	<button class="hide-cookies"><img src="assets/img/close-white.svg"></button>
 	<p>Cookies are used to provide you with the best experience and service. By visiting our website, you consent to the use of <a href="#" title="">cookies</a></p>
 </div>
@@ -110,12 +129,13 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 	<script src="assets/js/plugins/owl.carousel.min.js"></script>
-	<script src="assets/js/plugins/scrollreveal.min.js"></script>
+	<script src="assets/js/plugins/wow.js"></script>
 	<script src="assets/js/plugins/bootstrap-datepicker.min.js"></script>
 	<script src="assets/js/plugins/jquery.selectric.min.js"></script>
 	<script src="assets/js/plugins/jquery.fancybox.min.js"></script>
 	<script src="assets/js/app.js"></script>
 	
+	<script src="assets/js/scroller.js"></script>
 	
 	<!-- Plugins -->
 	
