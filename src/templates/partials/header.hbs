@@ -10,7 +10,7 @@
 			<ul class="header-nav-list">
 				<li class="header-nav-listitem header-nav-dropdown">
 					<a href="#" title="">
-						Packages
+						<span>Packages</span>
 					</a>
 					<div class="dropdown" id="Packages">
 						<div class="container">
@@ -24,14 +24,27 @@
 				</li>
 				{{!-- <li class="header-nav-listitem"><a href="#" title="" class="scroll" data-scroll="whybook">Why book</a></li> --}}
 				<li class="header-nav-listitem"><a href="info.html" title="" class="">More info</a></li>
+
 				<li class="header-nav-listitem mobile-menu-no">
 					{{#if type}}
 					<a href="cart-extras.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg"><span class="euro">&euro;</span> 469</a>
 					{{else}}
 					<a href="login.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg">My Booking</a>{{/if}}
 				</li>
+
+				<li class="header-nav-listitem header-nav-listitem--language">
+					<a href="#" data-type="toggle" data-target="#languages"><span>English</span></a>
+					<div style="display: none;" class="languages" id="languages">
+					<ul class="languages-list">
+						<li><a href="#">Spanish</a></li>
+						<li><a href="#">Dutch</a></li>
+						<li><a href="#">Deutsch</a></li>
+					</ul>
+				</div>
+				</li>
 			</ul>
 		</nav>
+
 		<button class="nav-mobile-btn d-lg-none"></button>
 		<div class="header-booking-mob">
 			{{#if type}}
@@ -40,4 +53,6 @@
 			<a href="login.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg">My Booking</a>{{/if}}
 		</div>
 	</div>
+
+	
 </header>

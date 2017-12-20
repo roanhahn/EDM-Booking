@@ -1601,15 +1601,20 @@ a, button {
     .header-nav-list {
       margin: 0;
       padding: 0; }
-      @media (max-width: 768px) {
-        .header-nav-list {
-          padding: 15px 0; } }
     .header-nav-listitem {
       display: inline-block;
       list-style-type: none;
       vertical-align: middle;
       position: relative;
-      margin: 0 10px; }
+      margin: 0 10px;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-family: "ornitons-demiboldregular", sans-serif; }
+      .header-nav-listitem--language {
+        position: relative;
+        font-family: "Roboto", sans-serif;
+        text-transform: none;
+        cursor: pointer; }
       .header-nav-listitem:last-child {
         margin-right: 0; }
       .header-nav-listitem.header-nav-dropdown:after {
@@ -1622,7 +1627,7 @@ a, button {
         -ms-transform: translate(0%, -50%);
         -webkit-transform: translate(0%, -50%);
         transform: translate(0%, -50%);
-        margin-top: -2px; }
+        margin-top: -4px; }
         @media (max-width: 992px) {
           .header-nav-listitem.header-nav-dropdown:after {
             top: 0px;
@@ -1640,15 +1645,11 @@ a, button {
             display: none; } }
       .header-nav-listitem a {
         color: #fff;
-        padding: 34px 15px 30px;
-        display: block;
-        font-size: 15px;
-        text-transform: uppercase;
-        font-family: "ornitons-demiboldregular", sans-serif; }
+        padding: 32px 15px;
+        display: block; }
         @media (max-width: 992px) {
           .header-nav-listitem a {
             margin: 0 auto;
-            padding: 15px 15px 10px 15px;
             display: inline-block; } }
         .header-nav-listitem a:after {
           display: block;
@@ -1757,6 +1758,31 @@ a, button {
         .dropdown a:after {
           background: #fff; } }
 
+.languages {
+  position: fixed;
+  top: 91px;
+  right: 0px;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.3);
+  text-align: right; }
+  .languages ul {
+    padding: 15px;
+    margin: 0; }
+  .languages li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: auto; }
+    .languages li a {
+      font-family: "Roboto", sans-serif;
+      line-height: 1 !important;
+      padding: 15px 25px;
+      color: #fff;
+      height: auto;
+      display: block; }
+      .languages li a:after {
+        display: none; }
+
 .hero {
   height: 70%;
   min-height: 500px;
@@ -1796,7 +1822,7 @@ a, button {
         .hero-content .hero-header {
           font-size: 30px; } }
     .hero-content .hero-subheader {
-      font-size: 22px;
+      font-size: 30px;
       font-family: "ornitons-lightregular", sans-serif;
       max-width: 80%;
       margin: 0 auto; }
