@@ -8,11 +8,11 @@
 		</div>
 		<nav class="header-nav">
 			<ul class="header-nav-list">
-				<li class="header-nav-listitem header-nav-dropdown">
+				<li class="header-nav-listitem header-nav-dropdown" data-type="dropdown" data-target="#packages">
 					<a href="#" title="">
 						<span>Packages</span>
 					</a>
-					<div class="dropdown" id="Packages">
+					<div class="dropdown" id="packages">
 						<div class="container">
 							<div class="row">
 								<div class="col-lg-4"><a href="hotels.html">Regular Hotels Packages</a></div>
@@ -32,8 +32,8 @@
 					<a href="login.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg">My Booking</a>{{/if}}
 				</li>
 
-				<li class="header-nav-listitem header-nav-listitem--language">
-					<a href="#" data-type="toggle" data-target="#languages"><span>English</span></a>
+				<li class="header-nav-listitem header-nav-listitem--language" data-type="dropdown" data-target="#languages">
+					<a href="#" ><span>English</span></a>
 					<div style="display: none;" class="languages" id="languages">
 					<ul class="languages-list">
 						<li><a href="#">Spanish</a></li>

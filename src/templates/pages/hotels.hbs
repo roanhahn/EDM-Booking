@@ -4,15 +4,16 @@ type: page
 layout: default.hbs
 ---
 
-
+{{> progress }}
 <section class="section">
 	<div class="container">
-		{{!-- <div class="alert alert-warning text-center m-b-30" role="alert">Note! There are no festival tickets included in the Hotel packages! To book a festival ticket, please select it in the personal extras!</div> --}}
+		
 
 
 		<h3 class="h3">All Regular Hotels<small>We have selected <span>24</span> great hotels for you.</small></h3>
 		<div>
 			<ul class="cat-menu">
+				<li>Accomodation type:</li>
 				<li class="active"><a href="hotels.html">Regular Hotels</a></li>
 				<li><a href="hotels.html">AMF Hotels</a></li>
 				<li><a href="hotels.html">Camping</a></li>
@@ -21,35 +22,21 @@ layout: default.hbs
 		<div>
 			{{> filter-horz }}
 		</div>
-		{{!-- <div class="row">
-			<div class="col">
-				<button class="button button--small btn-filter d-inlineblock d-lg-none m-b-20 scroll" data-scroll="#filters" data-type="toggle" data-target="#filters"><img src="assets/img/filter.svg" alt="">Filters</button>
-				<form class="sort">	
-					<select>
-						<option value="price_l2h">Sort by</option>
-						<option value="price_l2h">Price (low to high)</option>
-						<option value="price_h2l">Price (high to low)</option>
-						<option value="distance_l2h">Distance to event (low to high)</option>
-						<option value="distance_h2l">Distance to event (high to low)</option>
-						<option value="rating_l2h">Rating (low to high)</option>
-						<option value="rating_h2l">Rating (high to low)</option>
-					</select>
-				</form>
-				
-			</div>
-		</div> --}}
 		<div class="row">
 			<div class="{{!-- col-lg-9 order-1 order-lg-2 --}} col text-center">
-				<div class="scroll-container">
-					{{> product }}
-					{{> product }}
-					{{> product }}
-					{{> product }}
-					{{> product }}
-					{{> product }}
-					{{> product }}
-					{{> product }}
-					{{> product }}
+				<div class="scroll-container scroll-container--overview">
+					{{> product-overview }}
+					{{> product-overview }}
+					{{> product-overview }}
+					{{> product-overview }}
+					{{> product-overview }}
+					{{> product-overview }}
+					{{> product-overview }}
+					{{> product-overview }}
+					{{> product-overview }}
+					{{> product-overview }}
+					{{> product-overview }}
+					{{> product-overview }}
 				</div>
 			</div>
 			{{!-- <div class="col-lg-3 order-2 order-lg-1" id="filters">

@@ -18,9 +18,10 @@ body{
 
 .curved{
 	background: $color-2;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	border-radius: 4px;
 	padding: 60px 40px;
 	position: relative;
 	z-index: 10;
@@ -63,7 +64,7 @@ body{
 		padding: 40px 30px;
 
 
-	
+
 
 	}
 
@@ -263,7 +264,7 @@ body{
 // }
 
 .cat-menu{
-	margin: 0;
+	margin: 0 0 20px;
 	padding: 0;
 	& li{
 		display: inline-block;
@@ -283,11 +284,18 @@ body{
 			&:hover{
 				background: $color-1;
 			}
+
+			@media (max-width: $breakpoint-mobile){
+				font-size: 11px;
+				padding: 5px 10px;
+			}
 		}
 
 		&.active a{
 			background: $color-1;
 		}
+
+		
 	}
 }
 .category-wrapper{
@@ -389,6 +397,10 @@ body{
 	// margin-right: 15px;
 	// padding-top:30px;
 
+	&--overview{
+
+	}
+
 	&--nowrap{
 		flex-wrap: nowrap;
 	}
@@ -414,25 +426,30 @@ body{
 	height: 100%;
 	color: $product-color;
 
+	// float: left;
+	flex-shrink: 0;
+	flex-grow: 1;
+	align-self: auto;
+	flex-basis: 261px;
+	margin-bottom: 60px;
+	height: auto;
+	margin-right: 15px;
+	margin-top: 20px;
 
 	&--overview{
-		// float: left;
+		flex-basis: 330px;
 		flex-shrink: 1;
 		flex-grow: 1;
-		align-self: auto;
-		flex-basis: 340px;
-		margin-bottom: 50px;
-		height: auto;
-		margin-right: 15px;
-		margin-top: 20px;
-
-		@media (max-width: $breakpoint-tablet) { 
-			flex-basis: 261px;
-			flex-grow: 1;
-			flex-shrink: 0;
-			margin-bottom: 20px;
-		}
 	}
+
+	@media (max-width: $breakpoint-tablet) { 
+		flex-basis: 261px;
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin-bottom: 20px;
+	}
+
+	
 
 	@media (max-width: $breakpoint-mobile){
 		// width: 80%;
