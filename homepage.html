@@ -37,7 +37,7 @@
 			<ul class="header-nav-list">
 				<li class="header-nav-listitem header-nav-dropdown">
 					<a href="#" title="">
-						Packages
+						<span>Packages</span>
 					</a>
 					<div class="dropdown" id="Packages">
 						<div class="container">
@@ -51,18 +51,33 @@
 				</li>
 				
 				<li class="header-nav-listitem"><a href="info.html" title="" class="">More info</a></li>
+
 				<li class="header-nav-listitem mobile-menu-no">
 					
 					<a href="login.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg">My Booking</a>
 				</li>
+
+				<li class="header-nav-listitem header-nav-listitem--language">
+					<a href="#" data-type="toggle" data-target="#languages"><span>English</span></a>
+					<div style="display: none;" class="languages" id="languages">
+					<ul class="languages-list">
+						<li><a href="#">Spanish</a></li>
+						<li><a href="#">Dutch</a></li>
+						<li><a href="#">Deutsch</a></li>
+					</ul>
+				</div>
+				</li>
 			</ul>
 		</nav>
+
 		<button class="nav-mobile-btn d-lg-none"></button>
 		<div class="header-booking-mob">
 			
 			<a href="login.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg">My Booking</a>
 		</div>
 	</div>
+
+	
 </header>
 	
 		
@@ -72,20 +87,17 @@
         <div class="vertical-align">
             <div class="container text-center">
                 
-                <h1 class="hero-header">Create your AMF travel experience</h1>
+                <h1 class="hero-header">Create your AMF travel experience!!!</h1>
                 <p class="hero-subheader">Make your choice</p>
                 <div class="scroll-down scroll" data-scroll="#offers"></div>
             </div>
         </div>
     </div>
     <div class="videowrapper">
-        <div id="hero-video" class="videoplayer"></div>
+        
     </div>
 </div>
-<section class="section section--offers text-center" id="offers">
-	
-	
-
+<div class="category-wrapper">
 	<div class="container">
 		<ul class="category-menu">
 			<li class="active toggle-category" data-toggle="hotels">Regular Hotels</li>
@@ -93,6 +105,12 @@
 			<li class="toggle-category" data-toggle="camping">Camping</li>
 		</ul>
 	</div>
+</div>
+<section class="section section--offers text-center wow fadeIn" data-wow-duration="1s" data-wow-delay="0s" id="offers">
+	
+	
+
+	
 
 	<div class="homepage-offer-wrapper">
 		<div id="hotels" class="homepage-category homepage-category--active">
@@ -103,8 +121,11 @@
 						<div class="scroll-container scroll-container--nowrap">
 							<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -112,7 +133,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -126,8 +152,11 @@
 </a>
 							<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -135,7 +164,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -149,8 +183,11 @@
 </a>
 							<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -158,7 +195,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -172,8 +214,11 @@
 </a>
 							<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -181,7 +226,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -208,8 +258,11 @@
 						<div class="scroll-container scroll-container--nowrap">
 							<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -217,7 +270,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -231,8 +289,11 @@
 </a>
 							<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -240,7 +301,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -254,8 +320,11 @@
 </a>
 							<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -263,7 +332,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -277,8 +351,11 @@
 </a>
 							<a href="hotel-detail.html" class="product product--overview">
     <div class="product-thumb">
-        <div class="product-label">Populair</div>
-        <img src="assets/img/hotel-4.jpg" alt="" class="img-fluid">
+        <div class="product-label">
+            <span class="populair">Populair</span>
+            <span class="bestprice">Best Price</span>
+        </div>
+        <img src="https://pbs.twimg.com/profile_images/892071041257713664/OnxKmm0Z_400x400.jpg" alt="" class="img-fluid">
     </div>
     <div class="product-content product-content--margin">
         <div class="product-info"></div>
@@ -286,7 +363,12 @@
         <div class="extra-price">
             <strong>€245</strong>
         </div>
-        <p class="product-description">"Great hub in the centre of Amsterdam"</p>
+        <ul class="product-bulletlist">
+            <li>Friendly hotel in Hoofddorp, near Schiphol Airport</li>
+            <li>Fitness centre, billiards, terrace, restaurant, bar/lounge</li>
+            <li>Comfortable rooms with a bathroom, free bottled water</li>
+        </ul>
+        
     </div>
     <div class="product-details">
         <div class="product-distance"><img src="assets/img/amf/marker-amf.svg">2.5 km to venue</div>
@@ -569,8 +651,8 @@
 		<div class="container reveal">
 			<div class="row">
 				<div class="col text-center">
-					<h3 class="h3">NEED HELP?</h3>
-					<p class="subheader">Questions or special wishes?<br />Contact us 24/7 via e-mail or WhatsApp.</p>
+					<h3 class="h3">Questions or special wishes?</h3>
+					<p class="subheader">Contact us 24/7 via e-mail or WhatsApp.</p>
 					
 				</div>
 			</div>
