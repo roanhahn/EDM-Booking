@@ -35,11 +35,11 @@
 		</div>
 		<nav class="header-nav">
 			<ul class="header-nav-list">
-				<li class="header-nav-listitem header-nav-dropdown">
+				<li class="header-nav-listitem header-nav-dropdown" data-type="dropdown" data-target="#packages">
 					<a href="#" title="">
 						<span>Packages</span>
 					</a>
-					<div class="dropdown" id="Packages">
+					<div class="dropdown" id="packages">
 						<div class="container">
 							<div class="row">
 								<div class="col-lg-4"><a href="hotels.html">Regular Hotels Packages</a></div>
@@ -57,8 +57,8 @@
 					<a href="login.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg">My Booking</a>
 				</li>
 
-				<li class="header-nav-listitem header-nav-listitem--language">
-					<a href="#" data-type="toggle" data-target="#languages"><span>English</span></a>
+				<li class="header-nav-listitem header-nav-listitem--language" data-type="dropdown" data-target="#languages">
+					<a href="#" ><span>English</span></a>
 					<div style="display: none;" class="languages" id="languages">
 					<ul class="languages-list">
 						<li><a href="#">Spanish</a></li>
@@ -119,7 +119,7 @@
 					<div class="col">
 						<p class="subheader">Choose your favorite hotel in Amsterdam</p>
 						<div class="scroll-container scroll-container--nowrap">
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -150,7 +150,7 @@
         </div>
     </div>
 </a>
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -181,7 +181,7 @@
         </div>
     </div>
 </a>
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -212,7 +212,7 @@
         </div>
     </div>
 </a>
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -256,7 +256,7 @@
 					<div class="col">
 						<p class="subheader">Stay with AMF for the full experience</p>
 						<div class="scroll-container scroll-container--nowrap">
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -287,7 +287,7 @@
         </div>
     </div>
 </a>
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -318,7 +318,7 @@
         </div>
     </div>
 </a>
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -349,7 +349,7 @@
         </div>
     </div>
 </a>
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -519,64 +519,64 @@
 		<h3 class="h3">AMF Extras</h3>
 		<p class="subheader">Add some cool extra's to make your experience even better!</p>
 		
-			<div class="row">
-				<div class="col">
-					<div class="scroll-container scroll-container--nowrap">
-						<div class="product product--overview">
-							<div class="product-thumb">
-								<img src="assets/img/limousine.jpg" alt="" class="img-fluid">
-							</div>
-							<div class="product-content">
-								<div class="product-info"></div>
-								<h4 class="product-title">Private transfer</h4>
-								<div class="extra-price">
-									<strong>€269</strong>
-								</div>
-								<p class="product-description">Private transfer between your hotel and the Amsterdam Arena and back. The driver will pick you up at any time.</p>
-							</div>
+		<div class="row">
+			<div class="col">
+				<div class="scroll-container scroll-container--nowrap">
+					<div class="product">
+						<div class="product-thumb">
+							<img src="assets/img/limousine.jpg" alt="" class="img-fluid">
 						</div>
-						<div class="product product--overview">
-							<div class="product-thumb">
-								<img src="assets/img/cap.jpg" alt="" class="img-fluid">
+						<div class="product-content">
+							<div class="product-info"></div>
+							<h4 class="product-title">Private transfer</h4>
+							<div class="extra-price">
+								<strong>€269</strong>
 							</div>
-							<div class="product-content">
-								<div class="product-info"></div>
-								<h4 class="product-title">AMF Cap</h4>
-								<div class="extra-price">
-									<strong>€25</strong>
-								</div>
-								<p class="product-description">The night is what you live for. This cap is what you need! Together we own the night.</p>
-							</div>
+							<p class="product-description">Private transfer between your hotel and the Amsterdam Arena and back. The driver will pick you up at any time.</p>
 						</div>
-						<div class="product product--overview">
-							<div class="product-thumb">
-								<img src="assets/img/hands.jpg" alt="" class="img-fluid">
-							</div>
-							<div class="product-content">
-								<div class="product-info"></div>
-								<h4 class="product-title">Tickets</h4>
-								<div class="extra-price">
-									<strong>€80</strong>
-								</div>
-								<p class="product-description">Select official AMF Regular or AMF VIP Tickets. VIP ticket includes separate VIP entrance, VIP deck at the Mainstage and a free locker.</p>
-							</div>
+					</div>
+					<div class="product">
+						<div class="product-thumb">
+							<img src="assets/img/cap.jpg" alt="" class="img-fluid">
 						</div>
-						<div class="product product--overview">
-							<div class="product-thumb">
-								<img src="assets/img/breakfast.jpg" alt="" class="img-fluid">
+						<div class="product-content">
+							<div class="product-info"></div>
+							<h4 class="product-title">AMF Cap</h4>
+							<div class="extra-price">
+								<strong>€25</strong>
 							</div>
-							<div class="product-content">
-								<div class="product-info"></div>
-								<h4 class="product-title">Breakfast</h4>
-								<div class="extra-price">
-									<strong>€15</strong>
-								</div>
-								<p class="product-description">Wake up to a wonderful breakfast with fresh rolls, croissants, various spreads, fruit, coffee, tea and juices.</p>
+							<p class="product-description">The night is what you live for. This cap is what you need! Together we own the night.</p>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-thumb">
+							<img src="assets/img/hands.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="product-content">
+							<div class="product-info"></div>
+							<h4 class="product-title">Tickets</h4>
+							<div class="extra-price">
+								<strong>€80</strong>
 							</div>
+							<p class="product-description">Select official AMF Regular or AMF VIP Tickets. VIP ticket includes separate VIP entrance, VIP deck at the Mainstage and a free locker.</p>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-thumb">
+							<img src="assets/img/breakfast.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="product-content">
+							<div class="product-info"></div>
+							<h4 class="product-title">Breakfast</h4>
+							<div class="extra-price">
+								<strong>€15</strong>
+							</div>
+							<p class="product-description">Wake up to a wonderful breakfast with fresh rolls, croissants, various spreads, fruit, coffee, tea and juices.</p>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 	
 	</div>
 </section>

@@ -35,11 +35,11 @@
 		</div>
 		<nav class="header-nav">
 			<ul class="header-nav-list">
-				<li class="header-nav-listitem header-nav-dropdown">
+				<li class="header-nav-listitem header-nav-dropdown" data-type="dropdown" data-target="#packages">
 					<a href="#" title="">
 						<span>Packages</span>
 					</a>
-					<div class="dropdown" id="Packages">
+					<div class="dropdown" id="packages">
 						<div class="container">
 							<div class="row">
 								<div class="col-lg-4"><a href="hotels.html">Regular Hotels Packages</a></div>
@@ -57,8 +57,8 @@
 					<a href="login.html" title="My Booking" class="nav-btn"><img src="assets/img/avatar.svg">My Booking</a>
 				</li>
 
-				<li class="header-nav-listitem header-nav-listitem--language">
-					<a href="#" data-type="toggle" data-target="#languages"><span>English</span></a>
+				<li class="header-nav-listitem header-nav-listitem--language" data-type="dropdown" data-target="#languages">
+					<a href="#" ><span>English</span></a>
 					<div style="display: none;" class="languages" id="languages">
 					<ul class="languages-list">
 						<li><a href="#">Spanish</a></li>
@@ -97,38 +97,7 @@
         
     </div>
 </div>
-<section class="section">
-    <h3 class="h3 text-center">AMF Camping</h3>
-    <p class="subheader text-center">It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
-    <div class="container">
-        <div class="row no-gutters">
-            <div class="col-md-7 wow fadeIn" data-wow-duration=".5s" data-wow-delay=".2s">
-                <img src="assets/img/camping1.jpg" alt="" class="img-fluid img-curved">
-            </div>
-            <div class="col-md-5">
-                <div class="curved text-center wow fadeIn" data-wow-duration=".5s" data-wow-delay="0s">
-                    <img src="assets/img/tent.svg" class="curved-icon">
-                    <h3>Pre-build tents</h3>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-                    <a href="#" class="button">Download</a>
-                </div>
-            </div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-md-5 order-2 order-md-1 wow fadeInLeft" data-wow-duration=".5s" data-wow-delay="0s">
-                <div class="curved curved-left text-center">
-                    <img src="assets/img/tent.svg" class="curved-icon">
-                    <h3>Camping Packages</h3>
-                    <p>A spot on our camping in a pre-set tent. Access to our exclusive pre- and afterparties, on Friday and Saturday evening. Access both festival days on Saturday and Sunday.</p>
-                    <a href="#" class="button">Download</a>
-                </div>
-            </div>
-            <div class="col-md-7 order-1 order-md-2 wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".2s">
-                <img src="assets/img/camping2.jpg" alt="" class="img-fluid img-curved">
-            </div>
-        </div>
-    </div>
-</section>
+
 <div class="category-wrapper">
 	<div class="container">
 		<ul class="category-menu">
@@ -151,7 +120,7 @@
 					<div class="col">
 						<p class="subheader">Choose your favorite hotel in Amsterdam</p>
 						<div class="scroll-container scroll-container--nowrap">
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -182,7 +151,7 @@
         </div>
     </div>
 </a>
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -213,7 +182,7 @@
         </div>
     </div>
 </a>
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -244,7 +213,7 @@
         </div>
     </div>
 </a>
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -288,7 +257,7 @@
 					<div class="col">
 						<p class="subheader">Stay with AMF for the full experience</p>
 						<div class="scroll-container scroll-container--nowrap">
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -319,7 +288,7 @@
         </div>
     </div>
 </a>
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -350,7 +319,7 @@
         </div>
     </div>
 </a>
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -381,7 +350,7 @@
         </div>
     </div>
 </a>
-							<a href="hotel-detail.html" class="product product--overview">
+							<a href="hotel-detail.html" class="product">
     <div class="product-thumb">
         <div class="product-label">
             <span class="populair">Populair</span>
@@ -546,69 +515,103 @@
 
 
 
+<section class="section">
+    <h3 class="h3 text-center">AMF Camping</h3>
+    <p class="subheader text-center">It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="col-md-7 wow fadeIn" data-wow-duration=".5s" data-wow-delay=".2s">
+                <img src="assets/img/camping1.jpg" alt="" class="img-fluid img-curved">
+            </div>
+            <div class="col-md-5">
+                <div class="curved text-center wow fadeIn" data-wow-duration=".5s" data-wow-delay="0s">
+                    <img src="assets/img/tent.svg" class="curved-icon">
+                    <h3>Pre-build tents</h3>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                    <a href="#" class="button">Download</a>
+                </div>
+            </div>
+        </div>
+        <div class="row no-gutters">
+            <div class="col-md-5 order-2 order-md-1 wow fadeInLeft" data-wow-duration=".5s" data-wow-delay="0s">
+                <div class="curved curved-left text-center">
+                    <img src="assets/img/tent.svg" class="curved-icon">
+                    <h3>Camping Packages</h3>
+                    <p>A spot on our camping in a pre-set tent. Access to our exclusive pre- and afterparties, on Friday and Saturday evening. Access both festival days on Saturday and Sunday.</p>
+                    <a href="#" class="button">Download</a>
+                </div>
+            </div>
+            <div class="col-md-7 order-1 order-md-2 wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".2s">
+                <img src="assets/img/camping2.jpg" alt="" class="img-fluid img-curved">
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <section class="section wow fadeIn text-center" data-wow-duration="1s" data-wow-delay="0s">
 	<div class="container">
 		<h3 class="h3">AMF Extras</h3>
 		<p class="subheader">Add some cool extra's to make your experience even better!</p>
 		
-			<div class="row">
-				<div class="col">
-					<div class="scroll-container scroll-container--nowrap">
-						<div class="product product--overview">
-							<div class="product-thumb">
-								<img src="assets/img/limousine.jpg" alt="" class="img-fluid">
-							</div>
-							<div class="product-content">
-								<div class="product-info"></div>
-								<h4 class="product-title">Private transfer</h4>
-								<div class="extra-price">
-									<strong>€269</strong>
-								</div>
-								<p class="product-description">Private transfer between your hotel and the Amsterdam Arena and back. The driver will pick you up at any time.</p>
-							</div>
+		<div class="row">
+			<div class="col">
+				<div class="scroll-container scroll-container--nowrap">
+					<div class="product">
+						<div class="product-thumb">
+							<img src="assets/img/limousine.jpg" alt="" class="img-fluid">
 						</div>
-						<div class="product product--overview">
-							<div class="product-thumb">
-								<img src="assets/img/cap.jpg" alt="" class="img-fluid">
+						<div class="product-content">
+							<div class="product-info"></div>
+							<h4 class="product-title">Private transfer</h4>
+							<div class="extra-price">
+								<strong>€269</strong>
 							</div>
-							<div class="product-content">
-								<div class="product-info"></div>
-								<h4 class="product-title">AMF Cap</h4>
-								<div class="extra-price">
-									<strong>€25</strong>
-								</div>
-								<p class="product-description">The night is what you live for. This cap is what you need! Together we own the night.</p>
-							</div>
+							<p class="product-description">Private transfer between your hotel and the Amsterdam Arena and back. The driver will pick you up at any time.</p>
 						</div>
-						<div class="product product--overview">
-							<div class="product-thumb">
-								<img src="assets/img/hands.jpg" alt="" class="img-fluid">
-							</div>
-							<div class="product-content">
-								<div class="product-info"></div>
-								<h4 class="product-title">Tickets</h4>
-								<div class="extra-price">
-									<strong>€80</strong>
-								</div>
-								<p class="product-description">Select official AMF Regular or AMF VIP Tickets. VIP ticket includes separate VIP entrance, VIP deck at the Mainstage and a free locker.</p>
-							</div>
+					</div>
+					<div class="product">
+						<div class="product-thumb">
+							<img src="assets/img/cap.jpg" alt="" class="img-fluid">
 						</div>
-						<div class="product product--overview">
-							<div class="product-thumb">
-								<img src="assets/img/breakfast.jpg" alt="" class="img-fluid">
+						<div class="product-content">
+							<div class="product-info"></div>
+							<h4 class="product-title">AMF Cap</h4>
+							<div class="extra-price">
+								<strong>€25</strong>
 							</div>
-							<div class="product-content">
-								<div class="product-info"></div>
-								<h4 class="product-title">Breakfast</h4>
-								<div class="extra-price">
-									<strong>€15</strong>
-								</div>
-								<p class="product-description">Wake up to a wonderful breakfast with fresh rolls, croissants, various spreads, fruit, coffee, tea and juices.</p>
+							<p class="product-description">The night is what you live for. This cap is what you need! Together we own the night.</p>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-thumb">
+							<img src="assets/img/hands.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="product-content">
+							<div class="product-info"></div>
+							<h4 class="product-title">Tickets</h4>
+							<div class="extra-price">
+								<strong>€80</strong>
 							</div>
+							<p class="product-description">Select official AMF Regular or AMF VIP Tickets. VIP ticket includes separate VIP entrance, VIP deck at the Mainstage and a free locker.</p>
+						</div>
+					</div>
+					<div class="product">
+						<div class="product-thumb">
+							<img src="assets/img/breakfast.jpg" alt="" class="img-fluid">
+						</div>
+						<div class="product-content">
+							<div class="product-info"></div>
+							<h4 class="product-title">Breakfast</h4>
+							<div class="extra-price">
+								<strong>€15</strong>
+							</div>
+							<p class="product-description">Wake up to a wonderful breakfast with fresh rolls, croissants, various spreads, fruit, coffee, tea and juices.</p>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
 	
 	</div>
 </section>

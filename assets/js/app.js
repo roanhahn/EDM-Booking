@@ -263,6 +263,12 @@ $('*[data-type="toggle"]').click(function()
 	$(toggletarget).fadeToggle("fast");
 });
 
+$('*[data-type="dropdown"]').hover(function()
+{
+	var toggletarget = $(this).data('target');
+	$(toggletarget).fadeToggle("fast");
+});
+
 
 // Dropdown
 
