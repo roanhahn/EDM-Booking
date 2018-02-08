@@ -17,9 +17,10 @@
 	display: inline-block;
 	white-space: nowrap;
 	position: relative;
+	// min-width: 200px;
 
 
-
+	
 
 	&:hover{
 		background-color: $button-bg-hover;
@@ -58,13 +59,51 @@
 		}
 	}
 
+	&--back{
+		border-color: $back-color;
+		background-color: $back-color;
+		min-width: 200px;
+		color: #333;
+		margin-right: 20px;
+
+		& img{
+			position: absolute;
+			left: 15px;
+			top: 50%;
+			max-width: 15px;
+			-ms-transform: translate(0, -50%); /* IE 9 */
+			-webkit-transform: translate(0, -50%); /* Safari */
+			transform: translate(0, -50%);
+		}
+
+		&:hover{
+			border-color: #BDC3C7;
+			background-color: #BDC3C7;
+			color: #333;
+		}
+	}
+
 	&--confirm{
 		border-color: $checkout-color;
 		background-color: $checkout-color;
+		min-width: 200px;
 
 		&:hover{
 			border-color: #00B16A;
 			background-color: #00B16A;
+		}
+	}
+
+	&--next{
+
+		& img{
+			position: absolute;
+			right: 15px;
+			top: 50%;
+			max-width: 15px;
+			-ms-transform: translate(0, -50%); /* IE 9 */
+			-webkit-transform: translate(0, -50%); /* Safari */
+			transform: translate(0, -50%);
 		}
 	}
 
@@ -81,6 +120,20 @@
 
 		&:hover{
 			padding-left: 34px;
+		}
+
+		@media all and (max-width: $breakpoint-mobile){
+
+			height: 40px;
+			padding-right: 6px;
+
+			&:hover{
+				padding-right: 6px;
+			}
+
+			span{
+				display: none;
+			}
 		}
 	}
 

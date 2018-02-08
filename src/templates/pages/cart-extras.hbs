@@ -23,11 +23,11 @@ layout: default.hbs
 				{{!-- <div class="offset" style="position: fixed; z-index: 100; background: red;">asdasd</div>
 				<div style="height: 600px;">asdsa</div> --}}
 				{{!-- <h3 class="h3 h3-cart">Your stay</h3> --}}
-				<div class="cart-stay">
+				{{!-- <div class="cart-stay">
 					<div class="row">
 						<div class="col-3"><a href="hotel-detail.html"><img src="assets/img/hotel-1.jpg" alt="" class="img-fluid"></a></div>
 						<div class="col">
-							{{!-- <p class="lead">Great choice!</p> --}}
+					
 							<div class="name">Volkshotel Amsterdam - Great choice!</div>
 							<div class="row data">
 								<div class="col-4">
@@ -46,7 +46,7 @@ layout: default.hbs
 							<a href="hotels.html" class="button button--small"><img src="assets/img/change-white.svg" alt="">Change</a>
 						</div>
 					</div>
-				</div>
+				</div> --}}
 				<h3 class="h3 h3-cart">Personal Extras<small>Add a transfer or an upgrade to your booking</small></h3>
 				<ul class="cart-list">
 					<li class="cart-list-item">
@@ -55,7 +55,7 @@ layout: default.hbs
 								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket VIP
 							</div>
 							<div class="surcharge">€173.60</div>
-							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+							<div class="addtocart"><button class="button button--addcart button--small"><span>Add to cart</span></button></div>
 						</div>
 						<div class="item-info">extra info</div>
 					</li>
@@ -65,7 +65,7 @@ layout: default.hbs
 								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket Regular
 							</div>
 							<div class="surcharge">€100</div>
-							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+							<div class="addtocart"><button class="button button--addcart button--small"><span>Add to cart</span></button></div>
 						</div>
 						<div class="item-info">extra info</div>
 					</li>
@@ -75,7 +75,7 @@ layout: default.hbs
 								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket Hotel only
 							</div>
 							<div class="surcharge">€0</div>
-							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+							<div class="addtocart"><button class="button button--addcart button--small"><span>Add to cart</span></button></div>
 						</div>
 						<div class="item-info">extra info</div>
 					</li>
@@ -85,7 +85,7 @@ layout: default.hbs
 								<button class="button-info show-extra" data-target="breakfast"></button>Breakfast
 							</div>
 							<div class="surcharge">€10</div>
-							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+							<div class="addtocart"><button class="button button--addcart button--small"><span>Add to cart</span></button></div>
 						</div>
 						<div class="item-info" id="breakfast">
 							<div class="row">
@@ -104,7 +104,7 @@ layout: default.hbs
 								<button class="button-info show-extra" data-target="private-transfer"></button>Private Transfer
 							</div>
 							<div class="surcharge">€269</div>
-							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+							<div class="addtocart"><button class="button button--addcart button--small"><span>Add to cart</span></button></div>
 						</div>
 						<div class="item-info" id="private-transfer">
 							<div class="row">
@@ -132,7 +132,7 @@ layout: default.hbs
 								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Exclusive limited AMF flag
 							</div>
 							<div class="surcharge">€18</div>
-							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+							<div class="addtocart"><button class="button button--addcart button--small"><span>Add to cart</span></button></div>
 						</div>
 						<div class="item-info">extra info</div>
 					</li>
@@ -142,7 +142,7 @@ layout: default.hbs
 								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket
 							</div>
 							<div class="surcharge">€173.60</div>
-							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+							<div class="addtocart"><button class="button button--addcart button--small"><span>Add to cart</span></button></div>
 						</div>
 						<div class="item-info">extra info</div>
 					</li>
@@ -152,7 +152,7 @@ layout: default.hbs
 								<button class="button-info" data-toggle="modal" data-target="#exampleModal"></button>Festival Ticket
 							</div>
 							<div class="surcharge">€173.60</div>
-							<div class="addtocart"><button class="button button--addcart button--small">Add to cart</button></div>
+							<div class="addtocart"><button class="button button--addcart button--small"><span>Add to cart</span></button></div>
 						</div>
 						<div class="item-info">extra info</div>
 					</li>
@@ -161,58 +161,65 @@ layout: default.hbs
 			<div class="col-lg-4 scroller">
 				<div data-scroll="true">
 					<div class="cart">
-						<div class="total">Your booking <span>€173.60</span></div>
-						<table>
-							<tbody>
-								<tr>
-									<td>
-										<div class="name">Volkshotel Amsterdam</div>
-										<p>Check in: 17-02-2018</p>
-										<p>Check out: 18-02-2018</p>
-										<p>2 x Comfort Twin Room</p>
+						<div class="img-container ratio-16-9"><img src="https://www.volkshotel.nl/media/uploads/2014/11/DSC619014-1-530x348.jpg" alt="" class=""></div>
+						<div class="wrapper">
+							<div class="total">Your booking <span>€173.60</span></div>
+							<table>
+								<tbody>
+									<tr>
+										<td>
+											<div class="name">Volkshotel Amsterdam</div>
+											<p>Check in: 17-02-2018</p>
+											<p>Check out: 18-02-2018</p>
+											<p>2 x Comfort Twin Room</p>
+											<p>3 Guests</p>
 
-									</td>
-									<td class="price">€173.60</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="name">
-											<button class="delete" title="Delete from cart"></button>
-											<span class="cart-item-amount">2</span>
-											Item goes here
-										</div>
-									</td>
-									<td class="price">€60</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="name">
-											<button class="delete" title="Delete from cart"></button>
-											Item goes here
-										</div>
-									</td>
-									<td class="price">€60</td>
-								</tr>
-								<tr>
-									<td>
-										<div class="name">
-											<button class="delete" title="Delete from cart"></button>
-											Item goes here
-										</div>
-									</td>
-									<td class="price">€60</td>
-								</tr>
-								<tr>
+										</td>
+										<td class="price">
+											€173.60
+											<a href="hotels.html" class="button button--small m-t-20"><img src="assets/img/change-white.svg" alt="">Change</a>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="name">
+												<button class="delete" title="Delete from cart"></button>
+												<span class="cart-item-amount">2</span>
+												Item goes here
+											</div>
+										</td>
+										<td class="price">€60</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="name">
+												<button class="delete" title="Delete from cart"></button>
+												Item goes here
+											</div>
+										</td>
+										<td class="price">€60</td>
+									</tr>
+									<tr>
+										<td>
+											<div class="name">
+												<button class="delete" title="Delete from cart"></button>
+												Item goes here
+											</div>
+										</td>
+										<td class="price">€60</td>
+									</tr>
+								{{!-- <tr>
 									<td>
 										<div class="name vat">
 											Including 7% V.A.T.
 										</div>
 									</td>
 									<td class="price vat">€128</td>
-								</tr>
+								</tr> --}}
 							</tbody>
 						</table>
-						<form>
+					</div>
+						{{!-- <form>
 							<div class="mycheck">
 								<label class="mycheck-label">
 									<input type="checkbox">
@@ -222,7 +229,7 @@ layout: default.hbs
 							</div>
 						</form>
 						<button class="button button--confirm button--block" disabled>Confirm order</button>
-						<div class="cart-p">Payment details on the next page</div>
+						<div class="cart-p">Payment details on the next page</div> --}}
 					</div>
 				</div>
 			</div>

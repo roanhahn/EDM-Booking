@@ -9,6 +9,12 @@ $(".nav-mobile-btn").click(function() {
 	$(".header-nav").slideToggle("fast");
 });
 
+// Tooltip
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+
 //  LANGUAGE
 
 // WOW JS

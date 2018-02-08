@@ -341,6 +341,7 @@
 
 .languages{
 	position: fixed;
+	display: none;
 	top: 91px;
 	// font-size: 14px;
 	right: 0px;
@@ -375,7 +376,8 @@
 			}
 
 			&:hover{
-				color: $color-2;
+				// color: $color-2;
+				text-decoration: underline;
 			}
 		}
 	}

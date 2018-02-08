@@ -11,6 +11,10 @@ body, html{
 	line-height: 1.3;
 }
 
+.modal{
+	color: #333;
+}
+
 a{
 	color: $link-color;
 
@@ -111,6 +115,10 @@ a, button{
 	text-transform: uppercase;
 	font-family: $secondary-font;
 	font-size: 18px;
+}
+
+.h5{
+	font-size: 20px;
 }
 
 .subheader{
