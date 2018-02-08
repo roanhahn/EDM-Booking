@@ -135,6 +135,16 @@ a, button{
 	}
 }
 
+.page ul{
+	padding: 0;
+	list-style-position: inside;
+}
+
+.page{
+	font-size: 15px;
+	line-height: 1.5;
+}
+
 .intro{
 	font-size: 22px;
 	font-family: $tertiary-font;
