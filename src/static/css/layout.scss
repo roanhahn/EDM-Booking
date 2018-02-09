@@ -239,6 +239,11 @@ body{
 		
 	}
 
+	&--succes{
+		background: #fff url(../img/succes-bg.jpg) no-repeat center center scroll;
+		background-size: cover;
+	}
+
 	&--cart{
 		background: #fff;
 		color: #000;

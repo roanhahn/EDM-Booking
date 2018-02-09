@@ -204,3 +204,54 @@ a, button{
 			transform: scale(1.0);
 		}
 	}
+
+	.wow{
+		visibility: hidden;
+	}
+
+	.succes{
+		background: #fff;
+		color: #333;
+		padding: 50px;
+		text-align: center;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+
+		@media (max-width: $breakpoint-mobile){
+			padding: 30px 15px;
+		}
+
+		&-icon{
+			width: 150px;
+			margin-bottom: 20px;
+
+			@media (max-width: $breakpoint-mobile){
+				width: 75px;
+			}
+		}
+
+		& table{
+			margin: 20px auto;
+			border-top: 1px solid #eee;
+			border-bottom: 1px solid #eee;
+			padding: 20px;
+			width: 100%;
+
+			
+
+			& td{
+				text-align: left;
+				padding: 15px 5px;
+
+				@media (max-width: $breakpoint-mobile){
+					font-size: 13px;
+					padding: 10px 5px;
+				}
+			}
+
+			& .type{
+				text-align: right;
+			}
+		}
+	}

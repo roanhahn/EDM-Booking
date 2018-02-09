@@ -32,6 +32,10 @@
 		font-size: 17px;
 		font-weight: 500;
 
+		@media (max-width: $breakpoint-mobile){
+			font-size: 13px;
+		}
+
 		& span{
 			display:inline-block;
 			margin: 0;
@@ -61,6 +65,13 @@
 			margin-right: 10px;
 			position: relative;
 			margin-top: -3px;
+
+			@media (max-width: $breakpoint-mobile){
+				background-size: 15px auto;
+				width: 15px;
+				height: 15px;
+				margin-right: 5px;
+			}
 		}
 	}
 }
@@ -120,8 +131,8 @@
 			white-space: nowrap;
 
 			@media (max-width: $breakpoint-mobile){
-					font-size: 13px;
-				}
+				font-size: 13px;
+			}
 
 			&.name{
 				// flex-basis: 300px;
@@ -195,6 +206,10 @@
 	}
 	& tr{
 		border-bottom: 1px solid #eee;
+
+		&:last-child{
+			border: none;
+		}
 	}
 	& .name{
 		font-weight: 500;
@@ -259,6 +274,7 @@
 		line-height: 25px;
 		padding: 0;
 		margin: 0;
+		cursor: pointer;
 	}
 
 	& input{
@@ -276,23 +292,23 @@
 		background-size: contain;
 
 		// &:after{
-		// 	content: "";
-		// 	position: absolute;
-		// 	display: none;
-		// }
-	}
+			// 	content: "";
+			// 	position: absolute;
+			// 	display: none;
+			// }
+		}
 
-	&:hover input ~ .checkmark{
-		background: #fff url(../img/check-hover.svg) no-repeat center center;
-		background-size: contain;
-	}
+		&:hover input ~ .checkmark{
+			background: #fff url(../img/check-hover.svg) no-repeat center center;
+			background-size: contain;
+		}
 
-	& input:checked ~ .checkmark{
-		background: #fff url(../img/check-checked.svg) no-repeat center center;
-		background-size: contain;
-	}
+		& input:checked ~ .checkmark{
+			background: #fff url(../img/check-checked.svg) no-repeat center center;
+			background-size: contain;
+		}
 
-	// & input:checked ~ .checkmark:after{
-	// 	display: block;
-	// }
-}
+		// & input:checked ~ .checkmark:after{
+			// 	display: block;
+			// }
+		}

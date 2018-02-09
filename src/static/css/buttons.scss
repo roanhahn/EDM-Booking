@@ -81,6 +81,11 @@
 			background-color: #BDC3C7;
 			color: #333;
 		}
+
+		@media all and (max-width: $breakpoint-mobile){
+
+			min-width: 150px;
+		}
 	}
 
 	&--confirm{
@@ -104,6 +109,11 @@
 			-ms-transform: translate(0, -50%); /* IE 9 */
 			-webkit-transform: translate(0, -50%); /* Safari */
 			transform: translate(0, -50%);
+		}
+
+		@media all and (max-width: $breakpoint-mobile){
+
+			min-width: 150px;
 		}
 	}
 
