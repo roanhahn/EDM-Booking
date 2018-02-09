@@ -255,3 +255,21 @@ a, button{
 			}
 		}
 	}
+
+	.preloader{
+		background: #fff;
+		border-radius: 5px;
+		width: 100%;
+		padding: 2px;
+		position: relative;
+
+		& .bar{
+			background: red;
+			border-radius: 3px;
+			width: 100%;
+			height: 20px;
+			// position: absolute;
+			-moz-animation:graphic-design 2s ease-out;
+			-webkit-animation:graphic-design 2s ease-out;
+		}
+	}

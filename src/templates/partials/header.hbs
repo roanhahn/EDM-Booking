@@ -6,6 +6,8 @@
 				<span class="d-none d-sm-inline-block">Official Travel Packages</span>
 			</a>
 		</div>
+
+		{{#unless menu}}
 		<nav class="header-nav">
 			<ul class="header-nav-list">
 				<li class="header-nav-listitem header-nav-dropdown" data-type="dropdown" data-target="#packages">
@@ -44,6 +46,7 @@
 				</li>
 			</ul>
 		</nav>
+		{{/unless}}
 
 		<button class="nav-mobile-btn d-lg-none"></button>
 		<div class="header-booking-mob">

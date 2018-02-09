@@ -21,53 +21,56 @@ layout: default.hbs
 		<div class="row">
 			<div class="col-lg-8 m-b-30">
 				<h3 class="h3 h3-cart">4. Pay</h3>
-				<h5 class="h5 m-t-30">Choose your payment option</h5>
-				<form class="globalform">
-					<ul class="payment-options">
-						<li class="payment-options-item">
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="payment" id="iDeal" value="iDeal">
-								<label class="form-check-label" for="iDeal">
-									<img src="assets/img/ideal.jpg" alt="iDeal">
-								</label>
-								<span>Only available in the Netherlands</span>
-							</div>
-							<div class="form-group select col-md-6 col-lg-4" style="display: block;">
-								<select class="form-control">
-									<option selected="">Choose your Bank</option>
-									<option>ABN AMRO</option>
-									<option>ING</option>
-									<option>RaboBank</option>
-								</select>
-							</div>
-						</li>
-						<li class="payment-options-item">
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="payment" id="Mastercard" value="Mastercard">
-								<label class="form-check-label" for="Mastercard">
-									<img src="assets/img/mastercard.jpg" alt="Mastercard">
-								</label>
-								<span>&euro; 4,- surcharge</span>
-							</div>
-						</li>
-						<li class="payment-options-item">
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="payment" id="Visa" value="Visa">
-								<label class="form-check-label" for="Visa">
-									<img src="assets/img/visa.jpg" alt="Visa">
-								</label>
-								<span>&euro; 4,- surcharge</span>
-							</div>
-						</li>
-						<li class="payment-options-item">
-							<div class="form-check">
-								<input class="form-check-input" type="radio" name="payment" id="PayPal" value="PayPal">
-								<label class="form-check-label" for="PayPal">
-									<img src="assets/img/paypal.jpg" alt="PayPal">
-								</label>
-								<span>Some text goes here</span>
-							</div>
-						</li>
+				<div class="row">
+					<div class="col-lg-6">
+						
+						<h5 class="h5 m-t-20">Choose your payment option</h5>
+						<form class="globalform">
+							<ul class="payment-options">
+								<li class="payment-options-item">
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="payment" id="iDeal" value="iDeal">
+										<label class="form-check-label" for="iDeal">
+											<img src="assets/img/ideal.jpg" alt="iDeal">
+										</label>
+										<span>Only available in the Netherlands</span>
+									</div>
+									<div class="form-group select col-md-6" style="display: block;">
+										<select class="form-control">
+											<option selected="">Choose your Bank</option>
+											<option>ABN AMRO</option>
+											<option>ING</option>
+											<option>RaboBank</option>
+										</select>
+									</div>
+								</li>
+								<li class="payment-options-item">
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="payment" id="Mastercard" value="Mastercard">
+										<label class="form-check-label" for="Mastercard">
+											<img src="assets/img/mastercard.jpg" alt="Mastercard">
+										</label>
+										<span>&euro; 4,- surcharge</span>
+									</div>
+								</li>
+								<li class="payment-options-item">
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="payment" id="Visa" value="Visa">
+										<label class="form-check-label" for="Visa">
+											<img src="assets/img/visa.jpg" alt="Visa">
+										</label>
+										<span>&euro; 4,- surcharge</span>
+									</div>
+								</li>
+								<li class="payment-options-item">
+									<div class="form-check">
+										<input class="form-check-input" type="radio" name="payment" id="PayPal" value="PayPal">
+										<label class="form-check-label" for="PayPal">
+											<img src="assets/img/paypal.jpg" alt="PayPal">
+										</label>
+										<span>Some text goes here</span>
+									</div>
+								</li>
 						{{!-- <li class="payment-options-item">
 							<div class="form-check">
 								<input class="form-check-input" type="radio" name="payment" id="Sofortüberweisung" value="Sofortüberweisung">
@@ -78,76 +81,84 @@ layout: default.hbs
 							</div>
 						</li> --}}
 					</ul>
-					<div>
-						<div class="mycheck">
-								<label class="mycheck-label">
-									<input type="checkbox">
-									<span class="checkmark"></span>
-									I agree to the <a href="terms.html">Terms and Conditions</a>
-								</label>
-							</div>
-						<p>Your booking confirmation and the link to your official tickets will be processed and send to you per email directly. </p>
-					</div>
-					<div class="m-t-30">
-						<a href="personal-info.html" class="button button--back"><img src="assets/img/back.svg">Back</a>
-						<a href="transaction.html" class="button button--confirm button--next float-right"><img src="assets/img/next.svg">Buy now</a>
-					</div>
+					
+					
 				</form>
 			</div>
-			<div class="col-lg-4 scroller">
-				<div data-scroll="true">
-					<div class="cart">
-						<div class="img-container ratio-16-9"><img src="https://www.volkshotel.nl/media/uploads/2014/11/DSC619014-1-530x348.jpg" alt="" class=""></div>
-						<div class="wrapper">
-							<div class="total">Your booking <span>€173.60</span></div>
-							<table>
-								<tbody>
-									<tr>
-										<td>
-											<div class="name">Volkshotel Amsterdam</div>
-											<p>Check in: 17-02-2018</p>
-											<p>Check out: 18-02-2018</p>
-											<p>2 x Comfort Twin Room</p>
-										</td>
-										<td class="price">
-											€173.60
-											<a href="hotels.html" class="button button--small m-t-20"><img src="assets/img/change-white.svg" alt="">Change</a>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="name">
-												<button class="delete" title="Delete from cart"></button>
-												<span class="cart-item-amount">2</span>
-												Item goes here
-											</div>
-										</td>
-										<td class="price">€60</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="name">
-												<button class="delete" title="Delete from cart"></button>
-												Item goes here
-											</div>
-										</td>
-										<td class="price">€60</td>
-									</tr>
-									<tr>
-										<td>
-											<div class="name">
-												<button class="delete" title="Delete from cart"></button>
-												Item goes here
-											</div>
-										</td>
-										<td class="price">€60</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
+			<div class="col-lg-6">
+				<h5 class="h5 m-t-20">Personal details</h5>
+			</div>
+		</div>
+		<div>
+			<div class="mycheck">
+				<label class="mycheck-label">
+					<input type="checkbox">
+					<span class="checkmark"></span>
+					I agree to the <a href="terms.html">Terms and Conditions</a>
+				</label>
+			</div>
+			<p>Your booking confirmation and the link to your official tickets will be processed and send to you per email directly. </p>
+		</div>
+		<div class="m-t-30">
+			<a href="personal-info.html" class="button button--back"><img src="assets/img/back.svg">Back</a>
+			<a href="transaction.html" class="button button--confirm button--next float-right"><img src="assets/img/next.svg">Buy now</a>
+		</div>
+
+	</div>
+	<div class="col-lg-4 scroller">
+		<div data-scroll="true">
+			<div class="cart">
+				<div class="img-container ratio-16-9"><img src="https://www.volkshotel.nl/media/uploads/2014/11/DSC619014-1-530x348.jpg" alt="" class=""></div>
+				<div class="wrapper">
+					<div class="total">Your booking <span>€173.60</span></div>
+					<table>
+						<tbody>
+							<tr>
+								<td>
+									<div class="name">Volkshotel Amsterdam</div>
+									<p>Check in: 17-02-2018</p>
+									<p>Check out: 18-02-2018</p>
+									<p>2 x Comfort Twin Room</p>
+								</td>
+								<td class="price">
+									€173.60
+									<a href="hotels.html" class="button button--small m-t-20"><img src="assets/img/change-white.svg" alt="">Change</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="name">
+										<button class="delete" title="Delete from cart"></button>
+										<span class="cart-item-amount">2</span>
+										Item goes here
+									</div>
+								</td>
+								<td class="price">€60</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="name">
+										<button class="delete" title="Delete from cart"></button>
+										Item goes here
+									</div>
+								</td>
+								<td class="price">€60</td>
+							</tr>
+							<tr>
+								<td>
+									<div class="name">
+										<button class="delete" title="Delete from cart"></button>
+										Item goes here
+									</div>
+								</td>
+								<td class="price">€60</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 		</div>
 	</div>
+</div>
+</div>
 </section>
